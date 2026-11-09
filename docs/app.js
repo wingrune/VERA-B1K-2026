@@ -4,6 +4,7 @@
   const count = document.getElementById('results-count');
   const search = document.getElementById('task-search');
   const evidence = document.getElementById('evidence-filter');
+  const family = document.getElementById('family-filter');
   const sort = document.getElementById('task-sort');
   const more = document.getElementById('show-more');
   let expanded = false;
@@ -18,6 +19,7 @@
   function render() {
     const term = search.value.trim().toLowerCase().replaceAll('_', ' ');
     const selected = summary.tasks.filter(t => (readable(t.task).toLowerCase().includes(term) || String(t.id) === term)
+      && (family.value === 'all' || (family.value === 'planners' ? ['planner', 'planner_cpu'].includes(t.release_route) : ['b1k_classical', 'frozen_rgbd'].includes(t.release_route)))
       && (evidence.value === 'all' || (evidence.value === 'published' ? t.episodes > 0 : t.episodes === 0)));
     selected.sort((a, b) => sort.value === 'id' ? a.id - b.id : sort.value === 'name' ? a.task.localeCompare(b.task)
       : (b.mean_q ?? -1) - (a.mean_q ?? -1) || a.id - b.id);
@@ -62,7 +64,7 @@
       row.append(score, linkCell);
       rows.append(row);
     }
-    count.textContent = `Showing ${shown.length} of ${selected.length} matching tasks · ${summary.published_tasks} tasks with public episodes`;
+    count.textContent = `Showing ${shown.length} of ${selected.length} matching tasks · ${family.value === 'planners' ? 'planner routes' : family.value === 'classical' ? 'classical controller routes' : 'full submission'}`;
     more.hidden = expanded || shown.length === selected.length;
     if (!selected.length) {
       const row = document.createElement('tr');
@@ -72,7 +74,7 @@
       rows.append(row);
     }
   }
-  for (const control of [search, evidence, sort]) {
+  for (const control of [search, evidence, sort, family]) {
     control.addEventListener(control === search ? 'input' : 'change', () => { expanded = false; render(); });
   }
   more.addEventListener('click', () => { expanded = true; render(); });

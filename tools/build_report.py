@@ -11,7 +11,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle, XPreformatted
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak, Table, TableStyle, XPreformatted, Image
 
 ROOT = Path(__file__).resolve().parents[1]
 FONT_ROOT = Path('/usr/share/fonts/truetype/dejavu')
@@ -58,6 +58,15 @@ def render():
         if line.startswith('<!-- pagebreak'):
             story.append(PageBreak())
             i += 1
+        elif line.startswith('!['):
+            match = re.fullmatch(r'!\[([^\]]*)\]\(([^)]+)\)', line)
+            if not match:
+                raise ValueError(f'Unsupported image markup: {line}')
+            image = Image(str(ROOT / 'docs' / match.group(2)))
+            image.drawHeight *= 495 / image.drawWidth
+            image.drawWidth = 495
+            story.extend([image, Spacer(1, 10)])
+            i += 1
         elif line.startswith('#'):
             depth = len(line) - len(line.lstrip('#'))
             style = 'title' if depth == 1 else 'h2' if depth == 2 else 'h3'
@@ -78,7 +87,7 @@ def render():
                 if not all(re.fullmatch(r'[:\- ]+', c) for c in cells):
                     table_rows.append([Paragraph(inline(c), STYLES['cell']) for c in cells])
                 i += 1
-            widths = [233, 112, 150] if 'Successful' in ''.join(str(c) for c in table_rows[0]) else [150, 55, 290]
+            widths = [220, 100, 175]
             table = Table(table_rows, colWidths=widths, repeatRows=1, hAlign='LEFT')
             table.setStyle(TableStyle([('BACKGROUND', (0, 0), (-1, 0), colors.HexColor('#e6e9df')),
                 ('VALIGN', (0, 0), (-1, -1), 'TOP'), ('TOPPADDING', (0, 0), (-1, -1), 7),
@@ -87,7 +96,7 @@ def render():
         else:
             para = [line]
             i += 1
-            while i < len(lines) and lines[i].strip() and not lines[i].startswith(('#', '|', '```', '<!--')):
+            while i < len(lines) and lines[i].strip() and not lines[i].startswith(('#', '|', '```', '<!--', '![')):
                 para.append(lines[i]); i += 1
             story.append(Paragraph(inline(' '.join(para)), STYLES['body']))
     out = ROOT / 'docs/technical-report.pdf'
@@ -105,7 +114,7 @@ def render():
         canvas.drawRightString(w - 50, 29, str(doc.page))
         canvas.restoreState()
     doc = SimpleDocTemplate(str(out), pagesize=A4, leftMargin=50, rightMargin=50, topMargin=53, bottomMargin=48,
-        title='VERA-Volve for the 2026 BEHAVIOR Challenge', author='VERA team', subject='Architecture and pinned public validation evidence')
+        title='VERA-Volve for the 2026 BEHAVIOR Challenge', author='VERA team', subject='Planner evolution using an Isaac digital twin, LLM and algorithmic search, and native validation')
     doc.build(story, onFirstPage=furniture, onLaterPages=furniture)
     print(out)
 

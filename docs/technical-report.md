@@ -1,135 +1,133 @@
 # VERA-Volve for the 2026 BEHAVIOR Challenge
 
-System architecture and reproducible public validation
+Planner evolution with an Isaac digital twin and native validation
 
 VERA team | November 9, 2026
 
 ## Abstract
 
-VERA-Volve is a hybrid embodied policy that assigns household tasks to task-specific motion planners, classical RGB-D controllers and vision-language-action models. A fixed routing table covers all 100 challenge tasks. One WebSocket policy server manages the selected specialist, enforces the R1Pro action contract and isolates episode failures. The release preserves the original solution code and publishes instructions for recovering all five routed checkpoints from the public, digest-pinned submission image. We summarize an immutable public artifact snapshot containing 820 native-evaluator episodes across 82 tasks. Across those published tasks, mean final Q is 0.531441 and 259 episodes report success. These measurements describe a ten-instance public slice, not a verified official leaderboard score. The release supports inspection and inference reproduction; complete COMET training and evolution-search reproduction require materials beyond this source snapshot.
+VERA-Volve develops executable robot planners through a simulation-driven evolution loop. We construct an Isaac digital twin of the task environment for GPU simulation and fast RGB-D rendering, implement an observation-driven seed planner, and search over its logic and parameters. Candidate generation combines LLM-proposed code edits with algorithmic search. Closed-loop rollouts supply task-progress scores, success outcomes and failure traces; promising programs seed the next round. We then freeze a planner artifact and validate its packaged runtime in the native BEHAVIOR-1K evaluator. This report focuses on that planner method and its transfer gate. The source release preserves selected planner implementations, static priors, provenance and native episode evidence. It does not bundle the full digital-twin conversion pipeline or evolution-search history. Search-backend scores and native evaluator measurements are reported separately; no numerical rendering speedup or exact physics-equivalence claim is made.
 
-## 1. Task and system setting
+## 1. Problem and planner representation
 
-The target is the 2026 BEHAVIOR Challenge with the R1Pro robot under BEHAVIOR-1K v3.9.3-post1. The policy receives observations through the evaluator protocol and returns a 23-dimensional robot action. Geometric policies use onboard RGB-D, proprioception and robot-relative camera information, together with static robot, object or scene priors. VLA routes use camera RGB and proprioception; the COMET adapter also conditions on the task name.
+The target is the 2026 BEHAVIOR Challenge with the R1Pro robot under BEHAVIOR-1K v3.9.3-post1. A planner must turn onboard observations into a sequence of navigation, grasping and manipulation actions over a long episode. The deployed program receives permitted RGB-D, robot proprioception and relative camera information, together with its packaged static priors, and returns a 23-dimensional robot action.
 
-The routing table is fixed before execution. It does not select a backend from privileged live simulator state. The following counts describe the released configuration, excluding the wildcard fallback row.
+The search object is executable planner code plus configuration, rather than only a learned action-policy checkpoint. A seed planner contains perception and geometric estimates, task stages, motion targets, and completion or recovery conditions. Its numerical parameters include thresholds, offsets, gains and timeouts. Depending on the task, shared IK and motion-planning routines supply feasible robot motions. The camera-on-tripod planner explicitly separates mutable numerical parameters from its logic.
 
-| Backend | Tasks | Function |
-|---|---:|---|
-| planner | 8 | Task-specific planning programs |
-| planner_cpu | 2 | Native CPU-environment task planners |
-| b1k_classical | 25 | Geometric classical controllers |
-| frozen_rgbd | 5 | Preserved controllers with pinned environment |
-| larchenko_ckpt2 / ckpt3 | 11 / 3 | Adapted 2025 VLA policies |
-| comet2 / comet2_1 / comet3 | 7 / 6 / 33 | Team pi0.5 checkpoints |
+The released configuration has eight planner routes and two CPU-environment planner routes. The wider submission includes other controllers, but its task coverage is not the subject of the evolution method. At runtime a fixed task route loads the selected planner, while the shared server supplies observation transport, reset behavior, action validation and backend isolation.
 
 <!-- pagebreak -->
 
-## 2. Policy architecture
+## 2. Evolution method scheme
 
-### 2.1 Task routing and backend lifecycle
+![Nine-step planner evolution workflow](assets/evolution-method-print.png)
 
-The evaluator connects to port 8000. The server reads the observation's task ID, resolves the corresponding route in `config/routing.csv`, and starts the backend command registered in `config/solutions.json`. At most one backend is active. Switching specialists stops the previous process, which bounds the policy-side memory footprint. A second evaluator connection waits until the first closes; independent simultaneous evaluations therefore require separate policy servers.
+Figure 1. Build the Isaac twin and a seed planner, propose candidates, execute GPU rollouts, score behavior, select and iterate, freeze the selected program, validate natively, and release the packaged artifact. The dashed feedback path returns rollout evidence to LLM and algorithmic candidate generation. The full-size SVG in the project blog expands the contents of each step.
 
-Reset behavior is explicit in the backend registry. Planner, classical, frozen and COMET routes restart their backend per episode. Larchenko routes reuse their checkpoint process and reset policy state through the adapter. The router verifies finite 23D actions and, when supplied, finite action chunks with consistent first actions. A backend error, invalid reply or timeout fails the current episode: the server returns an action that holds the current robot pose until the next reset. This permits later episodes to proceed without silently changing the selected method.
-
-### 2.2 Task planners and geometric controllers
-
-Task folders contain the selected planning programs, entrypoint metadata and provenance. Some planner records describe programs selected by evolution; their recorded H100/Isaac Lab port measurements are distinct from native simulator validation. Other folders package classical controllers with geometric perception, whole-body IK, sampling-based motion planning and static priors. cuRobo supplies GPU IK for planners that depend on it.
-
-The release serves popcorn and smoke-detector planners in a pinned CPU environment. A separate set of five frozen RGB-D controllers retains its original source fingerprints and dependency pins. These choices preserve the numerical and import environments expected by the packaged policies. The generic backend adapters translate evaluator observations and episode resets to each controller's API while retaining the controller code.
-
-### 2.3 VLA specialists
-
-The adapted Larchenko backend vendors the 2025 BEHAVIOR solution and maps task identities into its 2025 policy interface. Its two routed checkpoints serve 14 tasks. The source documents adapter differences, including action conversion and a known base-velocity-frame gap; the release does not assert perfect behavioral equivalence to the original 2025 system.
-
-The team COMET checkpoints are group2_hour_a01 step 2498, group1_7h_a01 step 20408 and all63_1h_a01 step 2540. They share the bundled OpenPI runtime but serve different task sets. COMET takes three RGB camera views, 61D R1Pro proprioception and the task-name prompt. The model predicts a 32-step sequence; the existing scheduler preserves its 26-to-20 compression, gripper handling and replanning after 20 executed actions. The evaluator must request 20-action replay. The fallback wildcard route uses comet3 for task IDs not otherwise listed, with an empty prompt for unknown IDs.
+The search environment and native evaluator have different roles. GPU simulation and rendering support repeated candidate execution; native evaluation measures transfer to the challenge runtime. If native validation reveals a problem, revise the program, freeze a new candidate and validate that version again. Simulator task-state checks may score a development rollout, but they are not an oracle input to the deployed planner's action logic.
 
 <!-- pagebreak -->
 
-## 3. Public validation evidence
+## 3. Building and searching the planner
 
-The evidence snapshot is VERA-VLA/b1k_final_submission revision `a7e21a893581e5f6a1bf71d8a0e9780530ecf241`, submission folder `standard.public.VERA_team.team.20261015`. It contains 820 JSON episodes for 82 tasks, with ten distinct instances per task: 301-310, rollout 0. Every JSON has a corresponding video path in the dataset tree. The remaining 18 task IDs have no episodes in this snapshot.
+### 3.1 Isaac digital twin and GPU observations
 
-The summary is computed from committed JSON blobs. For task t with ten published episodes, mean Q is the arithmetic mean of `q_score.final`. The published-task aggregate is the equally weighted mean of the 82 task means. Successes count the evaluator's explicit Boolean `success`, rather than inferring success from a rounded Q. This gives mean Q 0.531441 and 259 successful episodes out of 820. These values are descriptive statistics for the available slice and are not reported as the official challenge score.
+The first stage converts the task scene, objects and R1Pro into an Isaac digital twin. Camera placement and RGB-D observations, robot controls, task initialization and task checks define the interfaces that candidate programs use during development. GPU physics and fast rendering make this environment useful for repeated closed-loop candidate screening. The source provenance refers to the H100 SR008 / Isaac Lab port for several recorded evolution results.
 
-| Task | Successful episodes | Mean final Q |
+The twin is a search backend, not a certificate that contact, dynamics, perception or task transitions exactly match the native simulator. Those differences are tested at transfer. The release records search results and native results separately instead of pooling their episodes or presenting one as a substitute for the other.
+
+### 3.2 Seed planner and candidate generation
+
+The seed planner provides executable task structure. Typical stages include finding target objects from RGB-D, estimating geometry, choosing a base stance, approaching a grasp, closing a gripper, transporting an object, performing the task-specific interaction and recovering when progress stalls. Static robot, object or scene priors and shared IK routines support these decisions where the implementation uses them.
+
+Evolution combines two sources of variation. LLM proposals edit planner logic, stage transitions and recovery behavior. Algorithmic search supplies code or parameter variations, allowing numerical settings to change independently of larger structural edits. The resulting candidate is a concrete program/configuration bundle that can be executed and identified. This method description does not prescribe an unrecorded LLM model, crossover rule, population size or search budget.
+
+### 3.3 GPU rollout, scoring and selection loop
+
+Each candidate runs in a closed loop: render permitted observations, let the planner compute an action, advance the simulated robot and observe the result. Evaluate across task instances or seeds, retaining task progress/Q, success, timeouts and diagnostic traces. Infrastructure errors must remain distinguishable from completed task failures. A search fitness can include development signals, so a combined search score must not be silently relabeled as native final Q.
+
+Retain promising candidates and use execution failures to guide the next proposal round. The feedback can target perception thresholds, motion offsets, stage logic or recovery conditions. Repeating proposal, execution, scoring and selection turns observed robot behavior into the basis for the next program revision. Selected artifacts retain program identities, iterations, source revisions and hashes where recorded; the release does not include every evaluated candidate.
+
+<!-- pagebreak -->
+
+## 4. Freeze and native transfer validation
+
+### 4.1 Validate the actual packaged planner
+
+Freeze the selected code and parameters before a native validation run. Record its program ID, source revision and file or bundle SHA256. Package its dependencies and static priors, then smoke-test that exact policy image against native BEHAVIOR-1K v3.9.3-post1. A search runner or a different image is not the validation target.
+
+Use permitted observations, the expected R1Pro configuration, default horizons, one rollout and one environment. Start a fresh native evaluator process per episode and preserve the full instances 301-310 set with JSON and MP4 output. Planner backends restart per episode through the registry. When a changed planner needs another validation, retain the candidate identity for the new task-level run rather than selecting the luckiest repeated result for each instance.
+
+### 4.2 Search and native measurements
+
+The following task records illustrate why transfer is a separate gate. Search results are recorded H100-port measurements; native results are separate RTX evaluator runs. They reproduce historical runs recorded in the imported task notes, not new experiments or a recomputation of the newer public dataset snapshot.
+
+| Planner task | Recorded search success | Native success / mean Q |
 |---|---:|---:|
-| Installing smoke detectors | 10 / 10 | 1.000000 |
-| Installing a fax machine | 10 / 10 | 1.000000 |
-| Loading the car | 10 / 10 | 1.000000 |
-| Picking up trash | 9 / 10 | 0.966667 |
-| Setting mousetraps | 0 / 10 | 0.966667 |
-| Collecting aluminum cans | 3 / 10 | 0.850000 |
-| Turning on radio | 8 / 10 | 0.800000 |
-| Attaching a camera to a tripod | 6 / 10 | 0.600000 |
-| Making rose centerpieces | 0 / 10 | 0.400000 |
+| Turning on radio | 9 / 10 | 8 / 10; Q 0.80 |
+| Attaching a camera to a tripod | 10 / 10 | 6 / 10; Q 0.60 |
+| Storing honey | 7 / 10 | 3 / 10; Q 0.30 |
+| Installing a scanner | 4 / 10 | 3 / 10; Q 0.40 |
 
-### 3.1 Interpretation and provenance
+These differences show a transfer gap; the available records do not isolate a single causal explanation. Native notes and solution metadata distinguish the evaluated program, source, hardware and candidate where available. Later native adaptations, including the CPU popcorn and smoke-detector planners, have their own candidate identities and should not be treated as unchanged search champions.
 
-The examples illustrate the difference between partial completion and full task success. Setting mousetraps has high mean Q but no successful episodes in the published set. A video of a successful instance is not a task-level success estimate; the report's counts use all ten published instances.
+### 4.3 Episode evidence and inspection
 
-The released routing table is not a complete per-episode policy provenance record. Some artifacts were collected before tasks moved to newer routes. Per-task README files and solution metadata preserve earlier candidate identities, source commits, fingerprints and hardware-specific measurements where available. The summary labels the current configuration as a release route and does not attribute every historical episode to that route.
+The pinned public dataset is VERA-VLA/b1k_final_submission revision `a7e21a893581e5f6a1bf71d8a0e9780530ecf241`. It contains 820 JSON episodes across 82 tasks in the wider submission, with a corresponding video path for each JSON. This is an artifact snapshot, not an asserted official leaderboard score or a planner-only aggregate. The blog defaults to the ten current planner routes and can expose the broader inventory when needed.
 
-The evidence tool checks task identities, filenames, Q ranges, success consistency, the complete 301-310 instance sets and video-path presence. Its manifest records SHA256 hashes of every JSON. All video payloads were not downloaded or decoded during release preparation; file-tree pairing is the scope of the 820-video presence check. One radio video was downloaded, matched to its LFS SHA256 and used to derive the blog poster.
+The evidence tool reads committed JSON blobs, checks task and instance identity, complete ten-instance sets, Q ranges and success consistency, and records SHA256 hashes. Pairing with video paths checks dataset-tree presence; the entire MP4 collection was not downloaded and decoded. Historical artifacts are not automatically attributed to the current release route.
 
 <!-- pagebreak -->
 
-## 4. Reproduction and release artifacts
+## 5. Reproducing a released planner
 
-### 4.1 Recover the packaged inference environment
+### 5.1 Start with one task
 
-The publicly readable Linux/amd64 image is pinned by the following OCI digest. It contains policy source, runtime dependencies, routing and all five model checkpoint roots. Registry metadata shows 64 layers and approximately 71.1 GiB compressed content. The image is an available weight distribution even though the public VERA-VLA listing does not expose separate COMET model repositories.
+Install the native BEHAVIOR-1K v3.9.3-post1 environment and licensed assets separately. Docker, NVIDIA Container Toolkit and compatible GPU access are required by the planner image. From the repository root, the task-scoped launcher builds the selected policy and runs instance 301 without requiring VLA checkpoint downloads:
 
-```text
-ghcr.io/alstar8/b1k-evo-submit@sha256:
-1ab7d94f5b3ecc347dbb9adccc2d9212cfbd2ed4aad078bda82faad607a240c5
+```bash
+B1K=/absolute/path/to/BEHAVIOR-1K \
+B1K_PYTHON=/absolute/path/to/evaluator/python \
+INDICES=0 RESULTS_DIR=results_smoke \
+bash scripts/run_eval.sh turning_on_radio
 ```
 
-Run the policy on Linux with Docker, NVIDIA Container Toolkit and sufficient GPU resources. The submission specifies 24 GB VRAM for one active policy backend; the native simulator needs additional resources. Install BEHAVIOR-1K v3.9.3-post1 and its licensed assets separately. The policy requires no external inference service or policy network connection at runtime.
+The launcher supplies the RGBDFullResWrapper and writes native evaluator outputs and container logs. Validate the resulting JSON/video pair with `scripts/check_results.py`. After smoke validation, evaluate indices 0-9 sequentially for instances 301-310. Preserve the exact image identity and use separate containers, policy ports, caches and output directories for concurrent evaluators.
 
-Use one native evaluator process per instance, `--num-envs 1`, one rollout and default timeouts. Select DefaultWrapper for Larchenko routes. Select RGBDFullResWrapper for the other released routes. COMET routes require replay chunk size 20; other routes use 1. The reproduction guide includes commands that derive these choices from the released image's own routing and registry files. Preserve JSON, MP4, image identity and logs for each new run.
+A planner's reproducible artifact includes its source tree, entrypoint, configuration, static priors and runtime. It does not require a language model at deployment merely because LLM edits were used during search. The task folders and source manifest make the selected code inspectable. The release's inherited GPU planner dependencies, cuRobo revision and separate CPU environment pins remain unchanged.
 
-### 4.2 Rebuild and inspect the weights
+### 5.2 Full submission distribution
 
-The extraction helper pulls the pinned image, creates a stopped container and copies checkpoints into the source layout. It does not start the policy or require a GPU. Copies are staged, existing destinations are protected, and the group2 COMET files are verified against the included checksum manifest. Its aggregate fingerprint is recorded below.
+The complete public submission image also contains other routes and their model checkpoints. Its immutable digest and extraction instructions are retained in the weights guide for reproducing the full package; those auxiliary learned policies are outside this report's method focus. Use the route-specific wrapper and replay settings in the reproduction guide if evaluating them.
 
-```text
-9afdb712de022c058fc10495f8aca921c24b38291dd40aca9950c38805799923
-```
+### 5.3 Release verification scope
 
-The group1 and all63 checkpoints lack equivalent independent per-file manifests in the source release; their available distribution is pinned by the image digest. The image builder copies each routed checkpoint once through named build contexts and keeps backend dependencies in separate environments. Some installer or base-image references still depend on external registries, so a fresh source build is not claimed to be bit-for-bit identical to the prebuilt image.
+The source check verifies 1,832 imported entries, including symlink targets and executable modes. The CPU suite has 30 passing tests and four optional external-reference tests skipped. These checks cover source fingerprints, routing, action transport, recovery, checkpoint extraction behavior with simulated Docker operations, and release consistency. They do not run a physical task or substitute for native simulator validation.
 
-### 4.3 Verification performed for this release
-
-The source-preservation check verifies 1,832 imported file entries, including symlink targets and executable modes, against the original commit. The inherited CPU suite passes 28 tests, with four optional frozen-reference differential tests skipped because external fixtures are absent. The bundled OpenPI client must be on PYTHONPATH for transport tests. Routing and frozen-controller fingerprint checks can run without weights. The static blog was checked at desktop and mobile viewport sizes, and task search and missing-evidence filtering were exercised.
-
-Release preparation verified public image access and checkpoint layer metadata. It did not download the full 71.1 GiB image, execute full checkpoint extraction, rebuild the GPU image or perform fresh native simulator rollouts. Recorded validation results remain the evidence described in Section 3.
+The diagram and report are explanatory additions. Their preparation did not rerun the original evolution search, rebuild the full GPU submission image or collect new native rollouts. Reported success rates refer to the task records and public artifacts identified above.
 
 <!-- pagebreak -->
 
-## 5. Limitations and lessons
+## 6. Limits and reproducibility requirements
 
-The released package is an inference and evidence release. Vendored runtime and training-related modules do not constitute a complete COMET training recipe: the release does not provide a fully specified data selection, initial checkpoint, training command and compute record for each of the three team models. Similarly, selected evolved programs and provenance records do not reproduce the entire program-search history. These are meaningful limits for reproducing how the specialists were obtained.
+The source release preserves selected planner outputs of evolution. It does not contain a self-contained copy of the Isaac twin conversion pipeline, full search driver, prompts, complete candidate archive or every development rollout. Repeating the entire search would additionally require those components, exact task conversion settings, mutation/search budgets, scoring definitions and compute configuration. The nine-step scheme describes the method; its stages should not be mistaken for a claim that all search infrastructure is bundled here.
 
-Coverage must be separated from measured performance. All 100 tasks are routed, but the pinned public snapshot contains 82 task sets. Some task notes report strong native outcomes while other tasks show partial completion or failure. Measurements from an Isaac Lab port and the official native evaluator are different experiments; the release preserves their identities and does not pool them.
+Search-backend and native task outcomes remain separate. No numerical GPU rendering speedup, exact physics match or held-out improvement guarantee is inferred from the available records. Repeated adaptive search on particular instances can favor those instances, and simulator or rendering variability can affect a native rerun. The task notes retain both strong results and failures.
 
-The hybrid design makes interface details consequential. Wrapper selection controls observations. Action scheduling changes execution semantics. Process isolation and resets determine whether one episode affects the next. Numerical dependencies and static priors are part of the behavior of geometric controllers. Recovering the full policy package, rather than only a model file, is therefore the practical starting point for reproduction.
+The runtime observation boundary also matters. A development simulator can access task predicates to score a rollout, while the deployed planner acts on permitted sensor observations and static priors. A controller that reads live ground-truth object state would be a different policy. The release description does not replace this boundary with an oracle controller.
 
-Model, tokenizer, simulator and dataset terms remain separate from the root Apache-2.0 project license. The root license and all bundled notices are preserved. Simulator assets are obtained through the upstream installation and are not redistributed in this source release.
+Finally, the original Apache-2.0 root license and component notices are preserved. Model, tokenizer, simulator and dataset terms remain separate. Simulator assets are obtained through the upstream installation rather than redistributed with the planner source.
 
 ## References and artifact index
 
-1. [BEHAVIOR Challenge 2026](https://behavior.stanford.edu/challenge/index.html), including its evaluation and submission documentation.
+1. [BEHAVIOR Challenge 2026](https://behavior.stanford.edu/challenge/index.html) and [BEHAVIOR-1K v3.9.3-post1](https://github.com/StanfordVL/BEHAVIOR-1K/tree/v3.9.3-post1), the native evaluation target.
 
-2. [BEHAVIOR-1K v3.9.3-post1](https://github.com/StanfordVL/BEHAVIOR-1K/tree/v3.9.3-post1), the evaluator version targeted by this package.
+2. [VERA-Volve source release](https://github.com/wingrune/VERA-B1K-2026), imported from alstar8/b1k_evo_submit commit 309bb650dc1606319a4309d5b0ab64702f8ad6ab. The source manifest identifies preserved entries.
 
-3. [VERA-Volve source release](https://github.com/wingrune/VERA-B1K-2026). Imported source commit: 309bb650dc1606319a4309d5b0ab64702f8ad6ab from alstar8/b1k_evo_submit. The release manifest records preserved entries.
+3. [Turning-on-radio task record](https://github.com/wingrune/VERA-B1K-2026/blob/main/tasks/turning_on_radio/README.md) and [camera-on-tripod task record](https://github.com/wingrune/VERA-B1K-2026/blob/main/tasks/attach_a_camera_to_a_tripod/README.md), with selected program provenance and recorded evolution results. The native camera result is retained in the archived source README and public artifacts.
 
-4. [Pinned VERA validation snapshot](https://huggingface.co/datasets/VERA-VLA/b1k_final_submission/tree/a7e21a893581e5f6a1bf71d8a0e9780530ecf241). JSON hashes, per-task statistics and video paths are published with the code.
+4. [Storing-honey task record](https://github.com/wingrune/VERA-B1K-2026/blob/main/tasks/store_honey/README.md) and [scanner task record](https://github.com/wingrune/VERA-B1K-2026/blob/main/tasks/installing_a_scanner/README.md), including transfer evidence and source metadata.
 
-5. [Larchenko et al., BEHAVIOR solution](https://github.com/IliaLarchenko/behavior-1k-solution) and [technical report](https://arxiv.org/abs/2512.06951). The adapted implementation and upstream license are vendored in this release.
+5. [Pinned VERA validation snapshot](https://huggingface.co/datasets/VERA-VLA/b1k_final_submission/tree/a7e21a893581e5f6a1bf71d8a0e9780530ecf241), with unedited episode JSONs and videos. Per-file JSON hashes and source revision are published alongside this report.
 
-6. [OpenPI](https://github.com/Physical-Intelligence/openpi), [cuRobo](https://github.com/NVlabs/curobo), and [b1k_rl_guys](https://github.com/tttonyalpha/b1k_rl_guys). Task-level provenance records and bundled licenses identify their use in the solution.
-
-The accompanying repository contains the full reproduction guide, checkpoint extraction helper, editable report source and GitHub Pages article. The report's claims are scoped to the released implementation and pinned public artifacts; no new training or simulator experiments are asserted.
+6. [cuRobo](https://github.com/NVlabs/curobo) and task-level BIMBO_EvoX / B1K_hacker provenance records identify planning dependencies and selected program origins. Broader controller and model acknowledgments remain in the release's third-party notices.
