@@ -1,0 +1,6 @@
+{
+ "version": "y01",
+ "parent": "clean_up_broken_glass g01",
+ "summary": "First controller for putting_away_toys: the glass controller g01 with this scene's map (house_single_floor), toy-sized detection on the living- and dining-room floors, the open toy box found as a 0.82 x 0.51 m rectangle at 0.40 m, the stance at it with its middle 0.84 m ahead, toys let go from the hand pointing down 8 cm above the rim, lookouts in both rooms, eight toys.",
+ "status": "frozen 2026-10-15 21:19 MSK (same code as dev snapshot y01_c); scored in REPORT_20261015_Y01.md"
+}

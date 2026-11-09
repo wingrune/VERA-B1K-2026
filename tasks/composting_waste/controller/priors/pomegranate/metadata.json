@@ -1,0 +1,38 @@
+{
+  "category": "pomegranate",
+  "synset": "half__pomegranate.n.01_1",
+  "model": "vqybii",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.053656019270420074,
+      -0.04182896763086319,
+      -0.04575840011239052
+    ],
+    [
+      0.03951317071914673,
+      0.039529167115688324,
+      0.029802760109305382
+    ]
+  ],
+  "mass": 0.23800000548362732,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "vqybii__base_link",
+      "vertices": 13031,
+      "faces": 19291,
+      "samples": 7133,
+      "texture": "/data/behavior-1k-assets/objects/half_pomegranate/vqybii/material/vqybii__base_link__diffuse.png",
+      "uv_shape": [
+        57873,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

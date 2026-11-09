@@ -1,0 +1,12 @@
+{
+  "scope": "Fixed native object-root collision convex hulls; no object world poses or episode state",
+  "source": "Canonical native collision meshes exported during development; folder guhatz and notebook aanuhi, installed task scale",
+  "sha256": "b48266162609419276c5e592775403b559b98f1595024b6f227e5b6f63fe66c7",
+  "pose_envelope": {
+    "xy_m": 0.004,
+    "z_m": 0.002,
+    "yaw_degrees": 3,
+    "contact_margin_m": 0.001
+  },
+  "status": "Unvalidated contact-planning hypothesis"
+}

@@ -1,0 +1,84 @@
+{
+  "task": "putting_away_Halloween_decorations",
+  "task_id_2026": 2,
+  "kind": "b1k_classical",
+  "candidate": "h01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/putting_away_Halloween_decorations/experiments/candidate/h01",
+    "fingerprint": "bc729e603e68c6aa24459ebd9b5c92a081d6b6ba18830bbb55d738bb8097dfc5",
+    "files": 24,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 9113
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 9752
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 8948
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 9905
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 10064
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.7142857142857143,
+          "steps": 20683
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 9296
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 9780
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 8714
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 9011
+        }
+      ]
+    }
+  },
+  "note": "First controller for putting_away_Halloween_decorations. The two pumpkins, three candles and the caldron are found on the living-room floor from the head camera's depth and colour images. The caldron goes to the coffee table first if it stands where a drawer slides out or where the base stands to pu"
+}

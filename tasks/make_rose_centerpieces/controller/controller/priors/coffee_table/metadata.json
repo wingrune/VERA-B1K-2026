@@ -1,0 +1,26 @@
+{
+  "category": "coffee_table",
+  "model": "koagbh",
+  "scale": [
+    0.9999982714653015,
+    1.0000159740447998,
+    1.000001311302185
+  ],
+  "links": {},
+  "source": "training template zero, before public reset",
+  "world_poses_exported": false,
+  "point_count": 3650,
+  "feature_count": 89,
+  "bounds": [
+    [
+      -0.3991732887319303,
+      -0.8255369919512359,
+      -0.3566194277693497
+    ],
+    [
+      0.40082736038697175,
+      0.830162693330828,
+      0.04970068513231375
+    ]
+  ]
+}

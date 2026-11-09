@@ -1,0 +1,9 @@
+{
+  "note": "Object priors of the fair planner of task 35 (models.py). Properties of the camera and tripod assets, not of any instance pose.",
+  "source": "collision meshes of the digital_camera and camera_tripod roles and their attachment meta links (cameratripodM / cameratripodF), read from the port's USD stage by the harness (run_episode.py --dump-models, job 35-fair-w9-d1-dumps, pin 5e06d6b5d0), expressed in each object's root frame; identical in the dumps of 301, 302 and 303 and in the start dumps of 301-310 (vertices)",
+  "builder": "planners/fair_tools/build_models.py (outside the planner package): vertices plus area-weighted surface samples (camera 2500, tripod 5000, seed 0)",
+  "camera": {"verts": 240, "faces": 464, "root_above_floor_m": 0.0383, "M_in_root": "x -0.0345, y 0.0021, z -0.0436, yaw +90 deg"},
+  "tripod": {"verts": 1643, "faces": 3134, "root_above_floor_m": 0.8063, "F_in_root": "x 0.0039, y -0.0019, z 0.4775, identity", "symmetry": "legs three-fold (0, +-120 deg), the pan handle (to -x, 0.23 m, about 0.35 m above the root) breaks it"},
+  "assets": "BEHAVIOR assets 3.9.0 as exported for the port (same asset in every public instance); no instance pose is stored",
+  "thresholds_tuned_on": "fit gates and the detection bands were checked on oracle dumps of the development instances 301-303 (pose truth used only offline to measure the error); no instance number appears in the code"
+}

@@ -1,0 +1,120 @@
+{
+  "_doc": "Solutions the routing table (config/routing.csv) may name. command: argv of the backend; {repo} {task} {port} {checkpoint} are filled in, $VARS expanded from the environment. per_task: one backend per task (else one per checkpoint, serving every task routed to it). fresh_process_per_episode: restart the backend on every evaluator reset. tasks: if set, the only tasks this solution can serve. Add a model here and route tasks to it in the CSV. comet2_1 and comet3 run the comet2 runtime with other checkpoints (group1_7h and all63_1h); comet3 has no task list: it is the * route (any task id outside the 100).",
+  "planner": {
+    "command": ["$PLANNER_PYTHON", "-u", "{repo}/solutions/planner/backend.py", "--task", "{task}", "--port", "{port}"],
+    "needs_checkpoint": false,
+    "per_task": true,
+    "fresh_process_per_episode": true,
+    "startup_timeout_s": 300
+  },
+  "planner_cpu": {
+    "command": ["$FROZEN_RGBD_PYTHON", "-u", "{repo}/solutions/planner/backend.py", "--task", "{task}", "--port", "{port}"],
+    "needs_checkpoint": false,
+    "per_task": true,
+    "fresh_process_per_episode": true,
+    "startup_timeout_s": 300
+  },
+  "b1k_classical": {
+    "command": ["$PLANNER_PYTHON", "-u", "{repo}/solutions/b1k_classical/backend.py", "--task", "{task}", "--port", "{port}"],
+    "needs_checkpoint": false,
+    "per_task": true,
+    "fresh_process_per_episode": true,
+    "startup_timeout_s": 300
+  },
+  "larchenko_ckpt2": {
+    "command": ["$VLA_PYTHON", "-u", "{repo}/solutions/larchenko_2025/backend.py", "--checkpoint", "{checkpoint}", "--port", "{port}"],
+    "needs_checkpoint": true,
+    "per_task": false,
+    "fresh_process_per_episode": false,
+    "startup_timeout_s": 1200,
+    "tasks_from": "solutions/larchenko_2025/task_ids_2025.json"
+  },
+  "larchenko_ckpt3": {
+    "command": ["$VLA_PYTHON", "-u", "{repo}/solutions/larchenko_2025/backend.py", "--checkpoint", "{checkpoint}", "--port", "{port}"],
+    "needs_checkpoint": true,
+    "per_task": false,
+    "fresh_process_per_episode": false,
+    "startup_timeout_s": 1200,
+    "tasks_from": "solutions/larchenko_2025/task_ids_2025.json"
+  },
+  "larchenko_ckpt4": {
+    "command": ["$VLA_PYTHON", "-u", "{repo}/solutions/larchenko_2025/backend.py", "--checkpoint", "{checkpoint}", "--port", "{port}"],
+    "needs_checkpoint": true,
+    "per_task": false,
+    "fresh_process_per_episode": false,
+    "startup_timeout_s": 1200,
+    "tasks_from": "solutions/larchenko_2025/task_ids_2025.json"
+  },
+  "frozen_rgbd": {
+    "command": [
+      "$FROZEN_RGBD_PYTHON",
+      "-u",
+      "{repo}/solutions/frozen_rgbd/backend.py",
+      "--task",
+      "{task}",
+      "--port",
+      "{port}"
+    ],
+    "needs_checkpoint": false,
+    "per_task": true,
+    "fresh_process_per_episode": true,
+    "startup_timeout_s": 300,
+    "tasks": [
+      "collecting_aluminum_cans",
+      "organizing_school_stuff",
+      "organizing_art_supplies",
+      "composting_waste",
+      "boxing_books_up_for_storage"
+    ]
+  },
+  "comet2": {
+    "command": [
+      "$COMET2_PYTHON",
+      "-u",
+      "{repo}/solutions/comet2/backend.py",
+      "--checkpoint",
+      "{checkpoint}",
+      "--port",
+      "{port}"
+    ],
+    "needs_checkpoint": true,
+    "per_task": false,
+    "fresh_process_per_episode": true,
+    "startup_timeout_s": 1200,
+    "tasks_from": "solutions/comet2/tasks.json",
+    "action_chunk_size": 20
+  },
+  "comet2_1": {
+    "command": [
+      "$COMET2_PYTHON",
+      "-u",
+      "{repo}/solutions/comet2/backend.py",
+      "--checkpoint",
+      "{checkpoint}",
+      "--port",
+      "{port}"
+    ],
+    "needs_checkpoint": true,
+    "per_task": false,
+    "fresh_process_per_episode": true,
+    "startup_timeout_s": 1200,
+    "tasks_from": "solutions/comet2/tasks.json",
+    "action_chunk_size": 20
+  },
+  "comet3": {
+    "command": [
+      "$COMET2_PYTHON",
+      "-u",
+      "{repo}/solutions/comet2/backend.py",
+      "--checkpoint",
+      "{checkpoint}",
+      "--port",
+      "{port}"
+    ],
+    "needs_checkpoint": true,
+    "per_task": false,
+    "fresh_process_per_episode": true,
+    "startup_timeout_s": 1200,
+    "action_chunk_size": 20
+  }
+}

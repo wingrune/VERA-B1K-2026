@@ -1,0 +1,5928 @@
+{
+  "dataset": "VERA-VLA/b1k_final_submission",
+  "revision": "a7e21a893581e5f6a1bf71d8a0e9780530ecf241",
+  "folder": "standard.public.VERA_team.team.20261015",
+  "source_commit": "309bb650dc1606319a4309d5b0ab64702f8ad6ab",
+  "scope": "Published public instances 301-310, rollout 0. Release routes are not per-episode policy provenance. No leaderboard score is asserted.",
+  "total_tasks": 100,
+  "published_tasks": 82,
+  "episodes": 820,
+  "video_entries": 820,
+  "successes": 259,
+  "mean_q_published_tasks": 0.5314411976911977,
+  "routing_counts": {
+    "b1k_classical": 25,
+    "comet2": 7,
+    "comet2_1": 6,
+    "comet3": 33,
+    "frozen_rgbd": 5,
+    "larchenko_ckpt2": 11,
+    "larchenko_ckpt3": 3,
+    "planner": 8,
+    "planner_cpu": 2
+  },
+  "tasks": [
+    {
+      "task": "turning_on_radio",
+      "id": 0,
+      "release_route": "planner",
+      "episodes": 10,
+      "mean_q": 0.8,
+      "successes": 8,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 1558
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 1780
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 1716
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 868
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 3225
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 1156
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 835
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 1734
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 2054
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 3225
+        }
+      ]
+    },
+    {
+      "task": "picking_up_trash",
+      "id": 1,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.9666666666666666,
+      "successes": 9,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 3136
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 3543
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 3063
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 3560
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 3682
+        },
+        {
+          "instance": 306,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 7902
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 3366
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 2912
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 2891
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 2915
+        }
+      ]
+    },
+    {
+      "task": "putting_away_Halloween_decorations",
+      "id": 2,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.9714285714285713,
+      "successes": 9,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 9113
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 9752
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 8948
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 9905
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 10064
+        },
+        {
+          "instance": 306,
+          "q": 0.7142857142857143,
+          "success": false,
+          "steps": 20683
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 9296
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 9780
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 8714
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 9011
+        }
+      ]
+    },
+    {
+      "task": "cleaning_up_plates_and_food",
+      "id": 3,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.7857142857142857,
+      "successes": 7,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.2857142857142857,
+          "success": false,
+          "steps": 20545
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 16568
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 15369
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 14664
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 18460
+        },
+        {
+          "instance": 306,
+          "q": 0.2857142857142857,
+          "success": false,
+          "steps": 20545
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 17026
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 17166
+        },
+        {
+          "instance": 309,
+          "q": 0.2857142857142857,
+          "success": false,
+          "steps": 20545
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 16093
+        }
+      ]
+    },
+    {
+      "task": "can_meat",
+      "id": 4,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "setting_mousetraps",
+      "id": 5,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.9666666666666666,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 304,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 305,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": false,
+          "steps": 15295
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": false,
+          "steps": 15295
+        }
+      ]
+    },
+    {
+      "task": "hiding_Easter_eggs",
+      "id": 6,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.47777777777777775,
+      "successes": 4,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 4810
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 4678
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 11430
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 11430
+        },
+        {
+          "instance": 305,
+          "q": 0.7777777777777778,
+          "success": false,
+          "steps": 11430
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 9364
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 11430
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 11430
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 4421
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 11430
+        }
+      ]
+    },
+    {
+      "task": "picking_up_toys",
+      "id": 7,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.2,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.5,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 304,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 307,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 28336
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 28336
+        }
+      ]
+    },
+    {
+      "task": "rearranging_kitchen_furniture",
+      "id": 8,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.175,
+      "successes": 1,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.25,
+          "success": false,
+          "steps": 13415
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 13415
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 12040
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 13415
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 13415
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 13415
+        },
+        {
+          "instance": 307,
+          "q": 0.25,
+          "success": false,
+          "steps": 13415
+        },
+        {
+          "instance": 308,
+          "q": 0.25,
+          "success": false,
+          "steps": 13415
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 13415
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 13415
+        }
+      ]
+    },
+    {
+      "task": "putting_up_Christmas_decorations_inside",
+      "id": 9,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.32222222222222224,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 302,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 303,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 304,
+          "q": 0.2222222222222222,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 305,
+          "q": 0.1111111111111111,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 306,
+          "q": 0.4444444444444444,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 307,
+          "q": 0.1111111111111111,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 309,
+          "q": 0.4444444444444444,
+          "success": false,
+          "steps": 20579
+        },
+        {
+          "instance": 310,
+          "q": 0.5555555555555556,
+          "success": false,
+          "steps": 20579
+        }
+      ]
+    },
+    {
+      "task": "set_up_a_coffee_station_in_your_kitchen",
+      "id": 10,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.5333333333333333,
+      "successes": 1,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 9400
+        },
+        {
+          "instance": 302,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 9400
+        },
+        {
+          "instance": 303,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 9400
+        },
+        {
+          "instance": 304,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 9400
+        },
+        {
+          "instance": 305,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 9400
+        },
+        {
+          "instance": 306,
+          "q": 0.5,
+          "success": false,
+          "steps": 9400
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 9228
+        },
+        {
+          "instance": 308,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 9400
+        },
+        {
+          "instance": 309,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 9400
+        },
+        {
+          "instance": 310,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 9400
+        }
+      ]
+    },
+    {
+      "task": "putting_dishes_away_after_cleaning",
+      "id": 11,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.19285714285714284,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.2857142857142857,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 302,
+          "q": 0.21428571428571427,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 303,
+          "q": 0.2857142857142857,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 304,
+          "q": 0.14285714285714285,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 305,
+          "q": 0.14285714285714285,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 306,
+          "q": 0.21428571428571427,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 307,
+          "q": 0.21428571428571427,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 308,
+          "q": 0.14285714285714285,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 309,
+          "q": 0.2857142857142857,
+          "success": false,
+          "steps": 16431
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 16431
+        }
+      ]
+    },
+    {
+      "task": "preparing_lunch_box",
+      "id": 12,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.5833333333333333,
+      "successes": 1,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 12368
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 8219
+        },
+        {
+          "instance": 303,
+          "q": 0.5,
+          "success": false,
+          "steps": 12368
+        },
+        {
+          "instance": 304,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 12368
+        },
+        {
+          "instance": 305,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 12368
+        },
+        {
+          "instance": 306,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 12368
+        },
+        {
+          "instance": 307,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 12368
+        },
+        {
+          "instance": 308,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 12368
+        },
+        {
+          "instance": 309,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 12368
+        },
+        {
+          "instance": 310,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 12368
+        }
+      ]
+    },
+    {
+      "task": "loading_the_car",
+      "id": 13,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 1.0,
+      "successes": 10,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 10415
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 10514
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 10644
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 10525
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 10166
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 10660
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 11180
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 11219
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 10976
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 10581
+        }
+      ]
+    },
+    {
+      "task": "carrying_in_groceries",
+      "id": 14,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.225,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.25,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 302,
+          "q": 0.25,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 303,
+          "q": 0.25,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 305,
+          "q": 0.25,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 306,
+          "q": 0.25,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 307,
+          "q": 0.5,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 309,
+          "q": 0.25,
+          "success": false,
+          "steps": 21413
+        },
+        {
+          "instance": 310,
+          "q": 0.25,
+          "success": false,
+          "steps": 21413
+        }
+      ]
+    },
+    {
+      "task": "bringing_in_wood",
+      "id": 15,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.23333333333333334,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 17965
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 20252
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 20304
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 20304
+        },
+        {
+          "instance": 305,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 20304
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 20304
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 20304
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 20304
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 20304
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 20304
+        }
+      ]
+    },
+    {
+      "task": "moving_boxes_to_storage",
+      "id": 16,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.75,
+      "successes": 7,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 12039
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 11373
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 10430
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 11230
+        },
+        {
+          "instance": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 21895
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 11382
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 21895
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 12766
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 13900
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 21895
+        }
+      ]
+    },
+    {
+      "task": "bringing_water",
+      "id": 17,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.4666666666666667,
+      "successes": 4,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 14158
+        },
+        {
+          "instance": 302,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 14158
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 14158
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 9352
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 9715
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 14158
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 13269
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 14158
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 12443
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 14158
+        }
+      ]
+    },
+    {
+      "task": "tidying_bedroom",
+      "id": 18,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.7666666666666666,
+      "successes": 5,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16557
+        },
+        {
+          "instance": 302,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 16557
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 9281
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 14170
+        },
+        {
+          "instance": 305,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16557
+        },
+        {
+          "instance": 306,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 16557
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 8808
+        },
+        {
+          "instance": 308,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 16557
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 15963
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 12760
+        }
+      ]
+    },
+    {
+      "task": "outfit_a_basic_toolbox",
+      "id": 19,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.15714285714285714,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.42857142857142855,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 303,
+          "q": 0.2857142857142857,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 309,
+          "q": 0.7142857142857143,
+          "success": false,
+          "steps": 15957
+        },
+        {
+          "instance": 310,
+          "q": 0.14285714285714285,
+          "success": false,
+          "steps": 15957
+        }
+      ]
+    },
+    {
+      "task": "sorting_vegetables",
+      "id": 20,
+      "release_route": "comet2_1",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.9230769230769231,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 302,
+          "q": 0.8461538461538461,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 303,
+          "q": 0.46153846153846156,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 304,
+          "q": 0.7692307692307693,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 305,
+          "q": 0.7692307692307693,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 306,
+          "q": 0.38461538461538464,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 307,
+          "q": 0.5384615384615384,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 308,
+          "q": 0.8461538461538461,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 17856
+        },
+        {
+          "instance": 310,
+          "q": 0.46153846153846156,
+          "success": false,
+          "steps": 17856
+        }
+      ]
+    },
+    {
+      "task": "collecting_childrens_toys",
+      "id": 21,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.34285714285714286,
+      "successes": 1,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.7142857142857143,
+          "success": false,
+          "steps": 28780
+        },
+        {
+          "instance": 302,
+          "q": 0.5714285714285714,
+          "success": false,
+          "steps": 28780
+        },
+        {
+          "instance": 303,
+          "q": 0.14285714285714285,
+          "success": false,
+          "steps": 28780
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 20671
+        },
+        {
+          "instance": 305,
+          "q": 0.14285714285714285,
+          "success": false,
+          "steps": 28780
+        },
+        {
+          "instance": 306,
+          "q": 0.42857142857142855,
+          "success": false,
+          "steps": 28780
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 28780
+        },
+        {
+          "instance": 308,
+          "q": 0.14285714285714285,
+          "success": false,
+          "steps": 28780
+        },
+        {
+          "instance": 309,
+          "q": 0.2857142857142857,
+          "success": false,
+          "steps": 28780
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 28780
+        }
+      ]
+    },
+    {
+      "task": "putting_shoes_on_rack",
+      "id": 22,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.6,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 303,
+          "q": 0.6,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 304,
+          "q": 0.6,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 305,
+          "q": 0.4,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 306,
+          "q": 0.6,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 307,
+          "q": 0.7,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 308,
+          "q": 0.8,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 309,
+          "q": 0.9,
+          "success": false,
+          "steps": 11590
+        },
+        {
+          "instance": 310,
+          "q": 0.3,
+          "success": false,
+          "steps": 11590
+        }
+      ]
+    },
+    {
+      "task": "boxing_books_up_for_storage",
+      "id": 23,
+      "release_route": "frozen_rgbd",
+      "episodes": 10,
+      "mean_q": 0.18333333333333332,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 302,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 303,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 306,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 307,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 309,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 36342
+        },
+        {
+          "instance": 310,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 36342
+        }
+      ]
+    },
+    {
+      "task": "storing_food",
+      "id": 24,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.3875,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.25,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 302,
+          "q": 0.625,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 303,
+          "q": 0.25,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 304,
+          "q": 0.375,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 306,
+          "q": 0.125,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 307,
+          "q": 0.375,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 308,
+          "q": 0.375,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 309,
+          "q": 0.25,
+          "success": false,
+          "steps": 29804
+        },
+        {
+          "instance": 310,
+          "q": 0.75,
+          "success": false,
+          "steps": 29804
+        }
+      ]
+    },
+    {
+      "task": "clearing_food_from_table_into_fridge",
+      "id": 25,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.36,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.2,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 302,
+          "q": 0.4,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 303,
+          "q": 0.4,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 304,
+          "q": 0.4,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 305,
+          "q": 0.4,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 306,
+          "q": 0.4,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 307,
+          "q": 0.2,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 308,
+          "q": 0.4,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 309,
+          "q": 0.4,
+          "success": false,
+          "steps": 19603
+        },
+        {
+          "instance": 310,
+          "q": 0.4,
+          "success": false,
+          "steps": 19603
+        }
+      ]
+    },
+    {
+      "task": "assembling_gift_baskets",
+      "id": 26,
+      "release_route": "comet2_1",
+      "episodes": 10,
+      "mean_q": 0.575,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.5625,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 302,
+          "q": 0.875,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 303,
+          "q": 0.5,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 304,
+          "q": 0.5625,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 305,
+          "q": 0.1875,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 306,
+          "q": 0.625,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 307,
+          "q": 0.75,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 308,
+          "q": 0.6875,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 309,
+          "q": 0.3125,
+          "success": false,
+          "steps": 39091
+        },
+        {
+          "instance": 310,
+          "q": 0.6875,
+          "success": false,
+          "steps": 39091
+        }
+      ]
+    },
+    {
+      "task": "sorting_household_items",
+      "id": 27,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.275,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.75,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 303,
+          "q": 0.5,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 306,
+          "q": 0.25,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 307,
+          "q": 0.375,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 308,
+          "q": 0.25,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 309,
+          "q": 0.25,
+          "success": false,
+          "steps": 23712
+        },
+        {
+          "instance": 310,
+          "q": 0.375,
+          "success": false,
+          "steps": 23712
+        }
+      ]
+    },
+    {
+      "task": "getting_organized_for_work",
+      "id": 28,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "clean_up_your_desk",
+      "id": 29,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "setting_the_fire",
+      "id": 30,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.25,
+      "successes": 1,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.625,
+          "success": false,
+          "steps": 13678
+        },
+        {
+          "instance": 302,
+          "q": 0.125,
+          "success": false,
+          "steps": 13678
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 13678
+        },
+        {
+          "instance": 304,
+          "q": 0.25,
+          "success": false,
+          "steps": 13678
+        },
+        {
+          "instance": 305,
+          "q": 0.125,
+          "success": false,
+          "steps": 13678
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 13678
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 13678
+        },
+        {
+          "instance": 308,
+          "q": 0.375,
+          "success": false,
+          "steps": 13678
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 8052
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 13678
+        }
+      ]
+    },
+    {
+      "task": "clean_boxing_gloves",
+      "id": 31,
+      "release_route": "larchenko_ckpt3",
+      "episodes": 10,
+      "mean_q": 0.35,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 12354
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 7863
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 9885
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 12354
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 12354
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 7845
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 12354
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 12354
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 12354
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 12354
+        }
+      ]
+    },
+    {
+      "task": "wash_a_baseball_cap",
+      "id": 32,
+      "release_route": "larchenko_ckpt3",
+      "episodes": 10,
+      "mean_q": 0.2,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 12525
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 6968
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 12525
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 7148
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 12525
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 12525
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 12525
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 12525
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 12525
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 12525
+        }
+      ]
+    },
+    {
+      "task": "wash_dog_toys",
+      "id": 33,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "hanging_pictures",
+      "id": 34,
+      "release_route": "planner",
+      "episodes": 10,
+      "mean_q": 0.0,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 3582
+        }
+      ]
+    },
+    {
+      "task": "attach_a_camera_to_a_tripod",
+      "id": 35,
+      "release_route": "planner",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 2508
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 5868
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 1478
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 4447
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 5868
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 1167
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 5868
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 2105
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 2410
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 5868
+        }
+      ]
+    },
+    {
+      "task": "clean_a_patio",
+      "id": 36,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "clean_a_trumpet",
+      "id": 37,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 7961
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 2709
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 5404
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 7961
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 7832
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 7961
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 6882
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 2620
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 3707
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 7961
+        }
+      ]
+    },
+    {
+      "task": "spraying_for_bugs",
+      "id": 38,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "spraying_fruit_trees",
+      "id": 39,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.75,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.5,
+          "success": false,
+          "steps": 12519
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 11442
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 6807
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 9167
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 6487
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 12127
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 12177
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 12519
+        },
+        {
+          "instance": 309,
+          "q": 0.5,
+          "success": false,
+          "steps": 12519
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 12519
+        }
+      ]
+    },
+    {
+      "task": "make_microwave_popcorn",
+      "id": 40,
+      "release_route": "planner_cpu",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 1523
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 1652
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 1780
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 4857
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 1768
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 1591
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 4857
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 1553
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 4857
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 4857
+        }
+      ]
+    },
+    {
+      "task": "cook_cabbage",
+      "id": 41,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "chop_an_onion",
+      "id": 42,
+      "release_route": "planner",
+      "episodes": 10,
+      "mean_q": 0.15,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 302,
+          "q": 0.25,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 304,
+          "q": 0.75,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 307,
+          "q": 0.5,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 9600
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 9600
+        }
+      ]
+    },
+    {
+      "task": "slicing_vegetables",
+      "id": 43,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.48888888888888893,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 22268
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 19382
+        },
+        {
+          "instance": 303,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 22268
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 22268
+        },
+        {
+          "instance": 305,
+          "q": 0.5555555555555556,
+          "success": false,
+          "steps": 22268
+        },
+        {
+          "instance": 306,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 22268
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 15266
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 22268
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 18561
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 22268
+        }
+      ]
+    },
+    {
+      "task": "chopping_wood",
+      "id": 44,
+      "release_route": "planner",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 4,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 3359
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 16128
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 13751
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 16128
+        },
+        {
+          "instance": 305,
+          "q": 0.75,
+          "success": false,
+          "steps": 16128
+        },
+        {
+          "instance": 306,
+          "q": 0.5,
+          "success": false,
+          "steps": 16128
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 4167
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 13292
+        },
+        {
+          "instance": 309,
+          "q": 0.75,
+          "success": false,
+          "steps": 16128
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 16128
+        }
+      ]
+    },
+    {
+      "task": "cook_hot_dogs",
+      "id": 45,
+      "release_route": "larchenko_ckpt2",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 13718
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 8729
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 13718
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 13718
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 9512
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 8525
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 8244
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 13718
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 6922
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 6740
+        }
+      ]
+    },
+    {
+      "task": "cook_bacon",
+      "id": 46,
+      "release_route": "larchenko_ckpt3",
+      "episodes": 10,
+      "mean_q": 0.15714285714285714,
+      "successes": 1,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 11520
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 11520
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 11520
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 11520
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 11520
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 11520
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 8204
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 11520
+        },
+        {
+          "instance": 309,
+          "q": 0.5714285714285714,
+          "success": false,
+          "steps": 11520
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 11520
+        }
+      ]
+    },
+    {
+      "task": "freeze_pies",
+      "id": 47,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "canning_food",
+      "id": 48,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "make_pizza",
+      "id": 49,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "freeze_fruit",
+      "id": 50,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "cook_a_brisket",
+      "id": 51,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.26666666666666666,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 11003
+        },
+        {
+          "instance": 302,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 11003
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 8314
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 11003
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 11003
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 10447
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 11003
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 11003
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 11003
+        },
+        {
+          "instance": 310,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 11003
+        }
+      ]
+    },
+    {
+      "task": "sorting_bottles_cans_and_paper",
+      "id": 52,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.0875,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0625,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 302,
+          "q": 0.0625,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 304,
+          "q": 0.125,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 305,
+          "q": 0.0625,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 306,
+          "q": 0.0625,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 307,
+          "q": 0.125,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 308,
+          "q": 0.125,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 309,
+          "q": 0.125,
+          "success": false,
+          "steps": 15396
+        },
+        {
+          "instance": 310,
+          "q": 0.125,
+          "success": false,
+          "steps": 15396
+        }
+      ]
+    },
+    {
+      "task": "tidying_living_room",
+      "id": 53,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.225,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.5,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 302,
+          "q": 0.25,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 304,
+          "q": 0.25,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 305,
+          "q": 0.25,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 306,
+          "q": 0.25,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 307,
+          "q": 0.25,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 308,
+          "q": 0.25,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 18849
+        },
+        {
+          "instance": 310,
+          "q": 0.25,
+          "success": false,
+          "steps": 18849
+        }
+      ]
+    },
+    {
+      "task": "putting_away_toys",
+      "id": 54,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.7875,
+      "successes": 4,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.75,
+          "success": false,
+          "steps": 16946
+        },
+        {
+          "instance": 302,
+          "q": 0.875,
+          "success": false,
+          "steps": 16946
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 16946
+        },
+        {
+          "instance": 304,
+          "q": 0.875,
+          "success": false,
+          "steps": 16946
+        },
+        {
+          "instance": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 16946
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 12587
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 16866
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 11698
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 11671
+        },
+        {
+          "instance": 310,
+          "q": 0.875,
+          "success": false,
+          "steps": 16946
+        }
+      ]
+    },
+    {
+      "task": "re_shelving_library_books",
+      "id": 55,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.4333333333333333,
+      "successes": 1,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 14293
+        },
+        {
+          "instance": 302,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14293
+        },
+        {
+          "instance": 303,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 14293
+        },
+        {
+          "instance": 304,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14293
+        },
+        {
+          "instance": 305,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14293
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 14293
+        },
+        {
+          "instance": 307,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14293
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 11424
+        },
+        {
+          "instance": 309,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 14293
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 14293
+        }
+      ]
+    },
+    {
+      "task": "make_rose_centerpieces",
+      "id": 56,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.4,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.75,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 303,
+          "q": 0.75,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 304,
+          "q": 0.25,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 306,
+          "q": 0.5,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 307,
+          "q": 0.5,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 6799
+        },
+        {
+          "instance": 310,
+          "q": 0.25,
+          "success": false,
+          "steps": 6799
+        }
+      ]
+    },
+    {
+      "task": "sweeping_garage",
+      "id": 57,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.7,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 6710
+        },
+        {
+          "instance": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 6710
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 4972
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 6530
+        },
+        {
+          "instance": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 6710
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 4713
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 6710
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 4292
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 3185
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 4022
+        }
+      ]
+    },
+    {
+      "task": "stacking_wood",
+      "id": 58,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.7333333333333333,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 23910
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 14862
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 22303
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 20582
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 23910
+        },
+        {
+          "instance": 306,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 23910
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 15744
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 16421
+        },
+        {
+          "instance": 309,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 23910
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 16236
+        }
+      ]
+    },
+    {
+      "task": "organizing_art_supplies",
+      "id": 59,
+      "release_route": "frozen_rgbd",
+      "episodes": 10,
+      "mean_q": 0.6599999999999999,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.6,
+          "success": false,
+          "steps": 9292
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 7213
+        },
+        {
+          "instance": 303,
+          "q": 0.2,
+          "success": false,
+          "steps": 9292
+        },
+        {
+          "instance": 304,
+          "q": 0.8,
+          "success": false,
+          "steps": 9292
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 5974
+        },
+        {
+          "instance": 306,
+          "q": 0.8,
+          "success": false,
+          "steps": 9292
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 6756
+        },
+        {
+          "instance": 308,
+          "q": 0.2,
+          "success": false,
+          "steps": 9292
+        },
+        {
+          "instance": 309,
+          "q": 0.6,
+          "success": false,
+          "steps": 9292
+        },
+        {
+          "instance": 310,
+          "q": 0.4,
+          "success": false,
+          "steps": 9292
+        }
+      ]
+    },
+    {
+      "task": "scrubbing_bathroom_floor",
+      "id": 60,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.2,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 4731
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 3790
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 3468
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 4731
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 4731
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 4731
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 4731
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 4731
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 4731
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 4731
+        }
+      ]
+    },
+    {
+      "task": "bringing_paper_to_recycling",
+      "id": 61,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "halve_an_egg",
+      "id": 62,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.16,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.2,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 302,
+          "q": 0.2,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 303,
+          "q": 0.2,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 304,
+          "q": 0.2,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 305,
+          "q": 0.2,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 306,
+          "q": 0.2,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 307,
+          "q": 0.2,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 308,
+          "q": 0.2,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 9566
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 9566
+        }
+      ]
+    },
+    {
+      "task": "installing_smoke_detectors",
+      "id": 63,
+      "release_route": "planner_cpu",
+      "episodes": 10,
+      "mean_q": 1.0,
+      "successes": 10,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 2251
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 2732
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 2229
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 1731
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 2376
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 1932
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 1823
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 2605
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 2758
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 2624
+        }
+      ]
+    },
+    {
+      "task": "setting_the_table",
+      "id": 64,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.1,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.5,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 309,
+          "q": 0.5,
+          "success": false,
+          "steps": 26713
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 26713
+        }
+      ]
+    },
+    {
+      "task": "unloading_the_car",
+      "id": 65,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.9,
+      "successes": 9,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 10187
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 10226
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 16986
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 10216
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 10303
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 10285
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 10352
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 11262
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 10325
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 9913
+        }
+      ]
+    },
+    {
+      "task": "turning_out_all_lights_before_sleep",
+      "id": 66,
+      "release_route": "comet2",
+      "episodes": 10,
+      "mean_q": 0.52,
+      "successes": 1,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.2,
+          "success": false,
+          "steps": 15010
+        },
+        {
+          "instance": 302,
+          "q": 0.6,
+          "success": false,
+          "steps": 15010
+        },
+        {
+          "instance": 303,
+          "q": 0.6,
+          "success": false,
+          "steps": 15010
+        },
+        {
+          "instance": 304,
+          "q": 0.8,
+          "success": false,
+          "steps": 15010
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 10023
+        },
+        {
+          "instance": 306,
+          "q": 0.4,
+          "success": false,
+          "steps": 15010
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 15010
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 15010
+        },
+        {
+          "instance": 309,
+          "q": 0.8,
+          "success": false,
+          "steps": 15010
+        },
+        {
+          "instance": 310,
+          "q": 0.8,
+          "success": false,
+          "steps": 15010
+        }
+      ]
+    },
+    {
+      "task": "boxing_food_after_dinner",
+      "id": 67,
+      "release_route": "comet2_1",
+      "episodes": 10,
+      "mean_q": 0.6166666666666667,
+      "successes": 4,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 10047
+        },
+        {
+          "instance": 302,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 10047
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 4363
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 6517
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 4097
+        },
+        {
+          "instance": 306,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 10047
+        },
+        {
+          "instance": 307,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 10047
+        },
+        {
+          "instance": 308,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 10047
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 5153
+        },
+        {
+          "instance": 310,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 10047
+        }
+      ]
+    },
+    {
+      "task": "cleaning_up_branches_and_twigs",
+      "id": 68,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "vacuuming_floors",
+      "id": 69,
+      "release_route": "planner",
+      "episodes": 10,
+      "mean_q": 0.0,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 3618
+        }
+      ]
+    },
+    {
+      "task": "thawing_frozen_food",
+      "id": 70,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.3888888888888889,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 302,
+          "q": 0.4444444444444444,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 303,
+          "q": 0.4444444444444444,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 304,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 305,
+          "q": 0.4444444444444444,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 306,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 307,
+          "q": 0.4444444444444444,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 308,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 309,
+          "q": 0.5555555555555556,
+          "success": false,
+          "steps": 12345
+        },
+        {
+          "instance": 310,
+          "q": 0.2222222222222222,
+          "success": false,
+          "steps": 12345
+        }
+      ]
+    },
+    {
+      "task": "clean_your_rusty_garden_tools",
+      "id": 71,
+      "release_route": "comet2",
+      "episodes": 10,
+      "mean_q": 0.4,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 18460
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 22737
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 22737
+        },
+        {
+          "instance": 304,
+          "q": 0.6,
+          "success": false,
+          "steps": 22737
+        },
+        {
+          "instance": 305,
+          "q": 0.4,
+          "success": false,
+          "steps": 22737
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 22737
+        },
+        {
+          "instance": 307,
+          "q": 0.4,
+          "success": false,
+          "steps": 22737
+        },
+        {
+          "instance": 308,
+          "q": 0.2,
+          "success": false,
+          "steps": 22737
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 18682
+        },
+        {
+          "instance": 310,
+          "q": 0.4,
+          "success": false,
+          "steps": 22737
+        }
+      ]
+    },
+    {
+      "task": "cook_a_frozen_pie",
+      "id": 72,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.35,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 13002
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 6085
+        },
+        {
+          "instance": 303,
+          "q": 0.5,
+          "success": false,
+          "steps": 13002
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 10921
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 13002
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 13002
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 7765
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 13002
+        },
+        {
+          "instance": 309,
+          "q": 0.0,
+          "success": false,
+          "steps": 13002
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 13002
+        }
+      ]
+    },
+    {
+      "task": "organizing_school_stuff",
+      "id": 73,
+      "release_route": "frozen_rgbd",
+      "episodes": 10,
+      "mean_q": 0.8,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 21888
+        },
+        {
+          "instance": 302,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 21888
+        },
+        {
+          "instance": 303,
+          "q": 0.5,
+          "success": false,
+          "steps": 21888
+        },
+        {
+          "instance": 304,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 21888
+        },
+        {
+          "instance": 305,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 21888
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 10875
+        },
+        {
+          "instance": 307,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 21888
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 15738
+        },
+        {
+          "instance": 309,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 21888
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 14502
+        }
+      ]
+    },
+    {
+      "task": "carrying_out_garden_furniture",
+      "id": 74,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "put_together_a_basic_pruning_kit",
+      "id": 75,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.925,
+      "successes": 9,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 3575
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 4325
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 4692
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 3745
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 4711
+        },
+        {
+          "instance": 306,
+          "q": 0.25,
+          "success": false,
+          "steps": 16897
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 3118
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 6918
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 4329
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 4121
+        }
+      ]
+    },
+    {
+      "task": "dispose_of_glass",
+      "id": 76,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.65,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.5,
+          "success": false,
+          "steps": 13793
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 7146
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 7603
+        },
+        {
+          "instance": 304,
+          "q": 0.75,
+          "success": false,
+          "steps": 13793
+        },
+        {
+          "instance": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 13793
+        },
+        {
+          "instance": 306,
+          "q": 0.75,
+          "success": false,
+          "steps": 13793
+        },
+        {
+          "instance": 307,
+          "q": 0.25,
+          "success": false,
+          "steps": 13793
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 13793
+        },
+        {
+          "instance": 309,
+          "q": 0.75,
+          "success": false,
+          "steps": 13793
+        },
+        {
+          "instance": 310,
+          "q": 0.5,
+          "success": false,
+          "steps": 13793
+        }
+      ]
+    },
+    {
+      "task": "installing_a_modem",
+      "id": 77,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.775,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 2859
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 3206
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 1810
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 2692
+        },
+        {
+          "instance": 305,
+          "q": 0.25,
+          "success": false,
+          "steps": 3620
+        },
+        {
+          "instance": 306,
+          "q": 0.5,
+          "success": false,
+          "steps": 3620
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 2016
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 3620
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 1901
+        },
+        {
+          "instance": 310,
+          "q": 0.5,
+          "success": false,
+          "steps": 3620
+        }
+      ]
+    },
+    {
+      "task": "make_cabinet_doors",
+      "id": 78,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "polishing_shoes",
+      "id": 79,
+      "release_route": "comet2",
+      "episodes": 10,
+      "mean_q": 0.26666666666666666,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 303,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 304,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 305,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 306,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 307,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 308,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 309,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16107
+        },
+        {
+          "instance": 310,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 16107
+        }
+      ]
+    },
+    {
+      "task": "clean_up_broken_glass",
+      "id": 80,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 1.0,
+      "successes": 10,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 6432
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 6637
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 7681
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 7486
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 6961
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 6232
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 3693
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 6234
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 5943
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 7937
+        }
+      ]
+    },
+    {
+      "task": "packing_meal_for_delivery",
+      "id": 81,
+      "release_route": "comet2_1",
+      "episodes": 10,
+      "mean_q": 0.4333333333333333,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 302,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 303,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 304,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 306,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 307,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 308,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 309,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 13290
+        },
+        {
+          "instance": 310,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 13290
+        }
+      ]
+    },
+    {
+      "task": "store_batteries",
+      "id": 82,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.8,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 11557
+        },
+        {
+          "instance": 302,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 11557
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 4059
+        },
+        {
+          "instance": 304,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 11557
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 4417
+        },
+        {
+          "instance": 306,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 11557
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 4478
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 4482
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 4250
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 5392
+        }
+      ]
+    },
+    {
+      "task": "store_honey",
+      "id": 83,
+      "release_route": "planner",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 6,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 10151
+        },
+        {
+          "instance": 302,
+          "q": 0.0,
+          "success": false,
+          "steps": 10151
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 2313
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 10151
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 3852
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 7312
+        },
+        {
+          "instance": 307,
+          "q": 0.0,
+          "success": false,
+          "steps": 10151
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 2809
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 6386
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 2736
+        }
+      ]
+    },
+    {
+      "task": "tidying_bathroom",
+      "id": 84,
+      "release_route": "comet2",
+      "episodes": 10,
+      "mean_q": 0.6,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.5,
+          "success": false,
+          "steps": 19505
+        },
+        {
+          "instance": 302,
+          "q": 0.25,
+          "success": false,
+          "steps": 19505
+        },
+        {
+          "instance": 303,
+          "q": 0.75,
+          "success": false,
+          "steps": 19505
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 7997
+        },
+        {
+          "instance": 305,
+          "q": 0.75,
+          "success": false,
+          "steps": 19505
+        },
+        {
+          "instance": 306,
+          "q": 0.75,
+          "success": false,
+          "steps": 19505
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 8159
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 19505
+        },
+        {
+          "instance": 309,
+          "q": 0.25,
+          "success": false,
+          "steps": 19505
+        },
+        {
+          "instance": 310,
+          "q": 0.25,
+          "success": false,
+          "steps": 19505
+        }
+      ]
+    },
+    {
+      "task": "putting_dirty_dishes_in_sink",
+      "id": 85,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 0.575,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 11594
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 12884
+        },
+        {
+          "instance": 303,
+          "q": 0.25,
+          "success": false,
+          "steps": 18223
+        },
+        {
+          "instance": 304,
+          "q": 0.75,
+          "success": false,
+          "steps": 18223
+        },
+        {
+          "instance": 305,
+          "q": 0.75,
+          "success": false,
+          "steps": 18223
+        },
+        {
+          "instance": 306,
+          "q": 0.5,
+          "success": false,
+          "steps": 18223
+        },
+        {
+          "instance": 307,
+          "q": 0.75,
+          "success": false,
+          "steps": 18223
+        },
+        {
+          "instance": 308,
+          "q": 0.25,
+          "success": false,
+          "steps": 18223
+        },
+        {
+          "instance": 309,
+          "q": 0.5,
+          "success": false,
+          "steps": 18223
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 18223
+        }
+      ]
+    },
+    {
+      "task": "make_gift_bags_for_baby_showers",
+      "id": 86,
+      "release_route": "comet2_1",
+      "episodes": 10,
+      "mean_q": 0.4,
+      "successes": 0,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 303,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 304,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 305,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 306,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 307,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 309,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14477
+        },
+        {
+          "instance": 310,
+          "q": 0.16666666666666666,
+          "success": false,
+          "steps": 14477
+        }
+      ]
+    },
+    {
+      "task": "collecting_aluminum_cans",
+      "id": 87,
+      "release_route": "frozen_rgbd",
+      "episodes": 10,
+      "mean_q": 0.85,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 15305
+        },
+        {
+          "instance": 302,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 15305
+        },
+        {
+          "instance": 303,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 15305
+        },
+        {
+          "instance": 304,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 15305
+        },
+        {
+          "instance": 305,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 15305
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 8645
+        },
+        {
+          "instance": 307,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 15305
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 14284
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 12800
+        },
+        {
+          "instance": 310,
+          "q": 0.8333333333333334,
+          "success": false,
+          "steps": 15305
+        }
+      ]
+    },
+    {
+      "task": "rearrange_your_room",
+      "id": 88,
+      "release_route": "comet2",
+      "episodes": 10,
+      "mean_q": 0.6666666666666666,
+      "successes": 4,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 9896
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 13622
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 17526
+        },
+        {
+          "instance": 304,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 19283
+        },
+        {
+          "instance": 305,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 19283
+        },
+        {
+          "instance": 306,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 19283
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 10643
+        },
+        {
+          "instance": 308,
+          "q": 0.0,
+          "success": false,
+          "steps": 19283
+        },
+        {
+          "instance": 309,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 19283
+        },
+        {
+          "instance": 310,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 19283
+        }
+      ]
+    },
+    {
+      "task": "installing_a_fax_machine",
+      "id": 89,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 1.0,
+      "successes": 10,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 2528
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 1524
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 2507
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 1041
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 1187
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 2463
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 2094
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 2470
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 1477
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 2628
+        }
+      ]
+    },
+    {
+      "task": "composting_waste",
+      "id": 90,
+      "release_route": "frozen_rgbd",
+      "episodes": 10,
+      "mean_q": 0.65,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 4826
+        },
+        {
+          "instance": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 5458
+        },
+        {
+          "instance": 303,
+          "q": 0.5,
+          "success": false,
+          "steps": 5458
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 5181
+        },
+        {
+          "instance": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 5458
+        },
+        {
+          "instance": 306,
+          "q": 0.5,
+          "success": false,
+          "steps": 5458
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 5047
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 5458
+        },
+        {
+          "instance": 309,
+          "q": 0.5,
+          "success": false,
+          "steps": 5458
+        },
+        {
+          "instance": 310,
+          "q": 0.5,
+          "success": false,
+          "steps": 5458
+        }
+      ]
+    },
+    {
+      "task": "store_produce",
+      "id": 91,
+      "release_route": "comet2_1",
+      "episodes": 10,
+      "mean_q": 0.725,
+      "successes": 4,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.75,
+          "success": false,
+          "steps": 14284
+        },
+        {
+          "instance": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 14284
+        },
+        {
+          "instance": 303,
+          "q": 0.0,
+          "success": false,
+          "steps": 14284
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 4365
+        },
+        {
+          "instance": 305,
+          "q": 0.75,
+          "success": false,
+          "steps": 14284
+        },
+        {
+          "instance": 306,
+          "q": 0.75,
+          "success": false,
+          "steps": 14284
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 8080
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 14284
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 7893
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 6123
+        }
+      ]
+    },
+    {
+      "task": "installing_a_scanner",
+      "id": 92,
+      "release_route": "planner",
+      "episodes": 10,
+      "mean_q": 0.4,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.0,
+          "success": false,
+          "steps": 6388
+        },
+        {
+          "instance": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 6388
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 1847
+        },
+        {
+          "instance": 304,
+          "q": 0.0,
+          "success": false,
+          "steps": 6388
+        },
+        {
+          "instance": 305,
+          "q": 0.0,
+          "success": false,
+          "steps": 6388
+        },
+        {
+          "instance": 306,
+          "q": 0.0,
+          "success": false,
+          "steps": 6388
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 1079
+        },
+        {
+          "instance": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 6388
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 1741
+        },
+        {
+          "instance": 310,
+          "q": 0.0,
+          "success": false,
+          "steps": 6388
+        }
+      ]
+    },
+    {
+      "task": "clean_a_keyboard",
+      "id": 93,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "dispose_of_batteries",
+      "id": 94,
+      "release_route": "b1k_classical",
+      "episodes": 10,
+      "mean_q": 1.0,
+      "successes": 10,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 8088
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 8073
+        },
+        {
+          "instance": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 7961
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 7969
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 9047
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 8284
+        },
+        {
+          "instance": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 8102
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 8049
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 8294
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 8045
+        }
+      ]
+    },
+    {
+      "task": "cook_brussels_sprouts",
+      "id": 95,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    },
+    {
+      "task": "cook_broccolini",
+      "id": 96,
+      "release_route": "comet3",
+      "episodes": 10,
+      "mean_q": 0.7090909090909091,
+      "successes": 3,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.45454545454545453,
+          "success": false,
+          "steps": 6927
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 4127
+        },
+        {
+          "instance": 303,
+          "q": 0.45454545454545453,
+          "success": false,
+          "steps": 6927
+        },
+        {
+          "instance": 304,
+          "q": 0.8181818181818182,
+          "success": false,
+          "steps": 6927
+        },
+        {
+          "instance": 305,
+          "q": 0.45454545454545453,
+          "success": false,
+          "steps": 6927
+        },
+        {
+          "instance": 306,
+          "q": 0.45454545454545453,
+          "success": false,
+          "steps": 6927
+        },
+        {
+          "instance": 307,
+          "q": 0.6363636363636364,
+          "success": false,
+          "steps": 6927
+        },
+        {
+          "instance": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 3593
+        },
+        {
+          "instance": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 4572
+        },
+        {
+          "instance": 310,
+          "q": 0.8181818181818182,
+          "success": false,
+          "steps": 6927
+        }
+      ]
+    },
+    {
+      "task": "setup_a_bar_for_a_cocktail_party",
+      "id": 97,
+      "release_route": "comet2",
+      "episodes": 10,
+      "mean_q": 0.78,
+      "successes": 2,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 0.55,
+          "success": false,
+          "steps": 20129
+        },
+        {
+          "instance": 302,
+          "q": 0.9,
+          "success": false,
+          "steps": 20129
+        },
+        {
+          "instance": 303,
+          "q": 0.95,
+          "success": false,
+          "steps": 20129
+        },
+        {
+          "instance": 304,
+          "q": 0.6,
+          "success": false,
+          "steps": 20129
+        },
+        {
+          "instance": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 16601
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 10253
+        },
+        {
+          "instance": 307,
+          "q": 0.75,
+          "success": false,
+          "steps": 20129
+        },
+        {
+          "instance": 308,
+          "q": 0.4,
+          "success": false,
+          "steps": 20129
+        },
+        {
+          "instance": 309,
+          "q": 0.9,
+          "success": false,
+          "steps": 20129
+        },
+        {
+          "instance": 310,
+          "q": 0.75,
+          "success": false,
+          "steps": 20129
+        }
+      ]
+    },
+    {
+      "task": "laying_tile_floors",
+      "id": 98,
+      "release_route": "comet2",
+      "episodes": 10,
+      "mean_q": 0.8,
+      "successes": 5,
+      "instances": [
+        {
+          "instance": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 10589
+        },
+        {
+          "instance": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 12535
+        },
+        {
+          "instance": 303,
+          "q": 0.5,
+          "success": false,
+          "steps": 21527
+        },
+        {
+          "instance": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 11583
+        },
+        {
+          "instance": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 21527
+        },
+        {
+          "instance": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 14576
+        },
+        {
+          "instance": 307,
+          "q": 0.75,
+          "success": false,
+          "steps": 21527
+        },
+        {
+          "instance": 308,
+          "q": 0.75,
+          "success": false,
+          "steps": 21527
+        },
+        {
+          "instance": 309,
+          "q": 0.5,
+          "success": false,
+          "steps": 21527
+        },
+        {
+          "instance": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 9346
+        }
+      ]
+    },
+    {
+      "task": "sorting_books_on_shelf",
+      "id": 99,
+      "release_route": "comet3",
+      "episodes": 0,
+      "mean_q": null,
+      "successes": 0,
+      "instances": []
+    }
+  ]
+}

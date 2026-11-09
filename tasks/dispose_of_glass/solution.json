@@ -1,0 +1,152 @@
+{
+ "task": "dispose_of_glass",
+ "task_id_2026": 76,
+ "kind": "b1k_classical",
+ "candidate": "w01",
+ "entry": {
+  "code": "controller",
+  "env": {}
+ },
+ "source": {
+  "repo": "github.com/tttonyalpha/b1k_rl_guys",
+  "branch": "pick-and-place",
+  "commit": "1fb32b358396e7bd82b54774eb540cdf305c9ac7",
+  "path": "tasks/dispose_of_glass/experiments/candidate/w01",
+  "fingerprint": "4c80a0f2b3d68cbc4ea1b1678abb19d2b20bd854b49fd9f16b216cdc705c5628",
+  "files": 20,
+  "measured": {
+   "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+   "per_instance": [
+    {
+     "instance": 301,
+     "success": false,
+     "q": 0.5,
+     "steps": 13793
+    },
+    {
+     "instance": 302,
+     "success": true,
+     "q": 1.0,
+     "steps": 7146
+    },
+    {
+     "instance": 303,
+     "success": true,
+     "q": 1.0,
+     "steps": 7603
+    },
+    {
+     "instance": 304,
+     "success": false,
+     "q": 0.75,
+     "steps": 13793
+    },
+    {
+     "instance": 305,
+     "success": false,
+     "q": 0.5,
+     "steps": 13793
+    },
+    {
+     "instance": 306,
+     "success": false,
+     "q": 0.75,
+     "steps": 13793
+    },
+    {
+     "instance": 307,
+     "success": false,
+     "q": 0.25,
+     "steps": 13793
+    },
+    {
+     "instance": 308,
+     "success": false,
+     "q": 0.5,
+     "steps": 13793
+    },
+    {
+     "instance": 309,
+     "success": false,
+     "q": 0.75,
+     "steps": 13793
+    },
+    {
+     "instance": 310,
+     "success": false,
+     "q": 0.5,
+     "steps": 13793
+    }
+   ]
+  }
+ },
+ "note": "First controller for dispose_of_glass: the glass controller g01 with this scene's map (hotel_suite_large; the wall shelf and the sink in the chassis layer), water glasses looked for over the sink's top, pinched by the wall nearest the robot (one finger inside) from stances 0.48-0.76 m off with the t",
+ "our_validation": {
+  "date": "2026-10-16",
+  "protocol": "independent rerun: native evaluator, fresh process per episode, native horizon, rtx A100 x3, one scored pass",
+  "per_instance": [
+   {
+    "instance": 301,
+    "success": false,
+    "q": 0.5,
+    "steps": 13793
+   },
+   {
+    "instance": 302,
+    "success": true,
+    "q": 1.0,
+    "steps": 7148
+   },
+   {
+    "instance": 303,
+    "success": true,
+    "q": 1.0,
+    "steps": 7112
+   },
+   {
+    "instance": 304,
+    "success": false,
+    "q": 0.75,
+    "steps": 13793
+   },
+   {
+    "instance": 305,
+    "success": false,
+    "q": 0.5,
+    "steps": 13793
+   },
+   {
+    "instance": 306,
+    "success": false,
+    "q": 0.0,
+    "steps": 13793
+   },
+   {
+    "instance": 307,
+    "success": false,
+    "q": 0.25,
+    "steps": 13793
+   },
+   {
+    "instance": 308,
+    "success": false,
+    "q": 0.5,
+    "steps": 13793
+   },
+   {
+    "instance": 309,
+    "success": false,
+    "q": 0.75,
+    "steps": 13793
+   },
+   {
+    "instance": 310,
+    "success": true,
+    "q": 1.0,
+    "steps": 9012
+   }
+  ],
+  "sr": "3/10",
+  "mean_q": 0.625
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "version": "a01",
+ "parent": "store_batteries x02 (code base), storing_food s05 (pantry door), cleaning_up_plates_and_food f01 (rim pinch)",
+ "summary": "Survey the bar and the countertop from the kitchen aisle, a fresh global fix, open the pantry's east door (handle lead, then a push from inside to ~90 deg; checked by the head camera, once more if it looks shut), then plate by plate: rim pinch from 0.36 m (retried on a miss), carry level, slide onto a shelf of the pantry's east bay, push in.",
+ "status": "frozen 2026-10-16 18:30 MSK (same code as dev snapshot a01_r8); dev: 301 r8 3/8 (r4 3/8), 302 r7 2/8"
+}

@@ -1,0 +1,28 @@
+{
+  "category": "tote",
+  "model": "bnkjle",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "links": {
+    "meta__base_link_fillable_0_0_link": {
+      "position": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quaternion_xyzw": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "meta_link_id": "0"
+    }
+  },
+  "meshes": [
+    "tote_bnkjle_0.npz"
+  ]
+}

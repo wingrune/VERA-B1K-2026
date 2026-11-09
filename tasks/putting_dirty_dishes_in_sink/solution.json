@@ -1,0 +1,84 @@
+{
+  "task": "putting_dirty_dishes_in_sink",
+  "task_id_2026": 85,
+  "kind": "b1k_classical",
+  "candidate": "k02",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "90b1ed1d1770fa73fb5f626bbac036e4027484ad",
+    "path": "tasks/putting_dirty_dishes_in_sink/experiments/candidate/k02",
+    "fingerprint": "04f2286f4bcd35bee7dadf1d8390fef5da4f6c68ddf9842ecdccc834444f8b7e",
+    "files": 20,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 11594
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 12884
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.25,
+          "steps": 18223
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.75,
+          "steps": 18223
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.75,
+          "steps": 18223
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.5,
+          "steps": 18223
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.75,
+          "steps": 18223
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.25,
+          "steps": 18223
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.5,
+          "steps": 18223
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.0,
+          "steps": 18223
+        }
+      ]
+    }
+  },
+  "note": "k01 with the kitchen door made safe. Way west: lined up on the vestibule's walls (heading and lateral position from the head camera); ends past the open leaf and slides south, away from it, before turning; held up = head depth image unchanged, then backs out and retries once. Way east: from the sout"
+}

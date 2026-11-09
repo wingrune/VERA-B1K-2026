@@ -1,0 +1,38 @@
+{
+  "category": "book1",
+  "synset": "book.n.02_1",
+  "model": "hrxujh",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.09087427705526352,
+      -0.06502316147089005,
+      -0.01516643911600113
+    ],
+    [
+      0.09105364978313446,
+      0.06344883888959885,
+      0.015155172906816006
+    ]
+  ],
+  "mass": 0.800000011920929,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "hrxujh__base_link",
+      "vertices": 1467,
+      "faces": 2040,
+      "samples": 9949,
+      "texture": "/data/behavior-1k-assets/objects/hardback/hrxujh/material/hrxujh__base_link__diffuse.png",
+      "uv_shape": [
+        6120,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

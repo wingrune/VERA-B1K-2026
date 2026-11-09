@@ -1,0 +1,59 @@
+{
+  "task": "installing_smoke_detectors",
+  "task_id_2026": 63,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/63_installing_smoke_detectors/planners/smoke_v2",
+    "env": {}
+  },
+  "source": {
+    "repo": "B1K_hacker passport artifact",
+    "file": "projects/B1K_hacker/h100_render/tasks/63_installing_smoke_detectors/planners/smoke_v2/versions/evo_evo-20261010-131911_dfd49599.py",
+    "evolution_run": "evo-20261010-131911",
+    "program_id": "dfd49599-9cb1-4313-b99e-c58de2608861",
+    "iteration": 0,
+    "sha256": "26e5db3513f459b182d1731e1e5d7ba75940caab46a1f2b7f1f81cf13d5d0554",
+    "recorded_result": {
+      "backend": "H100 SR008, BEHAVIOR port on Isaac Lab",
+      "seeds": "0-9 (native 301-310)",
+      "success_rate": 0.6,
+      "q": 0.634462,
+      "note": "Passport Q is the evolution combined score. Episode mean Q is 0.600. Per-episode Q on instances 0-9 (native 301-310): 0.00, 1.00, 1.00, 1.00, 0.00, 1.00, 1.00, 1.00, 0.00, 0.00. Success on 1, 2, 3, 5, 6, 7 (native 302, 303, 304, 306, 307, 308). Four failures are timeout. Horizon 3853. Four of six valid programs tie at this Q and SR; the passport shows the latest. The same sha256 is also evo_evo-20261009-161807_fc2ba920.py, evo_evo-20261010-125403_c497786c.py, and evo_161807_fc2ba920_0.634462.py."
+    },
+    "upstream_sha256": "33a807f31b11bb1c288919a8a35ddde3243b82ed5037935cbc3a0d657bff9867",
+    "candidate": "smoke_s05",
+    "adapted_from_commit": "4cb848e6c05bd5231676699b72b8a7ca71557673"
+  },
+  "native_evaluation": {
+    "runtime": "BEHAVIOR-1K v3.9.3-post1 / OmniGibson 3.9.3 / Isaac Sim 5.1",
+    "instances": [
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310
+    ],
+    "rollouts_per_instance": 1,
+    "mean_q": 1.0,
+    "success_rate": 1.0,
+    "per_instance_q": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "policy_image_digest": "sha256:d5e525b0ab25d3da55a029154ffb4deb12d6ebe29a7b285d78a6625ae141c10d",
+    "artifacts_commit": "https://huggingface.co/datasets/VERA-VLA/b1k_final_submission/commit/352087c61e891226d94263fa23e83601565a3333"
+  }
+}

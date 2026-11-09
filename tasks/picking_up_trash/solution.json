@@ -1,0 +1,84 @@
+{
+  "task": "picking_up_trash",
+  "task_id_2026": 1,
+  "kind": "b1k_classical",
+  "candidate": "t01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/picking_up_trash/experiments/candidate/t01",
+    "fingerprint": "8b2c13ac7ec42df70503867d588a0cabfe84eda274343812b13920c94320e855",
+    "files": 20,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 3136
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 3543
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 3063
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 3560
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 3682
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.6666666666666666,
+          "steps": 7902
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 3366
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 2912
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 2891
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 2915
+        }
+      ]
+    }
+  },
+  "note": "First controller for picking_up_trash. Map prior of the house with scan-matching localisation in four height slabs; soda cans and the trash can found by size on floor the map has empty; cans pinched from the floor with the trunk folded over the base, one per hand, and let go lying and crossed above "
+}

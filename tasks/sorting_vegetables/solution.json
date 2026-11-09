@@ -1,0 +1,84 @@
+{
+  "task": "sorting_vegetables",
+  "task_id_2026": 20,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/20_sorting_vegetables/planners/fair",
+    "env": {}
+  },
+  "source": {
+    "repo": "BIMBO_EvoX",
+    "commit": "94db055f25a64847db403c09460e08f3ad90230a",
+    "bimbo_task": "20_sorting_vegetables",
+    "package": "fair",
+    "evolution": {
+      "run": "fair-20-r1",
+      "program": "f31b2286",
+      "iteration": 442,
+      "bundle_sha256": "4d16dc04504177e4b6c31f9182cfdbe5e8336228fb6913c8a68e4bce1f2a0687",
+      "per_seed": [
+        {
+          "seed": 301,
+          "q": 0.23076923076923078,
+          "success": false,
+          "steps": 17855
+        },
+        {
+          "seed": 302,
+          "q": 0.3076923076923077,
+          "success": false,
+          "steps": 17855
+        },
+        {
+          "seed": 303,
+          "q": 0,
+          "success": false,
+          "steps": 0
+        },
+        {
+          "seed": 304,
+          "q": 0.15384615384615385,
+          "success": false,
+          "steps": 17855
+        },
+        {
+          "seed": 305,
+          "q": 0,
+          "success": false,
+          "steps": 0
+        },
+        {
+          "seed": 306,
+          "q": 0.15384615384615385,
+          "success": false,
+          "steps": 17855
+        },
+        {
+          "seed": 307,
+          "q": 0.3076923076923077,
+          "success": false,
+          "steps": 17855
+        },
+        {
+          "seed": 308,
+          "q": 0.15384615384615385,
+          "success": false,
+          "steps": 17855
+        },
+        {
+          "seed": 309,
+          "q": 0,
+          "success": false,
+          "steps": 17855
+        },
+        {
+          "seed": 310,
+          "q": 0,
+          "success": false,
+          "steps": 17855
+        }
+      ]
+    }
+  },
+  "note": "replaces 108c64cb (iteration 150, GAPF 0.1216, H100 mean Q 0.108); f31b2286 GAPF 0.1791, never below 108c64cb on a seed both scored (308: 0.15 vs 0.08); seeds 303 and 305 were infra in evolution and are recorded as 0; native RTX 301-310 validation not run yet"
+}

@@ -1,0 +1,84 @@
+{
+  "task": "clearing_food_from_table_into_fridge",
+  "task_id_2026": 25,
+  "kind": "b1k_classical",
+  "candidate": "z02",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "fdab48263355dd864714a2fa66e7434dd8f9ca98",
+    "path": "tasks/clearing_food_from_table_into_fridge/experiments/candidate/z02",
+    "fingerprint": "65fae6c0b95ae8892939e407817e7f5b31f5541d66113a3aa328cf5260f9cdf3",
+    "files": 27,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.2,
+          "steps": 19603
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.4,
+          "steps": 19603
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.4,
+          "steps": 19603
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.4,
+          "steps": 19603
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.4,
+          "steps": 19603
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.4,
+          "steps": 19603
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.2,
+          "steps": 19603
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.4,
+          "steps": 19603
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.4,
+          "steps": 19603
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.4,
+          "steps": 19603
+        }
+      ]
+    }
+  },
+  "note": "z01 with: far stances at the bar's south end (any free base pose 0.55-1.28 m off, the trunk bent over the bar), no phantom tupperware at the bar's corner, doubles handled, the hardest tupperware first, both side by side on the fridge's lower shelf (x 4.825 and 5.055, let go once inside, the other sp"
+}

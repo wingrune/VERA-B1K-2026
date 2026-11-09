@@ -1,0 +1,6 @@
+{
+ "version": "h01",
+ "parent": "p01 (put_together_a_basic_pruning_kit): localisation, map prior, routes, arm planner, pinches",
+ "summary": "First controller for putting_away_Halloween_decorations. The two pumpkins, three candles and the caldron are found on the living-room floor from the head camera's depth and colour images. The caldron goes to the coffee table first if it stands where a drawer slides out or where the base stands to pull one. Each pumpkin and candle (those in a drawer's way first) is taken from straight above, a candle by its wick, a pumpkin by its stem, the hand put right by the wrist camera's last look; carried in front of the chest. At the cabinet the free hand pulls the drawer of the next place out by its lip (wrist-camera look at the front for the depth), and the thing is let go over its place; a thing that cannot go in is set down out of the way. The drawers are pushed shut with the closed hand while the base drives in; the caldron is set down next to the table if it was not moved first.",
+ "status": "frozen 2026-10-14"
+}

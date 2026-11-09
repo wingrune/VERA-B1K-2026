@@ -1,0 +1,6 @@
+{
+ "version": "x02",
+ "parent": "store_batteries x01",
+ "summary": "x01 with a last phase: when only the bar's battery is left (behind the chairs on the living-room side), the robot drives into the kitchen, takes it from the kitchen side and brings it back into the drawer.",
+ "status": "frozen 2026-10-16 13:08 MSK (same code as dev snapshot x02_c plus the KITCHEN_WEST gate); scored in REPORT_20261016_X02.md"
+}

@@ -1,0 +1,13 @@
+{
+  "category": "paintbrush",
+  "model": "gngyrk",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "links": {},
+  "meshes": [
+    "paintbrush_gngyrk_0.npz"
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "task": "unloading_the_car",
+  "task_id_2026": 65,
+  "kind": "b1k_classical",
+  "candidate": "u01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/unloading_the_car/experiments/candidate/u01",
+    "fingerprint": "d88ba8b556bb899666997c35be3a871200f84634ce89150b318d746444675c19",
+    "files": 25,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 10187
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 10226
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.0,
+          "steps": 16986
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 10216
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 10303
+        },
+        {
+          "instance": 306,
+          "success": true,
+          "q": 1.0,
+          "steps": 10285
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 10352
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 11262
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 10325
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 9913
+        }
+      ]
+    }
+  },
+  "note": "First controller for unloading_the_car. The two bags are found in the open trunk from the head camera's depth image: the satchel by its top surface's shape, the briefcase the same way or, however it lies, as a slab from the plane of one of its faces, the two chosen together by the points they explai"
+}

@@ -1,0 +1,86 @@
+{
+  "task": "composting_waste",
+  "task_id_2026": 90,
+  "kind": "frozen_rgbd",
+  "candidate": "c05",
+  "entry": {
+    "code": "controller",
+    "method": "action",
+    "unbatch_observations": false
+  },
+  "source": {
+    "format": "verified frozen directory archive; original Git commit not recorded",
+    "fingerprint": "db09993762620e483dfb353fb3bc005338adcfaa4f5bf2290e515e5026f4779b",
+    "fingerprint_format": "sha256 of compact sorted JSON mapping relative paths to SHA256",
+    "files": 50
+  },
+  "evaluation": {
+    "protocol": "native evaluator v3.9.3-post1, RGBDFullResWrapper, public indices0-9, rollout0, default horizon, separate process per episode",
+    "original_image_id": "sha256:71e755c971328cdc4acff6c8d7358c9459d41c40d0712bc6683a0d6456efe92f",
+    "mean_q": 0.65,
+    "successes": 3,
+    "per_instance": [
+      {
+        "instance": 301,
+        "q": 1.0,
+        "success": true,
+        "steps": 4826
+      },
+      {
+        "instance": 302,
+        "q": 0.5,
+        "success": false,
+        "steps": 5458
+      },
+      {
+        "instance": 303,
+        "q": 0.5,
+        "success": false,
+        "steps": 5458
+      },
+      {
+        "instance": 304,
+        "q": 1.0,
+        "success": true,
+        "steps": 5181
+      },
+      {
+        "instance": 305,
+        "q": 0.5,
+        "success": false,
+        "steps": 5458
+      },
+      {
+        "instance": 306,
+        "q": 0.5,
+        "success": false,
+        "steps": 5458
+      },
+      {
+        "instance": 307,
+        "q": 1.0,
+        "success": true,
+        "steps": 5047
+      },
+      {
+        "instance": 308,
+        "q": 0.5,
+        "success": false,
+        "steps": 5458
+      },
+      {
+        "instance": 309,
+        "q": 0.5,
+        "success": false,
+        "steps": 5458
+      },
+      {
+        "instance": 310,
+        "q": 0.5,
+        "success": false,
+        "steps": 5458
+      }
+    ],
+    "integration_note": "Results belong to the unchanged frozen controller and original evaluated image. Integration replay does not constitute a new native evaluation."
+  }
+}

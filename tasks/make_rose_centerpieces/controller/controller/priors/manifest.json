@@ -1,0 +1,80 @@
+{
+  "half_banana": {
+    "category": "half_banana",
+    "model": "xytkre",
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "links": {},
+    "source": "training template zero, before public reset",
+    "world_poses_exported": false,
+    "point_count": 3935,
+    "feature_count": 520,
+    "bounds": [
+      [
+        -0.052426471796290314,
+        -0.04378696591786846,
+        -0.020301993455128436
+      ],
+      [
+        0.049738694402606524,
+        0.07977848454998869,
+        0.021877476890116734
+      ]
+    ]
+  },
+  "half_pomegranate": {
+    "category": "half_pomegranate",
+    "model": "vqybii",
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "links": {},
+    "source": "training template zero, before public reset",
+    "world_poses_exported": false,
+    "point_count": 6432,
+    "feature_count": 2200,
+    "bounds": [
+      [
+        -0.053657743403237444,
+        -0.04183013373893351,
+        -0.045758283409607504
+      ],
+      [
+        0.039511196402799736,
+        0.03952815766483858,
+        0.029802620206697866
+      ]
+    ]
+  },
+  "trash_can": {
+    "category": "trash_can",
+    "model": "ifzxzj",
+    "scale": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "links": {},
+    "source": "training template zero, before public reset",
+    "world_poses_exported": false,
+    "point_count": 27925,
+    "feature_count": 413,
+    "bounds": [
+      [
+        -0.14350774832113986,
+        -0.20234194189447383,
+        -0.3291178551230869
+      ],
+      [
+        0.16781288465883176,
+        0.20233820975245692,
+        0.34416937775610085
+      ]
+    ]
+  }
+}

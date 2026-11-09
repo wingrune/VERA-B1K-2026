@@ -1,0 +1,11 @@
+{
+  "source_repository": "https://github.com/alstar8/b1k_evo_submit",
+  "source_commit": "309bb650dc1606319a4309d5b0ab64702f8ad6ab",
+  "source_files": 1832,
+  "preservation": "All imported files except the root README are byte-for-byte unchanged, including symlink targets and executable modes. See source-manifest.json. Release documentation and helpers are additions.",
+  "dataset": "https://huggingface.co/datasets/VERA-VLA/b1k_final_submission",
+  "dataset_revision": "a7e21a893581e5f6a1bf71d8a0e9780530ecf241",
+  "policy_image": "ghcr.io/alstar8/b1k-evo-submit@sha256:1ab7d94f5b3ecc347dbb9adccc2d9212cfbd2ed4aad078bda82faad607a240c5",
+  "image_platform": "linux/amd64",
+  "release_date": "2026-11-09"
+}

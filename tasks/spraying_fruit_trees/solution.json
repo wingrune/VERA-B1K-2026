@@ -1,0 +1,24 @@
+{
+  "task": "spraying_fruit_trees",
+  "task_id_2026": 39,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/39_spraying_fruit_trees/planners/spraytrees_v1",
+    "env": {}
+  },
+  "source": {
+    "repo": "B1K_hacker passport artifact",
+    "file": "projects/B1K_hacker/h100_render/tasks/39_spraying_fruit_trees/planners/spraytrees_v1/versions/evo_evo-20261010-132017_0698e8f4.py",
+    "evolution_run": "evo-20261010-132017",
+    "program_id": "0698e8f4-9e95-4a31-ae5f-500d28d14fb3",
+    "iteration": 1,
+    "sha256": "f421be54ea8633cbfa3e92de01423ce6270272bf6e9412f2852bab3d61324baa",
+    "recorded_result": {
+      "backend": "H100 SR008, BEHAVIOR port on Isaac Lab",
+      "seeds": "301-305",
+      "success_rate": 0.0,
+      "q": 0.1,
+      "note": "Passport page labels combined_score 0.1198 as Q. Ranking is mean_q 0.10, then SR 0/5, then latest timestamp. 19 of 50 valid programs share that mean_q and SR. Per-episode Q on 301-305: 0.50, 0.00, 0.00, 0.00, 0.00. No separate native RTX 301-310 measurement is in the passport."
+    }
+  }
+}

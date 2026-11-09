@@ -1,0 +1,38 @@
+{
+  "category": "book4",
+  "synset": "book.n.02_4",
+  "model": "znlewl",
+  "scale": [
+    0.6999999284744263,
+    0.6999999284744263,
+    0.6999999284744263
+  ],
+  "bounds": [
+    [
+      -0.12826436758041382,
+      -0.0965578705072403,
+      -0.011784113943576813
+    ],
+    [
+      0.1282639354467392,
+      0.0933125913143158,
+      0.011784332804381847
+    ]
+  ],
+  "mass": 0.800000011920929,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "znlewl__base_link",
+      "vertices": 508,
+      "faces": 568,
+      "samples": 18169,
+      "texture": "/data/behavior-1k-assets/objects/hardback/znlewl/material/znlewl__base_link__diffuse.png",
+      "uv_shape": [
+        1704,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

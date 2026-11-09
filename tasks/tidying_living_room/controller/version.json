@@ -1,0 +1,6 @@
+{
+ "version": "v02",
+ "parent": "v01",
+ "summary": "v01 plus a phase before it: the hardback pulled over the coffee table's edge with the closed hand, the overhang pinched by a level hand so that the assisted grasp holds it, carried and pushed into bookcase_otwukr_2's east compartment on the middle shelf. Only when the held edge is under 27.5 cm (301 of the public starts). The notebook and the newspaper are not taken.",
+ "status": "frozen 2026-10-17 08:16 MSK (code identical to dev snapshot v02_v3; README/version.json written after). Dev run v3 on 301: plant + hardback, Q 0.5."
+}

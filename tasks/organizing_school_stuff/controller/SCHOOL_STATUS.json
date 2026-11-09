@@ -1,0 +1,6 @@
+{
+  "parent": "s05",
+  "change": "Cartesian IK anchors redundant posture to previous waypoint instead of global standing rest",
+  "evidence": "Paired CPU folder push path: baseline up=True slide=False; anchored up=True slide=True in1.30s at unchanged collision/load constraints",
+  "physical_verification": "pending"
+}

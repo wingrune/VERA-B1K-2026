@@ -1,0 +1,13 @@
+{
+  "note": "Object priors of the fair planner of task 83 (params.py CAB_*, LEDGE_*). They are properties of the cabinet asset (bottom_cabinet slgzfc), measured in its own frame, not of any instance pose: the code holds no world coordinate.",
+  "cabinet": {
+    "source": "collision AABBs of the exported cabinet links and the vertices of the top drawer (port/geom_probe.py on the task export, docs/reports/port_83_compare.md)",
+    "carcass_m": {"length": 1.085, "depth": 0.476, "top_above_floor": 0.8445},
+    "top_drawer": {"front_out_of_carcass_m": 0.017, "top_below_carcass_top_m": 0.0035},
+    "pull_ledges": {"count": 2, "lateral_from_centre_m": 0.4275, "below_carcass_top_m": 0.0545, "depth_out_of_drawer_face_m": 0.030, "thickness_m": 0.013, "length_m": 0.09},
+    "drawer_travel_m": 0.39,
+    "same_model_in_all_instances": "one cabinet object (cabinet.n.01_1) of the scene template in the task definition; hidden instances not checked"
+  },
+  "jar": {"source": "collision AABB of the jar asset: 8.3 x 8.1 cm, 15 cm tall", "note": "not used yet"},
+  "thresholds_tuned_on": "height bands and size tolerances were checked on port frames of public instances 301-303 (oracle runs with observation dumps); no instance number appears in the code"
+}

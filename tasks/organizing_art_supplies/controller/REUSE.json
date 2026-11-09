@@ -1,0 +1,53 @@
+{
+  "manip.py": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/manip.py",
+    "sha256": "723b25fed19efceead7e7ff8767ef0cbbab88ca49a06432f1cb86a7c793a115b",
+    "adaptation": "BASE_Z changed from 0.012 to 0.0053 m for installed default R1Pro robot assets 3.8.2, from training robot-support geometry diagnostics; no runtime simulator queries; validator accepts a separate start-world baseline for checked escape during base transport; guard supports an observed recipient coordinate frame for oriented boxes"
+  },
+  "wbik.py": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/wbik.py",
+    "sha256": "3e13f4ea3f8e6a5a5c93815e649da7da6581b358f1a1aa6bdabfcfabd7cb3ea4"
+  },
+  "skills.py": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/skills.py",
+    "sha256": "81f0fc3ea32c9ddccec00565106a569ec8675547cdb1b120ceddcc2ffb4ffeda"
+  },
+  "kinematics.py": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/kinematics.py",
+    "sha256": "e62b80711bab257492a0a7022cad6d2977aa68693f9dc9b42766b88126cc89f6"
+  },
+  "robot_collision.py": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/robot_collision.py",
+    "sha256": "0e59dc89434ee8b50d8afc479f5b03ec51ad0169e7069966f914bab592c1b1bc"
+  },
+  "robot_model.json": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/robot_model.json",
+    "sha256": "62d325e1cb41bf2365c499c6d53c26638f4e574688dc3e2a128d2e313b047618"
+  },
+  "robot_collision_spheres.json": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/robot_collision_spheres.json",
+    "sha256": "1fa7cb54f1eb64032218d49660fb3d768e21dad0e2b7d47ba80b16be451257cf"
+  },
+  "r1pro.urdf": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/r1pro.urdf",
+    "sha256": "b0d76760cbedfbcbe1ddc280380dd5f497bbca380313bc096d7239a2c50dae61"
+  },
+  "scene_map.py": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/scene_map.py",
+    "sha256": "0579aa37185368505af138153af053a78d3eb347b9beaba8da278ad17428105e"
+  },
+  "localizer.py": {
+    "source": "tasks/picking_up_trash/experiments/candidate/t01/localizer.py",
+    "sha256": "476bd94442dfa12829a456240de6795041b6d83950d64506afcf29c0363b2733",
+    "adaptation": "BASE_Z changed from 0.012 to 0.0053 m for installed default R1Pro robot assets 3.8.2, from training robot-support geometry diagnostics; no runtime simulator queries; integrates calibrated measured XY velocity supplied through allowed proprioception"
+  },
+  "surface_icp.py": {
+    "source": "tasks/organizing_art_supplies/code/surface_icp.py",
+    "sha256": "7ed5d028684b4fb817030260e34aee913bce47a293e275042ec1620ea9c47eb6"
+  },
+  "observer_payload_mask": {
+    "source": "tasks/installing_a_fax_machine/experiments/candidate/m05/observer.py",
+    "sha256": "fd4370d81a68a8716cfff1e488fbb3aaf5b749e217fed48225cfcfa2f79b521a",
+    "adaptation": "Reuse m05 estimated-payload sphere exclusion in map scan matching; object-to-gripper estimate and proprio FK only, no simulator state"
+  }
+}

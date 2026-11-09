@@ -1,0 +1,24 @@
+{
+  "task": "cook_broccolini",
+  "task_id_2026": 96,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/96_cook_broccolini/planners/broc_v2",
+    "env": {}
+  },
+  "source": {
+    "repo": "B1K_hacker passport artifact",
+    "file": "projects/B1K_hacker/h100_render/tasks/96_cook_broccolini/planners/broc_v2/versions/evo_evo-20261010-131913_cb2a002c.py",
+    "evolution_run": "evo-20261010-131913",
+    "program_id": "cb2a002c-4966-499a-a835-b4487b96d39b",
+    "iteration": 3,
+    "sha256": "b4d974bcfef0271cf37b13ca964d6c5d65607508e26a5d90a10d6bb9549f9427",
+    "recorded_result": {
+      "backend": "H100 SR008, Isaac Lab port of BEHAVIOR",
+      "seeds": "301-310",
+      "success_rate": 0.0,
+      "q": 0.178782,
+      "note": "Passport headline Q is the evolution combined_score 0.178782, the unique highest among 11 valid programs. Checkpoint mean_q is 0.145455 and SR is 0/10. Per-episode Q on 301-310: 0.273, 0.091, 0.000, 0.273, 0.273, 0.000, 0.000, 0.000, 0.273, 0.273. All ten episodes timed out at horizon 6927. No native RTX 301-310 measurement is in the passport."
+    }
+  }
+}

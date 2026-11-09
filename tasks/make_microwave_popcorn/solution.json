@@ -1,0 +1,60 @@
+{
+  "task": "make_microwave_popcorn",
+  "task_id_2026": 40,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/40_make_microwave_popcorn/planners/popcorn_rgbd_v1",
+    "env": {},
+    "reset_task_spec": true
+  },
+  "source": {
+    "repo": "B1K_hacker passport artifact",
+    "file": "projects/B1K_hacker/h100_render/tasks/40_make_microwave_popcorn/planners/popcorn_rgbd_v1/versions/evo_evo-20261010-131927_740988aa.py",
+    "evolution_run": "evo-20261010-131927",
+    "program_id": "740988aa-443e-4356-aa2b-5274cbcc1e79",
+    "iteration": 0,
+    "sha256": "7dea9dbcd87ce98109aad9d48826feae45ef7c139f3cae443fb32d32b4d6a183",
+    "recorded_result": {
+      "backend": "H100 SR008, BEHAVIOR port on Isaac Lab",
+      "seeds": "0-9 (native 301-310)",
+      "success_rate": 0.6,
+      "q": 0.6,
+      "note": "Passport champion: 13 of 91 valid programs tie at this Q, and the passport shows the latest. Per-episode Q on instances 0-9 (native 301-310): 1.00, 0.00, 1.00, 1.00, 1.00, 0.00, 1.00, 0.00, 0.00, 1.00. Success on 0, 2, 3, 4, 6, 9. The four failures are timeout."
+    },
+    "upstream_sha256": "01bac05da2e1f3aa04f5f6aad56a57d5e22c22ddb4479ead2c003ca51125a91c",
+    "candidate": "popcorn_p31",
+    "adapted_from_commit": "75d068ce11da9ff04646ea601cefbc48b326c7cc"
+  },
+  "native_evaluation": {
+    "runtime": "BEHAVIOR-1K v3.9.3-post1 / OmniGibson 3.9.3 / Isaac Sim 5.1",
+    "instances": [
+      301,
+      302,
+      303,
+      304,
+      305,
+      306,
+      307,
+      308,
+      309,
+      310
+    ],
+    "rollouts_per_instance": 1,
+    "mean_q": 0.6,
+    "success_rate": 0.6,
+    "per_instance_q": [
+      1.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    "policy_image_digest": "sha256:c78de5758f20661bf666c122809177ec4815f1d4b4f301d3ede8975002696de7",
+    "artifacts_commit": "https://huggingface.co/datasets/VERA-VLA/b1k_final_submission/commit/352087c61e891226d94263fa23e83601565a3333"
+  }
+}

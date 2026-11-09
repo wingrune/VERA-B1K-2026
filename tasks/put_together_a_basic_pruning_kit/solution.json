@@ -1,0 +1,84 @@
+{
+  "task": "put_together_a_basic_pruning_kit",
+  "task_id_2026": 75,
+  "kind": "b1k_classical",
+  "candidate": "p01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/put_together_a_basic_pruning_kit/experiments/candidate/p01",
+    "fingerprint": "ec869e5dbbfa263ceea4bf39d5e1e5676abddaa4136c1eca02e52d1ec197f13f",
+    "files": 24,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 3575
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 4325
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 4692
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 3745
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 4711
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.25,
+          "steps": 16897
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 3118
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 6918
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 4329
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 4121
+        }
+      ]
+    }
+  },
+  "note": "First controller for put_together_a_basic_pruning_kit. The toolbox, the pruner and the shears are found on the garage floor from the head camera's depth image (groups of points above free floor, told apart by height and size); which long side of the toolbox is its front is read from the colour image"
+}

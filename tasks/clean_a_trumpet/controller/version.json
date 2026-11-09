@@ -1,0 +1,6 @@
+{
+ "version": "t01",
+ "parent": "c01/u01/p01 (localisation, map, routes, whole-body arm planner)",
+ "summary": "Classical controller for clean_a_trumpet. Head-camera fit of the trumpet's pose and of the brush on the desk (a wrist-camera look past the trumpet if the brush is hidden). The brush is taken from above by its end nearer the base, with the trumpet as an obstacle on the way over; its place in the hand is corrected by the fingers' asymmetry, a measured offset and the holding hand's wrist camera. The brush is held tilted and let down beside each speck the head camera shows; then, blind, over the trumpet's collision surface in order of a dust prior. Every placement keeps the whole brush 6 mm clear of the trumpet's collision height field. Nearby dabs are joined by low glides, and the trumpet's pose is checked for pushes every 4 dabs. Dev rounds on the public starts 301-320: 9-10 of 20.",
+ "status": "frozen 2026-10-15 (dev snapshot t01_ag)"
+}

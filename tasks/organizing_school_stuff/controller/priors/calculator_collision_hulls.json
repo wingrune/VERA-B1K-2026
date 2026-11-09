@@ -1,0 +1,7 @@
+{
+  "model": "kwmmty",
+  "coordinate_frame": "fixed object-local canonical asset",
+  "hulls": 4,
+  "sha256": "4c6df352d133867f3590e2d11ad6d0187fa574ae7548979f2290d8d9abf0d400",
+  "scope": "No instance object world pose is stored or used at evaluation"
+}

@@ -1,0 +1,9 @@
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg && rm -rf /var/lib/apt/lists/*
+COPY solutions/comet2/requirements.lock /tmp/comet2-requirements.lock
+RUN --mount=type=cache,target=/tmp/uv-cache uv python install 3.11.13 \
+    && uv venv /opt/venv-comet2 --python 3.11.13 \
+    && uv pip install --python /opt/venv-comet2/bin/python --no-deps \
+       --index-strategy unsafe-best-match --extra-index-url https://download.pytorch.org/whl/cu128 \
+       -r /tmp/comet2-requirements.lock \
+    && /opt/venv-comet2/bin/python -c "import pathlib, site; pathlib.Path(site.getsitepackages()[0], 'comet2.pth').write_text('/opt/submit/solutions/comet2/runtime\\n')"
+ENV COMET2_PYTHON=/opt/venv-comet2/bin/python

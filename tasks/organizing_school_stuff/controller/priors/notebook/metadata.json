@@ -1,0 +1,38 @@
+{
+  "category": "notebook",
+  "synset": "book.n.02_1",
+  "model": "aanuhi",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.07566752284765244,
+      -0.05419810488820076,
+      -0.013735402375459671
+    ],
+    [
+      0.07566744089126587,
+      0.06534067541360855,
+      0.013735408894717693
+    ]
+  ],
+  "mass": 0.4749999940395355,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "aanuhi__base_link",
+      "vertices": 4193,
+      "faces": 7192,
+      "samples": 19773,
+      "texture": "/data/behavior-1k-assets/objects/notebook/aanuhi/material/aanuhi__base_link__diffuse.png",
+      "uv_shape": [
+        21576,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

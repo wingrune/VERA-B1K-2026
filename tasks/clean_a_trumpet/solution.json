@@ -1,0 +1,84 @@
+{
+  "task": "clean_a_trumpet",
+  "task_id_2026": 37,
+  "kind": "b1k_classical",
+  "candidate": "t01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/clean_a_trumpet/experiments/candidate/t01",
+    "fingerprint": "b82d623de4c27301437004f723efd428bb8e1775ebb770034db383b501425101",
+    "files": 34,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.0,
+          "steps": 7961
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 2709
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 5404
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.0,
+          "steps": 7961
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 7832
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.0,
+          "steps": 7961
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 6882
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 2620
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 3707
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.0,
+          "steps": 7961
+        }
+      ]
+    }
+  },
+  "note": "Classical controller for clean_a_trumpet. Head-camera fit of the trumpet's pose and of the brush on the desk (a wrist-camera look past the trumpet if the brush is hidden). The brush is taken from above by its end nearer the base, with the trumpet as an obstacle on the way over; its place in the hand"
+}

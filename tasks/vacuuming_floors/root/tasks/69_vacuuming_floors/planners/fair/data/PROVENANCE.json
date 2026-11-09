@@ -1,0 +1,9 @@
+{
+  "note": "Object prior of the fair planner of task 69 (models.py). A property of the vacuum asset, not of any instance pose.",
+  "source": "collision mesh of the vacuum role (one rigid body base_link, 8 convex pieces: head, body, pole, top handle loop as a box) and its asset frames (the ToggledOn marker, the ParticleRemover projection cube, the handle loop box), read from the port's USD stage by the harness (run_episode.py --dump-models, job 69fair-dump-r1, pin eb15717) in the base_link frame",
+  "builder": "planners/fair_tools/build_models.py (outside the planner package): vertices plus area-weighted surface samples (5000, seed 0)",
+  "vacuum": {"verts": 321, "faces": 610, "base_link_above_floor_m": 0.2945, "height_above_floor_m": 1.0217, "marker_in_body": "x 0.0247, y 0.0, z 0.6288", "cube_in_body": "centre (0.059, -0.0005, -0.3058), extents 0.3022 x 0.1192 x 0.0203, long side along body y", "handle_box": "x -0.0584..0.0477, y -0.0202..0.0202, z 0.5342..0.7272"},
+  "identical_in": "the dumps of 301, 302, 305, 308 and 310 (vertices to 1e-15, frames to 3e-7)",
+  "assets": "BEHAVIOR assets 3.9.0 as exported for the port (same asset in every public instance); no instance pose is stored",
+  "thresholds_tuned_on": "the dust and marker colour thresholds and the vacuum fit gates were checked on oracle dumps of the development instances 301-304 (truth used only offline to measure the error); no instance number appears in the code"
+}

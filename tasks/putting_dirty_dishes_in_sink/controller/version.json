@@ -1,0 +1,6 @@
+{
+ "version": "k02",
+ "parent": "k01",
+ "summary": "k01 with the kitchen door made safe. Way west: lined up on the vestibule's walls (heading and lateral position from the head camera); ends past the open leaf and slides south, away from it, before turning; held up = head depth image unchanged, then backs out and retries once. Way east: from the south, pushes the leaf to its stop, slides through facing north. Kitchen routes keep off the open leaf; the localiser leaves out the leaf's swing area in every band. Fresh global fixes in the dining room before each fetch, before each way west and after each way east. Drops aimed at the basin's middle. Route fallback without the dishes' keep-out discs, plus a short escape step.",
+ "status": "frozen 2026-10-16 22:40 MSK (code = dev snapshot k02_l); dev runs 302 1.0, 305 1.0, 307 0.75, 303/304/306/309/310 0.5, 308 0.25 (snapshots j/k/l/m, see README)"
+}

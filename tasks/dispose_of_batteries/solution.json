@@ -1,0 +1,84 @@
+{
+  "task": "dispose_of_batteries",
+  "task_id_2026": 94,
+  "kind": "b1k_classical",
+  "candidate": "b01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/dispose_of_batteries/experiments/candidate/b01",
+    "fingerprint": "95565204238079b75a6be18c17d407fb03b25743163f2d64de2e20c2d046c01a",
+    "files": 20,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 8088
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 8073
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 7961
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 7969
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 9047
+        },
+        {
+          "instance": 306,
+          "success": true,
+          "q": 1.0,
+          "steps": 8284
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 8102
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 8049
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 8294
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 8045
+        }
+      ]
+    }
+  },
+  "note": "First controller for dispose_of_batteries. Map prior with scan-matching localisation in the copy room and the corridor; in the office the pose is taken from the edges of the desk top and from dead reckoning on the velocity command. Blue-cap battery detection, pinch grasps from table-height surfaces "
+}

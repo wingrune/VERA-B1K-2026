@@ -1,0 +1,84 @@
+{
+  "task": "loading_the_car",
+  "task_id_2026": 13,
+  "kind": "b1k_classical",
+  "candidate": "c01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/loading_the_car/experiments/candidate/c01",
+    "fingerprint": "a23983a1afc984fbc62f079aa12c81d81022e2f2b6c666c096204df0697cdd02",
+    "files": 20,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 10415
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 10514
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 10644
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 10525
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 10166
+        },
+        {
+          "instance": 306,
+          "success": true,
+          "q": 1.0,
+          "steps": 10660
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 11180
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 11219
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 10976
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 10581
+        }
+      ]
+    }
+  },
+  "note": "First controller for loading_the_car. Map prior of the house's lower floor with scan-matching localisation in four height slabs; the start pose in the garage found from three looks, with the car, the shut door and lines of sight against the height field to tell the look-alike corners apart; the trun"
+}

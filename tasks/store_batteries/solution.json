@@ -1,0 +1,84 @@
+{
+  "task": "store_batteries",
+  "task_id_2026": 82,
+  "kind": "b1k_classical",
+  "candidate": "x02",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "63d6172b9ea2fc8d3f61602f5c60d16080813751",
+    "path": "tasks/store_batteries/experiments/candidate/x02",
+    "fingerprint": "da6fd434df7d0cc353ebbf82f921e1e63232f77328818522d9912ea1800d0c19",
+    "files": 21,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.6666666666666666,
+          "steps": 11557
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 11557
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 4059
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.6666666666666666,
+          "steps": 11557
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 4417
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 11557
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 4478
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 4482
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 4250
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 5392
+        }
+      ]
+    }
+  },
+  "note": "x01 with a last phase: when only the bar's battery is left (behind the chairs on the living-room side), the robot drives into the kitchen, takes it from the kitchen side and brings it back into the drawer."
+}

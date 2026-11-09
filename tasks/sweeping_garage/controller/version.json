@@ -1,0 +1,6 @@
+{
+ "version": "s03",
+ "parent": "s02 (scored 8/20, mean Q 0.55, on the second twenty held-out starts)",
+ "summary": "s02 with the broom's pose seen more truly and the broom knocked less: the broom's line from its handle's own points (the head, 0.44 m across the handle, had turned the main direction 15-26 degrees after a put-down); no pinch in the air where the wrist camera shows no handle, a fresh look from 0.6 m back turned to where the broom was; stances on the robot's side of the broom first; pulled out by the handle near the head when no hold has room after a knock; routes round the lying broom with as much room as there is. The rest is s02's (handle height from the mesh, wrist look before the pinch, the broom an obstacle for the arm planner, relocation, side hold, eight legs, localisation with the broom cut out of the scans).",
+ "status": "frozen 2026-10-14"
+}

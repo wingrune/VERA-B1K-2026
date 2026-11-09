@@ -1,0 +1,38 @@
+{
+  "category": "book5",
+  "synset": "book.n.02_5",
+  "model": "poanfs",
+  "scale": [
+    0.8999999761581421,
+    0.8999999761581421,
+    0.8999999761581421
+  ],
+  "bounds": [
+    [
+      -0.13713335990905762,
+      -0.12097473442554474,
+      -0.015166292898356915
+    ],
+    [
+      0.13713330030441284,
+      0.11719410121440887,
+      0.015167366713285446
+    ]
+  ],
+  "mass": 0.800000011920929,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "poanfs__base_link",
+      "vertices": 529,
+      "faces": 568,
+      "samples": 24870,
+      "texture": "/data/behavior-1k-assets/objects/hardback/poanfs/material/poanfs__base_link__diffuse.png",
+      "uv_shape": [
+        1704,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

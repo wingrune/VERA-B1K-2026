@@ -1,0 +1,24 @@
+{
+  "task": "turning_on_radio",
+  "task_id_2026": 0,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/00_turning_on_radio/planners/rgbd_v20",
+    "env": {}
+  },
+  "source": {
+    "repo": "B1K_hacker passport artifact",
+    "file": "projects/B1K_hacker/h100_render/tasks/00_turning_on_radio/planners/rgbd_v20/versions/evo_evo-20261008-194556_cf23f1b5.py",
+    "evolution_run": "evo-20261008-194556",
+    "program_id": "cf23f1b5-cf6a-477c-b4b5-16383b6d93f8",
+    "iteration": 21,
+    "sha256": "1ae068860bf490bff11347f96913f4b5f9487dcf19be384bfaf56f7d64d65e5c",
+    "h100_result": {
+      "backend": "H100 SR008, Isaac Lab port",
+      "seeds": "301-310",
+      "success_rate": 0.9,
+      "q": 0.9,
+      "failure": "one timeout"
+    }
+  }
+}

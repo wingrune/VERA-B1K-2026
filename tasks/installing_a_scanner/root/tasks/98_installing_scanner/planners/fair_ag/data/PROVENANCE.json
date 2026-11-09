@@ -1,0 +1,14 @@
+{
+  "note": "Object priors of the fair planner of task 98 (params.py SCANNER_*, LAPTOP_*). They are properties of the object assets, not of any instance pose.",
+  "scanner": {
+    "source": "export of the scanner asset (collision box in the root link frame, MARKER.json local point of the ToggledOn marker)",
+    "collision_box_local_m": {"lo": [-0.146, -0.109, -0.031], "hi": [0.165, 0.109, 0.030]},
+    "marker_local_m": [0.158, 0.002, 0.005],
+    "derived": {"long_m": 0.311, "short_m": 0.218, "marker_front_of_box_centre_m": 0.1485, "marker_below_top_m": 0.0245},
+    "same_model_in_all_instances": "one scanner asset (model id in task.yaml roles) in the task definition; not checked against hidden instances"
+  },
+  "laptop": {"source": "flat closed laptop: height range 1.5-4.8 cm above the desk top measured on the first frames of the port", "note": "only the height band is a prior; the footprint is measured"},
+  "desk": {"source": "no prior beyond the height band of the desk top (0.55-1.0 m above the robot frame)"},
+  "thresholds_tuned_on": "colour and height thresholds were calibrated on port frames of public instances 301-303 (the task statement fixed these as the development instances); no instance number appears in the code",
+  "red_marker": "pure red (255, 0, 0) shaded by the renderer: R >= 80 and G, B below 25 percent of R; the marker colour is the ToggledOn off colour of the native renderer (not touched by the colour gains). Used to find the button end of the scanner, never to decide that the button was pressed."
+}

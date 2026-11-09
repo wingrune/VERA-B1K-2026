@@ -1,0 +1,406 @@
+{
+  "source_sha256": "ced10aef6614a686ee3da0c611b5d71035200958c68e81d0ab4053bbb9b826b0",
+  "min_closed_fraction": 0.002,
+  "first_closure": {
+    "turning_on_radio": [
+      2,
+      2
+    ],
+    "picking_up_trash": [
+      null,
+      null
+    ],
+    "putting_away_Halloween_decorations": [
+      null,
+      null
+    ],
+    "cleaning_up_plates_and_food": [
+      null,
+      null
+    ],
+    "can_meat": [
+      null,
+      null
+    ],
+    "setting_mousetraps": [
+      null,
+      null
+    ],
+    "hiding_Easter_eggs": [
+      null,
+      null
+    ],
+    "picking_up_toys": [
+      null,
+      null
+    ],
+    "rearranging_kitchen_furniture": [
+      null,
+      null
+    ],
+    "putting_up_Christmas_decorations_inside": [
+      null,
+      null
+    ],
+    "set_up_a_coffee_station_in_your_kitchen": [
+      null,
+      null
+    ],
+    "putting_dishes_away_after_cleaning": [
+      null,
+      null
+    ],
+    "preparing_lunch_box": [
+      null,
+      null
+    ],
+    "loading_the_car": [
+      null,
+      null
+    ],
+    "carrying_in_groceries": [
+      null,
+      6
+    ],
+    "bringing_in_wood": [
+      null,
+      null
+    ],
+    "moving_boxes_to_storage": [
+      null,
+      null
+    ],
+    "bringing_water": [
+      null,
+      null
+    ],
+    "tidying_bedroom": [
+      null,
+      null
+    ],
+    "outfit_a_basic_toolbox": [
+      null,
+      null
+    ],
+    "sorting_vegetables": [
+      null,
+      null
+    ],
+    "collecting_childrens_toys": [
+      null,
+      null
+    ],
+    "putting_shoes_on_rack": [
+      null,
+      null
+    ],
+    "boxing_books_up_for_storage": [
+      null,
+      null
+    ],
+    "storing_food": [
+      null,
+      null
+    ],
+    "clearing_food_from_table_into_fridge": [
+      null,
+      null
+    ],
+    "assembling_gift_baskets": [
+      null,
+      null
+    ],
+    "sorting_household_items": [
+      null,
+      null
+    ],
+    "getting_organized_for_work": [
+      null,
+      null
+    ],
+    "clean_up_your_desk": [
+      null,
+      null
+    ],
+    "setting_the_fire": [
+      null,
+      6
+    ],
+    "clean_boxing_gloves": [
+      null,
+      9
+    ],
+    "wash_a_baseball_cap": [
+      9,
+      8
+    ],
+    "wash_dog_toys": [
+      null,
+      11
+    ],
+    "hanging_pictures": [
+      null,
+      null
+    ],
+    "attach_a_camera_to_a_tripod": [
+      null,
+      null
+    ],
+    "clean_a_patio": [
+      null,
+      null
+    ],
+    "clean_a_trumpet": [
+      null,
+      null
+    ],
+    "spraying_for_bugs": [
+      null,
+      1
+    ],
+    "spraying_fruit_trees": [
+      null,
+      2
+    ],
+    "make_microwave_popcorn": [
+      null,
+      4
+    ],
+    "cook_cabbage": [
+      14,
+      14
+    ],
+    "chop_an_onion": [
+      null,
+      null
+    ],
+    "slicing_vegetables": [
+      null,
+      null
+    ],
+    "chopping_wood": [
+      null,
+      null
+    ],
+    "cook_hot_dogs": [
+      null,
+      10
+    ],
+    "cook_bacon": [
+      8,
+      8
+    ],
+    "freeze_pies": [
+      null,
+      null
+    ],
+    "canning_food": [
+      null,
+      null
+    ],
+    "make_pizza": [
+      14,
+      null
+    ],
+    "freeze_fruit": [
+      null,
+      null
+    ],
+    "cook_a_brisket": [
+      null,
+      6
+    ],
+    "sorting_bottles_cans_and_paper": [
+      null,
+      null
+    ],
+    "tidying_living_room": [
+      null,
+      null
+    ],
+    "putting_away_toys": [
+      null,
+      null
+    ],
+    "re_shelving_library_books": [
+      null,
+      null
+    ],
+    "make_rose_centerpieces": [
+      null,
+      null
+    ],
+    "sweeping_garage": [
+      null,
+      null
+    ],
+    "stacking_wood": [
+      null,
+      null
+    ],
+    "organizing_art_supplies": [
+      null,
+      null
+    ],
+    "scrubbing_bathroom_floor": [
+      null,
+      null
+    ],
+    "bringing_paper_to_recycling": [
+      null,
+      11
+    ],
+    "halve_an_egg": [
+      null,
+      null
+    ],
+    "installing_smoke_detectors": [
+      null,
+      null
+    ],
+    "setting_the_table": [
+      null,
+      null
+    ],
+    "unloading_the_car": [
+      null,
+      null
+    ],
+    "turning_out_all_lights_before_sleep": [
+      2,
+      2
+    ],
+    "boxing_food_after_dinner": [
+      null,
+      null
+    ],
+    "cleaning_up_branches_and_twigs": [
+      null,
+      null
+    ],
+    "vacuuming_floors": [
+      1,
+      1
+    ],
+    "thawing_frozen_food": [
+      null,
+      9
+    ],
+    "clean_your_rusty_garden_tools": [
+      null,
+      null
+    ],
+    "cook_a_frozen_pie": [
+      null,
+      9
+    ],
+    "organizing_school_stuff": [
+      null,
+      null
+    ],
+    "carrying_out_garden_furniture": [
+      null,
+      null
+    ],
+    "put_together_a_basic_pruning_kit": [
+      null,
+      null
+    ],
+    "dispose_of_glass": [
+      null,
+      null
+    ],
+    "installing_a_modem": [
+      3,
+      3
+    ],
+    "make_cabinet_doors": [
+      null,
+      null
+    ],
+    "polishing_shoes": [
+      null,
+      null
+    ],
+    "clean_up_broken_glass": [
+      null,
+      null
+    ],
+    "packing_meal_for_delivery": [
+      null,
+      null
+    ],
+    "store_batteries": [
+      null,
+      null
+    ],
+    "store_honey": [
+      null,
+      null
+    ],
+    "tidying_bathroom": [
+      null,
+      null
+    ],
+    "putting_dirty_dishes_in_sink": [
+      null,
+      null
+    ],
+    "make_gift_bags_for_baby_showers": [
+      null,
+      null
+    ],
+    "collecting_aluminum_cans": [
+      null,
+      null
+    ],
+    "rearrange_your_room": [
+      null,
+      null
+    ],
+    "installing_a_fax_machine": [
+      1,
+      null
+    ],
+    "composting_waste": [
+      null,
+      null
+    ],
+    "store_produce": [
+      null,
+      null
+    ],
+    "installing_a_scanner": [
+      null,
+      3
+    ],
+    "clean_a_keyboard": [
+      null,
+      null
+    ],
+    "dispose_of_batteries": [
+      null,
+      null
+    ],
+    "cook_brussels_sprouts": [
+      7,
+      14
+    ],
+    "cook_broccolini": [
+      null,
+      5
+    ],
+    "setup_a_bar_for_a_cocktail_party": [
+      null,
+      null
+    ],
+    "laying_tile_floors": [
+      null,
+      null
+    ],
+    "sorting_books_on_shelf": [
+      null,
+      null
+    ]
+  }
+}

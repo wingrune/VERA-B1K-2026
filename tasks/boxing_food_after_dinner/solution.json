@@ -1,0 +1,24 @@
+{
+  "task": "boxing_food_after_dinner",
+  "task_id_2026": 67,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/67_boxing_food_after_dinner/planners/boxing_v1",
+    "env": {}
+  },
+  "source": {
+    "repo": "B1K_hacker passport artifact",
+    "file": "projects/B1K_hacker/h100_render/tasks/67_boxing_food_after_dinner/planners/boxing_v1/versions/evo_evo-20261009-163744_2bde53a4.py",
+    "evolution_run": "evo-20261009-163744",
+    "program_id": "2bde53a4-3964-47a3-8130-1e94ff2a24c1",
+    "iteration": 0,
+    "sha256": "20b102469f02566e8f4ee3d377d5b4e80b560ac5a1889666b06b426c780ca0f6",
+    "recorded_result": {
+      "backend": "H100 SR008, Isaac Lab port of BEHAVIOR",
+      "seeds": "301-310",
+      "success_rate": 0.0,
+      "q": 0.092593,
+      "note": "SR 0/10. Per-episode Q: 301=0.167, 302=0.000, 303=0.000, 304=0.000 (infrastructure, steps 0), 305=0.000, 306=0.167, 307=0.167, 308=0.167, 309=0.167, 310=0.000. One of ten episodes failed on infrastructure; Q and success are over the nine valid episodes. No separate native RTX 301-310 measurement is in the passport."
+    }
+  }
+}

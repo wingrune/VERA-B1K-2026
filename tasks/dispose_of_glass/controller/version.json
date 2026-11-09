@@ -1,0 +1,6 @@
+{
+ "version": "w01",
+ "parent": "clean_up_broken_glass g01",
+ "summary": "First controller for dispose_of_glass: the glass controller g01 with this scene's map (hotel_suite_large; the wall shelf and the sink in the chassis layer), water glasses looked for over the sink's top, pinched by the wall nearest the robot (one finger inside) from stances 0.48-0.76 m off with the target glass a box for the validator on the way, let go hanging from the hand pointing down above the trash can, lookouts at the sink and in the bedroom.",
+ "status": "frozen 2026-10-15 19:50 MSK (same code as dev snapshot w01_c); scored in REPORT_20261015_W01.md"
+}

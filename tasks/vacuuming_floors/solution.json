@@ -1,0 +1,84 @@
+{
+  "task": "vacuuming_floors",
+  "task_id_2026": 69,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/69_vacuuming_floors/planners/fair",
+    "env": {}
+  },
+  "source": {
+    "repo": "BIMBO_EvoX",
+    "commit": "106e2be5314eb896d6fa2f224c8666032906dbf5",
+    "bimbo_task": "69_vacuuming_floors",
+    "package": "fair",
+    "evolution": {
+      "run": "fair-69-r1",
+      "program": "434d955b",
+      "iteration": 68,
+      "bundle_sha256": "502bd01ed73a4af5d3284772ee1cfb99792baa6e20f71fd4cc70e00fb1283e8d",
+      "per_seed": [
+        {
+          "seed": 301,
+          "q": 0,
+          "success": false,
+          "steps": 1877
+        },
+        {
+          "seed": 302,
+          "q": 0,
+          "success": false,
+          "steps": 3617
+        },
+        {
+          "seed": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 2950
+        },
+        {
+          "seed": 304,
+          "q": 0,
+          "success": false,
+          "steps": 3617
+        },
+        {
+          "seed": 305,
+          "q": 0,
+          "success": false,
+          "steps": 3280
+        },
+        {
+          "seed": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 3523
+        },
+        {
+          "seed": 307,
+          "q": 0,
+          "success": false,
+          "steps": 3617
+        },
+        {
+          "seed": 308,
+          "q": 0,
+          "success": false,
+          "steps": 3617
+        },
+        {
+          "seed": 309,
+          "q": 0,
+          "success": false,
+          "steps": 3617
+        },
+        {
+          "seed": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 3106
+        }
+      ]
+    }
+  },
+  "note": "Best of fair-69-r1, H100 fitness 0.3405"
+}

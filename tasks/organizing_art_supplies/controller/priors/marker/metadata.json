@@ -1,0 +1,13 @@
+{
+  "category": "marker",
+  "model": "kjxpdi",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "links": {},
+  "meshes": [
+    "marker_kjxpdi_0.npz"
+  ]
+}

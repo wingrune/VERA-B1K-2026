@@ -1,0 +1,21 @@
+{
+  "sha256": "e81d0a5903f980962e46e8db833d1da146fc6802a3e1346d35eea8effe207236",
+  "files": {
+    "kinematics.py": "e62b80711bab257492a0a7022cad6d2977aa68693f9dc9b42766b88126cc89f6",
+    "localizer.py": "b841b7a80d5d218559af85a2d0e2db8f239f4a2c800230965ae095cf699d40a8",
+    "manip.py": "56c8afaa5dbbbe511cffe76b56c063ec1f742248b0b98d1e071d76d8315981b0",
+    "observation_policy.py": "cf85b181388788d090f5537a3a565809c9363d6ea2972d8b6d8d2ecdb4d3e89a",
+    "observer.py": "3d1546d0782b68bde78751df6a7a728cf689595d2bc2fdff7300487d64917149",
+    "priors/hotel_map.npz": "48aca8964917e9ea26c01ec648f15b538373d2cd3c0f0514ba9a525e8cc56ead",
+    "r1pro.urdf": "b0d76760cbedfbcbe1ddc280380dd5f497bbca380313bc096d7239a2c50dae61",
+    "robot_collision.py": "0e59dc89434ee8b50d8afc479f5b03ec51ad0169e7069966f914bab592c1b1bc",
+    "robot_collision_spheres.json": "1fa7cb54f1eb64032218d49660fb3d768e21dad0e2b7d47ba80b16be451257cf",
+    "robot_model.json": "62d325e1cb41bf2365c499c6d53c26638f4e574688dc3e2a128d2e313b047618",
+    "scene_map.py": "eb2d0476169fa41de717618b74f985b6c200d12bcb6402c687b1cf4553bdaa25",
+    "skills.py": "81f0fc3ea32c9ddccec00565106a569ec8675547cdb1b120ceddcc2ffb4ffeda",
+    "trash_observed.py": "7afc654c10c2df5f35c6936d656e1bfdcc5ecfaadcac6a2fad583ac6553bffb5",
+    "trash_pipeline.py": "08be042471e8562e9c51bb5f9e305c17ac9b1b38fd13112689556f7b19acd6cc",
+    "trash_skills.py": "df84dd2462bcac3a6d81f98fd1256b08927e897ae35533ece8db3e6ff9d9a984",
+    "wbik.py": "3e13f4ea3f8e6a5a5c93815e649da7da6581b358f1a1aa6bdabfcfabd7cb3ea4"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "task": "make_gift_bags_for_baby_showers",
+  "task_id_2026": 86,
+  "kind": "b1k_classical",
+  "candidate": "m03",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "30eae0165077f1824361f02df64a5d51544fdb97",
+    "path": "tasks/make_gift_bags_for_baby_showers/experiments/candidate/m03",
+    "fingerprint": "679a05fdad4c9184731116c5f8e722bae9799b34e3e686c66cea9610961ab6dd",
+    "files": 20,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.16666666666666666,
+          "steps": 14477
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.16666666666666666,
+          "steps": 14477
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.16666666666666666,
+          "steps": 14477
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.16666666666666666,
+          "steps": 14477
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.16666666666666666,
+          "steps": 14477
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.0,
+          "steps": 14477
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 14477
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.16666666666666666,
+          "steps": 14477
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.16666666666666666,
+          "steps": 14477
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 14477
+        }
+      ]
+    }
+  },
+  "note": "m02 with a first phase: the two toy dice taken from the top of the east cabinet (small-thing detection over a known surface, pinch from above at the sighted height) and let fall one into each bag where the bags stand on the breakfast table; then the bags onto the coffee table as in m02. The wafers a"
+}

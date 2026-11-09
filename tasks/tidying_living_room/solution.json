@@ -1,0 +1,84 @@
+{
+  "task": "tidying_living_room",
+  "task_id_2026": 53,
+  "kind": "b1k_classical",
+  "candidate": "v02",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "84354487f4d9806f5013dfda8bc780261d983952",
+    "path": "tasks/tidying_living_room/experiments/candidate/v02",
+    "fingerprint": "4d15dd994671692e2dd3961077a848c3814b93699ef803842c22f140ae052804",
+    "files": 21,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.5,
+          "steps": 18849
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.25,
+          "steps": 18849
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.0,
+          "steps": 18849
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.25,
+          "steps": 18849
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.25,
+          "steps": 18849
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.25,
+          "steps": 18849
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.25,
+          "steps": 18849
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.25,
+          "steps": 18849
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.0,
+          "steps": 18849
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.25,
+          "steps": 18849
+        }
+      ]
+    }
+  },
+  "note": "v01 plus a phase before it: the hardback pulled over the coffee table's edge with the closed hand, the overhang pinched by a level hand so that the assisted grasp holds it, carried and pushed into bookcase_otwukr_2's east compartment on the middle shelf. Only when the held edge is under 27.5 cm (301"
+}

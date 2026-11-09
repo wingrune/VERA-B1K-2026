@@ -1,0 +1,8 @@
+{
+  "source": "Installed default R1Pro, robot assets 3.8.2",
+  "diagnostic": "dev/jobs/gripper_geometry.py, gripper_geom2",
+  "coordinate_frame": "Each arm's gripper_link",
+  "contents": "Finger collision boundary vertices and assisted grasp ray endpoints transformed into the robot link frame",
+  "contains_instance_state": false,
+  "purpose": "Support clearance and pad overlap for thin tabletop objects; no world poses or task-object locations"
+}

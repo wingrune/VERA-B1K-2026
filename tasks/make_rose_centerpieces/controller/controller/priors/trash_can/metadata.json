@@ -1,0 +1,26 @@
+{
+  "category": "trash_can",
+  "model": "ifzxzj",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "links": {},
+  "source": "training template zero, before public reset",
+  "world_poses_exported": false,
+  "point_count": 27925,
+  "feature_count": 413,
+  "bounds": [
+    [
+      -0.14350774832113986,
+      -0.20234194189447383,
+      -0.3291178551230869
+    ],
+    [
+      0.16781288465883176,
+      0.20233820975245692,
+      0.34416937775610085
+    ]
+  ]
+}

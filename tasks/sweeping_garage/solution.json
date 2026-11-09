@@ -1,0 +1,84 @@
+{
+  "task": "sweeping_garage",
+  "task_id_2026": 57,
+  "kind": "b1k_classical",
+  "candidate": "s03",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/sweeping_garage/experiments/candidate/s03",
+    "fingerprint": "1d2ec7238bcf7d36c72045bd34e7fa492e5f95a91172899072e2a8e9e5d5164a",
+    "files": 27,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.0,
+          "steps": 6710
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.5,
+          "steps": 6710
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 4972
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 6530
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.5,
+          "steps": 6710
+        },
+        {
+          "instance": 306,
+          "success": true,
+          "q": 1.0,
+          "steps": 4713
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.0,
+          "steps": 6710
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 4292
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 3185
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 4022
+        }
+      ]
+    }
+  },
+  "note": "s02 with the broom's pose seen more truly and the broom knocked less: the broom's line from its handle's own points (the head, 0.44 m across the handle, had turned the main direction 15-26 degrees after a put-down); no pinch in the air where the wrist camera shows no handle, a fresh look from 0.6 m "
+}

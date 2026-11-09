@@ -1,0 +1,86 @@
+{
+  "task": "boxing_books_up_for_storage",
+  "task_id_2026": 23,
+  "kind": "frozen_rgbd",
+  "candidate": "books_b01",
+  "entry": {
+    "code": "controller",
+    "method": "action",
+    "unbatch_observations": false
+  },
+  "source": {
+    "format": "verified frozen directory archive; original Git commit not recorded",
+    "fingerprint": "e5c0cf37d385aa51c4a242f10bd06360c5dcb745a5b8e0417be6c39ae387b02d",
+    "fingerprint_format": "sha256 of compact sorted JSON mapping relative paths to SHA256",
+    "files": 77
+  },
+  "evaluation": {
+    "protocol": "native evaluator v3.9.3-post1, RGBDFullResWrapper, public indices0-9, rollout0, default horizon, separate process per episode",
+    "original_image_id": "sha256:7b220db539594d07473e61f2d88de1808f2805cc081454c52cb5251e0f254dd0",
+    "mean_q": 0.18333333333333332,
+    "successes": 0,
+    "per_instance": [
+      {
+        "instance": 301,
+        "q": 0.3333333333333333,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 302,
+        "q": 0.16666666666666666,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 303,
+        "q": 0.16666666666666666,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 304,
+        "q": 0.0,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 305,
+        "q": 0.0,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 306,
+        "q": 0.16666666666666666,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 307,
+        "q": 0.16666666666666666,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 308,
+        "q": 0.0,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 309,
+        "q": 0.6666666666666666,
+        "success": false,
+        "steps": 36342
+      },
+      {
+        "instance": 310,
+        "q": 0.16666666666666666,
+        "success": false,
+        "steps": 36342
+      }
+    ],
+    "integration_note": "Results belong to the unchanged frozen controller and original evaluated image. Integration replay does not constitute a new native evaluation."
+  }
+}

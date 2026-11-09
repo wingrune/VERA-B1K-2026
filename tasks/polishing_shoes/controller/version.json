@@ -1,0 +1,6 @@
+{
+ "version": "h02",
+ "parent": "dispose_of_glass w01",
+ "summary": "First controller for polishing_shoes: the water-glass controller w01 in the hotel suite's bedroom, the two shoes found on the floor, pinched by the collar and set down side by side next to the second footstool (both 'next to' conditions); the dust is not brushed off (best Q 0.5).",
+ "status": "frozen 2026-10-16 03:28 MSK (same code as dev snapshot h02_b); scored in REPORT_20261016_H02.md"
+}

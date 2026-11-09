@@ -1,0 +1,33 @@
+{
+  "created_utc": "2026-10-04T01:34:51.143263+00:00",
+  "runtime_inputs": [
+    "onboard RGB",
+    "onboard depth",
+    "robot proprioception",
+    "robot-relative camera calibration"
+  ],
+  "static_priors": [
+    "public robot URDF and geometry",
+    "canonical training object geometry and appearance"
+  ],
+  "live_privileged_inputs": [],
+  "native_commit": "bd049de3119acdcdf2334fe9e1ebe060fa20c108",
+  "evaluation": {
+    "mode": "public_test",
+    "indices": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "seed": 0,
+    "fresh_process": true,
+    "native_timeout": true
+  }
+}

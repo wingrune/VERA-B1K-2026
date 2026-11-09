@@ -1,0 +1,84 @@
+{
+  "task": "polishing_shoes",
+  "task_id_2026": 79,
+  "kind": "b1k_classical",
+  "candidate": "h02",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "54d6cd5fac876f781e95f3fd65c8d4f882ff5bdd",
+    "path": "tasks/polishing_shoes/experiments/candidate/h02",
+    "fingerprint": "8852ee4b200207b33cd19a23ef4fdd7065411317be6e437bf33558f88009162b",
+    "files": 20,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.0,
+          "steps": 16107
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.0,
+          "steps": 16107
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 16107
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 16107
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 16107
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 16107
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 16107
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 16107
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 16107
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 16107
+        }
+      ]
+    }
+  },
+  "note": "First controller for polishing_shoes: the water-glass controller w01 in the hotel suite's bedroom, the two shoes found on the floor, pinched by the collar and set down side by side next to the second footstool (both 'next to' conditions); the dust is not brushed off (best Q 0.5)."
+}

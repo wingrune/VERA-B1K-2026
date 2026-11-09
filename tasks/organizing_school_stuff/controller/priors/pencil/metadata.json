@@ -1,0 +1,38 @@
+{
+  "category": "pencil",
+  "synset": "pencil.n.01_1",
+  "model": "almpve",
+  "scale": [
+    1.023557424545288,
+    1.9867603778839111,
+    1.9979299306869507
+  ],
+  "bounds": [
+    [
+      -0.1054835319519043,
+      -0.007358720060437918,
+      -0.007503453642129898
+    ],
+    [
+      0.08451646566390991,
+      0.007641301956027746,
+      0.007497207261621952
+    ]
+  ],
+  "mass": 0.05000000074505806,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "almpve__base_link",
+      "vertices": 1630,
+      "faces": 2143,
+      "samples": 1500,
+      "texture": "/data/behavior-1k-assets/objects/pencil/almpve/material/almpve__base_link__diffuse.png",
+      "uv_shape": [
+        6429,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

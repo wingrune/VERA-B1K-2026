@@ -1,0 +1,38 @@
+{
+  "category": "book2",
+  "synset": "book.n.02_2",
+  "model": "okcflv",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.12766215205192566,
+      -0.09575051814317703,
+      -0.009023698046803474
+    ],
+    [
+      0.12766094505786896,
+      0.09900487214326859,
+      0.009023637510836124
+    ]
+  ],
+  "mass": 0.800000011920929,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "okcflv__base_link",
+      "vertices": 1288,
+      "faces": 1896,
+      "samples": 25000,
+      "texture": "/data/behavior-1k-assets/objects/hardback/okcflv/material/okcflv__base_link__diffuse.png",
+      "uv_shape": [
+        5688,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

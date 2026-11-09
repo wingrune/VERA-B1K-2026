@@ -1,0 +1,38 @@
+{
+  "category": "tote",
+  "synset": "carryall.n.01_1",
+  "model": "bnkjle",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.16751232743263245,
+      -0.12290792167186737,
+      -0.1897301971912384
+    ],
+    [
+      0.16848579049110413,
+      0.1213492900133133,
+      0.2844231128692627
+    ]
+  ],
+  "mass": 0.21084484457969666,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "bnkjle__base_link",
+      "vertices": 18590,
+      "faces": 14366,
+      "samples": 25000,
+      "texture": "/data/behavior-1k-assets/objects/tote/bnkjle/material/bnkjle__base_link__diffuse.png",
+      "uv_shape": [
+        43098,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

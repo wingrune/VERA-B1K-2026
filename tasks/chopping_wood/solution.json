@@ -1,0 +1,24 @@
+{
+  "task": "chopping_wood",
+  "task_id_2026": 44,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/44_chopping_wood/planners/rtx_v3",
+    "env": {}
+  },
+  "source": {
+    "repo": "B1K_hacker passport artifact",
+    "file": "projects/B1K_hacker/h100_render/tasks/44_chopping_wood/planners/rtx_v3/versions/evo_evo-20261010-132057_b6615d11.py",
+    "evolution_run": "evo-20261010-132057",
+    "program_id": "b6615d11-c5b7-4afd-9d2c-5275256e2793",
+    "iteration": 0,
+    "sha256": "359e5a5c413343c8f6a3374fb03cd9e82d267ad1db7a30eff8340337bd594c7b",
+    "recorded_result": {
+      "backend": "RTX, native BEHAVIOR on selectel-turing",
+      "seeds": "301-305",
+      "success_rate": 0.6,
+      "q": 0.75,
+      "note": "No separate H100 301-310 measurement is in the passport. Per-episode Q on 301-305: 1.00, 0.00, 1.00, 1.00, 0.75."
+    }
+  }
+}

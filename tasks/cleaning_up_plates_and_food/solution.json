@@ -1,0 +1,84 @@
+{
+  "task": "cleaning_up_plates_and_food",
+  "task_id_2026": 3,
+  "kind": "b1k_classical",
+  "candidate": "f01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/cleaning_up_plates_and_food/experiments/candidate/f01",
+    "fingerprint": "dfe511a2bdae08a8c30e734d9b120b3078786cdb884cfde74cc6118822e76a74",
+    "files": 26,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.2857142857142857,
+          "steps": 20545
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 16568
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 15369
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 14664
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 18460
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.2857142857142857,
+          "steps": 20545
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 17026
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 17166
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.2857142857142857,
+          "steps": 20545
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 16093
+        }
+      ]
+    }
+  },
+  "note": "First controller for cleaning_up_plates_and_food. The two bowls and the two plates with their pizzas are found on the breakfast table from the head camera's colour and depth images (white rings at the table's height; a pizza's orange inside a plate's ring). Each bowl is taken by its rim from a table"
+}

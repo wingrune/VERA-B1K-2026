@@ -1,0 +1,24 @@
+{
+  "task": "hanging_pictures",
+  "task_id_2026": 34,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/34_hanging_pictures/planners/rtx_v1",
+    "env": {}
+  },
+  "source": {
+    "repo": "B1K_hacker passport artifact",
+    "file": "projects/B1K_hacker/h100_render/tasks/34_hanging_pictures/planners/rtx_v1/versions/evo_evo-20261008-165320_b07a9f5b.py",
+    "evolution_run": "evo-20261008-165320",
+    "program_id": "b07a9f5b-0534-47db-8481-7a6b1cc231a4",
+    "iteration": 0,
+    "sha256": "e922081805d696c74404af3e8d36ee01f1cebe7833b0f3b8b14da4d75fd6498a",
+    "recorded_result": {
+      "backend": "RTX, native BEHAVIOR on airi-5090-zerotier",
+      "seeds": "301-310",
+      "success_rate": 0.1,
+      "q": 0.1,
+      "note": "Highest valid evolution Q, then SR. Per-episode Q on 301-310: 1.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00. Later rtx_v1 runs (evo-20261008-185602, evo-20261009-103943, evo-20261009-160928) top out at Q 0. Horizon 20000."
+    }
+  }
+}

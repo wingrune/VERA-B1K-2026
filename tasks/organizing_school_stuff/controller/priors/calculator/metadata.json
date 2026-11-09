@@ -1,0 +1,38 @@
+{
+  "category": "calculator",
+  "synset": "calculator.n.02_1",
+  "model": "kwmmty",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.07698320597410202,
+      -0.05906657129526138,
+      -0.007662698160856962
+    ],
+    [
+      0.07301788777112961,
+      0.05857401713728905,
+      0.016697464510798454
+    ]
+  ],
+  "mass": 0.16858187317848206,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "kwmmty__base_link",
+      "vertices": 16152,
+      "faces": 19669,
+      "samples": 8698,
+      "texture": "/data/behavior-1k-assets/objects/calculator/kwmmty/material/kwmmty__base_link__diffuse.png",
+      "uv_shape": [
+        59007,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

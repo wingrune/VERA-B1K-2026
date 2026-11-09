@@ -1,0 +1,35 @@
+{
+  "j_link_0": {
+    "physics:axis": "Y",
+    "physics:breakForce": 3.4028234663852886e+38,
+    "physics:breakTorque": 3.4028234663852886e+38,
+    "physics:collisionEnabled": false,
+    "physics:excludeFromArticulation": false,
+    "physics:jointEnabled": true,
+    "physics:JointEquivalentInertia": 0.07859387248754501,
+    "physics:localPos0": [
+      0.03670051693916321,
+      -1.5613834136729565e-07,
+      0.3313632309436798
+    ],
+    "physics:localPos1": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "physics:localRot0": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "physics:localRot1": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "physics:lowerLimit": 0.0,
+    "physics:upperLimit": 178.99993896484375
+  }
+}

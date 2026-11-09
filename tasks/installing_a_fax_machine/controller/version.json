@@ -1,0 +1,6 @@
+{
+  "version": "m05",
+  "parent": "m04",
+  "summary": "m04 with: the lean-room term of stance planning made effective (the map's clearance function now covers large probe spheres), stances with fewer than three collision-free grasp configurations used only as a reserve, the last stretch to the stance ended within 1.5 cm, a second IK search at the stance, refused stances excluded and up to five tries at the floor.",
+  "status": "development"
+}

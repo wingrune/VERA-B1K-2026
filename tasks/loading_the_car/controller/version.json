@@ -1,0 +1,6 @@
+{
+ "version": "c01",
+ "parent": null,
+ "summary": "First controller for loading_the_car. Map prior of the house's lower floor with scan-matching localisation in four height slabs; the start pose in the garage found from three looks, with the car, the shut door and lines of sight against the height field to tell the look-alike corners apart; the trunk lid opened by two hands in turn, the pose behind the car taken from the lid's edge and the bumper; the door pushed open by the chassis; camera taken by the hump on its top and lowered into the toy box, the box carried level by a long wall and set into the trunk, the racket fetched on a second trip and laid across the trunk; stances found with the chassis's rectangle and the arm planner; a last look with the wrist camera before each pinch.",
+ "status": "frozen 2026-10-12"
+}

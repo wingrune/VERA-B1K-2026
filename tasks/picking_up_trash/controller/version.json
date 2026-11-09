@@ -1,0 +1,6 @@
+{
+ "version": "t01",
+ "parent": null,
+ "summary": "First controller for picking_up_trash. Map prior of the house with scan-matching localisation in four height slabs; soda cans and the trash can found by size on floor the map has empty; cans pinched from the floor with the trunk folded over the base, one per hand, and let go lying and crossed above the trash can; the base turns only at staging points clear of every can and passes cans and the trash can nose first where there is no other way; cans that have fallen over are taken lying; the gap between the sofa and the coffee table is entered by what the head camera shows of its sides.",
+ "status": "frozen 2026-10-12; scored in REPORT_20261012_T01.md"
+}

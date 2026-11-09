@@ -1,0 +1,84 @@
+{
+  "task": "sorting_bottles_cans_and_paper",
+  "task_id_2026": 52,
+  "kind": "b1k_classical",
+  "candidate": "o01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "ede53534c6ffb87cba37611a35c00e80eff19429",
+    "path": "tasks/sorting_bottles_cans_and_paper/experiments/candidate/o01",
+    "fingerprint": "77468038f6be24d9dc4f666da76d50fb8f976bc889eb7c3ad68440e995a40301",
+    "files": 20,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.0625,
+          "steps": 15396
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.0625,
+          "steps": 15396
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.0,
+          "steps": 15396
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.125,
+          "steps": 15396
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.0625,
+          "steps": 15396
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.0625,
+          "steps": 15396
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.125,
+          "steps": 15396
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.125,
+          "steps": 15396
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.125,
+          "steps": 15396
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.125,
+          "steps": 15396
+        }
+      ]
+    }
+  },
+  "note": "First controller for sorting_bottles_cans_and_paper: the glass controller g01 in the trash task's scene (kitchen of house_double_floor_lower), cans into an ice bucket and bottles into the big bucket in turn, things found by height over the floor and the bar, buckets by rim height, descent from 0.12 "
+}

@@ -1,0 +1,26 @@
+{
+  "category": "half_pomegranate",
+  "model": "vqybii",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "links": {},
+  "source": "training template zero, before public reset",
+  "world_poses_exported": false,
+  "point_count": 6432,
+  "feature_count": 2200,
+  "bounds": [
+    [
+      -0.053657743403237444,
+      -0.04183013373893351,
+      -0.045758283409607504
+    ],
+    [
+      0.039511196402799736,
+      0.03952815766483858,
+      0.029802620206697866
+    ]
+  ]
+}

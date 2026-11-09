@@ -1,0 +1,26 @@
+{
+  "category": "half_banana",
+  "model": "xytkre",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "links": {},
+  "source": "training template zero, before public reset",
+  "world_poses_exported": false,
+  "point_count": 3935,
+  "feature_count": 520,
+  "bounds": [
+    [
+      -0.052426471796290314,
+      -0.04378696591786846,
+      -0.020301993455128436
+    ],
+    [
+      0.049738694402606524,
+      0.07977848454998869,
+      0.021877476890116734
+    ]
+  ]
+}

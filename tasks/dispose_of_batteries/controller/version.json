@@ -1,0 +1,6 @@
+{
+  "version": "b01",
+  "parent": null,
+  "summary": "First controller for dispose_of_batteries. Map prior with scan-matching localisation in the copy room and the corridor; in the office the pose is taken from the edges of the desk top and from dead reckoning on the velocity command. Blue-cap battery detection, pinch grasps from table-height surfaces (along the edge for batteries standing at it), the trash can carried out of the way when it blocks, the office door pushed open with the chassis, desk batteries on the far half taken from behind the desk after the office chair is pushed into the knee hole or, sideways, to the west wall.",
+  "status": "development"
+}

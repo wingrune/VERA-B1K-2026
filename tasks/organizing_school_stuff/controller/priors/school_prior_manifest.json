@@ -1,0 +1,36 @@
+{
+  "target_surface": {
+    "name": "bed_gxfipj_0",
+    "aabb_lo": [
+      22.887300491333008,
+      23.15436553955078,
+      0.47234952449798584
+    ],
+    "aabb_hi": [
+      24.852632522583008,
+      24.76073455810547,
+      0.49673938751220703
+    ],
+    "provenance": "Highest broad upward horizontal collision surface of the fixed bed asset",
+    "horizontal_area": 3.0772341303818393
+  },
+  "floor_height": -9.402632713317871e-06,
+  "categories": [
+    "calculator",
+    "folder",
+    "notebook",
+    "pen",
+    "pencil",
+    "tote"
+  ],
+  "contact_boxes": 2386,
+  "map_bounds": [
+    18.0,
+    20.0,
+    26.0,
+    27.0
+  ],
+  "source_probe": "/work/workers/0/queue/a_probe301.out",
+  "source_models": "/work/workers/0/queue/b_canonical.out/priors",
+  "observation_boundary": "Only fixed scene geometry and object-local geometry; no movable world poses."
+}

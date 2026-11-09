@@ -1,0 +1,38 @@
+{
+  "category": "book3",
+  "synset": "book.n.02_3",
+  "model": "acbrnv",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.11137086153030396,
+      -0.08724330365657806,
+      -0.015601773746311665
+    ],
+    [
+      0.11137329041957855,
+      0.08428476005792618,
+      0.015601785853505135
+    ]
+  ],
+  "mass": 0.800000011920929,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "acbrnv__base_link",
+      "vertices": 227,
+      "faces": 324,
+      "samples": 15586,
+      "texture": "/data/behavior-1k-assets/objects/hardback/acbrnv/material/acbrnv__base_link__diffuse.png",
+      "uv_shape": [
+        972,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

@@ -1,0 +1,26 @@
+{
+  "category": "vase",
+  "model": "jpwsrp",
+  "scale": [
+    1.8443212509155273,
+    1.872643232345581,
+    1.7973761558532715
+  ],
+  "links": {},
+  "source": "training template zero, before public reset",
+  "world_poses_exported": false,
+  "point_count": 53556,
+  "feature_count": 604,
+  "bounds": [
+    [
+      -0.1579084647021467,
+      -0.1599727998465659,
+      -0.1723394584671282
+    ],
+    [
+      0.1620914835560552,
+      0.16002718142849867,
+      0.17766057296409837
+    ]
+  ]
+}

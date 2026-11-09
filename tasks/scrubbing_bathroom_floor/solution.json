@@ -1,0 +1,84 @@
+{
+  "task": "scrubbing_bathroom_floor",
+  "task_id_2026": 60,
+  "kind": "b1k_classical",
+  "candidate": "b01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/scrubbing_bathroom_floor/experiments/candidate/b01",
+    "fingerprint": "e50724530b28655514f9f6c23d42db24b3eea0c4008f5603b430c2edaa74992d",
+    "files": 30,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.0,
+          "steps": 4731
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 3790
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 3468
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.0,
+          "steps": 4731
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.0,
+          "steps": 4731
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.0,
+          "steps": 4731
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.0,
+          "steps": 4731
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.0,
+          "steps": 4731
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.0,
+          "steps": 4731
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.0,
+          "steps": 4731
+        }
+      ]
+    }
+  },
+  "note": "Classical controller for scrubbing_bathroom_floor. Localisation in the bathroom with the glass and the mirrors left out of the scan fit. The brush (red) is found from the head camera, from lookouts over floor not yet seen if needed, and taken from above by the squatting hand beside the base. The dir"
+}

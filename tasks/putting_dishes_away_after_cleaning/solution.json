@@ -1,0 +1,84 @@
+{
+  "task": "putting_dishes_away_after_cleaning",
+  "task_id_2026": 11,
+  "kind": "b1k_classical",
+  "candidate": "a01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "7906a45943e81f4a153140469c8ad8361bb64e2f",
+    "path": "tasks/putting_dishes_away_after_cleaning/experiments/candidate/a01",
+    "fingerprint": "4dbeb84693eefc00af2d9ebcbda09060ab29de06608f9c81fcbe5709eae263f6",
+    "files": 25,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.2857142857142857,
+          "steps": 16431
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.21428571428571427,
+          "steps": 16431
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.2857142857142857,
+          "steps": 16431
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.14285714285714285,
+          "steps": 16431
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.14285714285714285,
+          "steps": 16431
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.21428571428571427,
+          "steps": 16431
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.21428571428571427,
+          "steps": 16431
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.14285714285714285,
+          "steps": 16431
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.2857142857142857,
+          "steps": 16431
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.0,
+          "steps": 16431
+        }
+      ]
+    }
+  },
+  "note": "Survey the bar and the countertop from the kitchen aisle, a fresh global fix, open the pantry's east door (handle lead, then a push from inside to ~90 deg; checked by the head camera, once more if it looks shut), then plate by plate: rim pinch from 0.36 m (retried on a miss), carry level, slide onto"
+}

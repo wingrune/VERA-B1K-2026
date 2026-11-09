@@ -1,0 +1,38 @@
+{
+  "category": "banana",
+  "synset": "half__banana.n.01_1",
+  "model": "xytkre",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.05242617800831795,
+      -0.04378722608089447,
+      -0.020301977172493935
+    ],
+    [
+      0.049738720059394836,
+      0.07977838814258575,
+      0.021877426654100418
+    ]
+  ],
+  "mass": 0.06199999898672104,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "xytkre__base_link",
+      "vertices": 287,
+      "faces": 462,
+      "samples": 2832,
+      "texture": "/data/behavior-1k-assets/objects/half_banana/xytkre/material/xytkre__base_link__diffuse.png",
+      "uv_shape": [
+        1386,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

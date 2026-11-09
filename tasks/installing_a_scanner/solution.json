@@ -1,0 +1,84 @@
+{
+  "task": "installing_a_scanner",
+  "task_id_2026": 92,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/98_installing_scanner/planners/fair_ag",
+    "env": {}
+  },
+  "source": {
+    "repo": "BIMBO_EvoX",
+    "commit": "32da8e40359623d4db97150ab8213ab3458331f1",
+    "bimbo_task": "98_installing_scanner",
+    "package": "fair_ag",
+    "evolution": {
+      "run": "fair-98-r3",
+      "program": "7dd85299",
+      "iteration": 55,
+      "bundle_sha256": "d2174ab2fa78eeb91d2ed574dcd6718510f6a6e8a3456df18f7be689d421c242",
+      "per_seed": [
+        {
+          "seed": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 1605
+        },
+        {
+          "seed": 302,
+          "q": 0.5,
+          "success": false,
+          "steps": 6000
+        },
+        {
+          "seed": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 2208
+        },
+        {
+          "seed": 304,
+          "q": 0.5,
+          "success": false,
+          "steps": 6000
+        },
+        {
+          "seed": 305,
+          "q": 0.5,
+          "success": false,
+          "steps": 3471
+        },
+        {
+          "seed": 306,
+          "q": 0,
+          "success": false,
+          "steps": 6000
+        },
+        {
+          "seed": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 1820
+        },
+        {
+          "seed": 308,
+          "q": 0.5,
+          "success": false,
+          "steps": 6000
+        },
+        {
+          "seed": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 1737
+        },
+        {
+          "seed": 310,
+          "q": 0,
+          "success": false,
+          "steps": 544
+        }
+      ]
+    }
+  },
+  "note": "Evolution champion of fair-98-r3; the seed fair f5 scored native RTX 1.0 on 301."
+}

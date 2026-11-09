@@ -1,0 +1,13 @@
+{
+  "category": "rubber_eraser",
+  "model": "cungod",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "links": {},
+  "meshes": [
+    "rubber_eraser_cungod_0.npz"
+  ]
+}

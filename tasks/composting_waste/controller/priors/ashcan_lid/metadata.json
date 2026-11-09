@@ -1,0 +1,38 @@
+{
+  "category": "ashcan_lid",
+  "synset": "ashcan.n.01_1",
+  "model": "ifzxzj",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.009828592650592327,
+      -0.14481450617313385,
+      -0.15164831280708313
+    ],
+    [
+      0.11273396760225296,
+      0.1448146402835846,
+      0.13460882008075714
+    ]
+  ],
+  "mass": 1.6525211334228516,
+  "meshes": [
+    {
+      "link": "link_0",
+      "mesh": "ifzxzj__link_0",
+      "vertices": 64,
+      "faces": 62,
+      "samples": 15893,
+      "texture": "/data/behavior-1k-assets/objects/trash_can/ifzxzj/material/ifzxzj__link_0__diffuse.png",
+      "uv_shape": [
+        186,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

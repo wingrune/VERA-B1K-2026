@@ -1,0 +1,102 @@
+task,solution,checkpoint,notes
+turning_on_radio,planner,,legacy-evolved planner cf23f1b5; H100 SR 9/10 Q 0.90; RTX run pending
+picking_up_trash,b1k_classical,,b1k_rl_guys classical t01; SR 0.9 Q 0.97 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+putting_away_Halloween_decorations,b1k_classical,,b1k_rl_guys classical h01; SR 0.9 Q 0.97 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+cleaning_up_plates_and_food,b1k_classical,,b1k_rl_guys classical f01; SR 0.7 Q 0.79 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+can_meat,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+setting_mousetraps,b1k_classical,,b1k_rl_guys classical v01; SR 0.0 Q 0.97 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+hiding_Easter_eggs,b1k_classical,,b1k_rl_guys classical v40; SR 0.4 Q 0.48 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+picking_up_toys,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0 Q 0.2
+rearranging_kitchen_furniture,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0.1 Q 0.175
+putting_up_Christmas_decorations_inside,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0 Q 0.322
+set_up_a_coffee_station_in_your_kitchen,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0.1"
+putting_dishes_away_after_cleaning,b1k_classical,,b1k_rl_guys classical a01; SR 0.0 Q 0.19 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+preparing_lunch_box,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0.1 Q 0.583
+loading_the_car,b1k_classical,,b1k_rl_guys classical c01; SR 1.0 Q 1.00 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+carrying_in_groceries,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+bringing_in_wood,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+moving_boxes_to_storage,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0.7 Q 0.75
+bringing_water,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0.4 Q 0.467
+tidying_bedroom,comet3,checkpoints/comet3,comet3 all63_1h step2540 (trained on this task); evaluation pending; before: larchenko_ckpt2 tracker: Larchenko Checkpoint 2; SR 0 Q 0.233
+outfit_a_basic_toolbox,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+sorting_vegetables,comet2_1,checkpoints/comet2_1,comet2_1 group1_7h step20408 (trained on this task); evaluation pending; before: planner BIMBO fair planner evolved (program f31b2286; H100 301-310 SR 0 Q 0.13); native RTX 301-310 SR 0/10 Q 0.069 (99e5cd85 native: Q 0.085)
+collecting_childrens_toys,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0.1 Q 0.343
+putting_shoes_on_rack,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0 Q 0.6
+boxing_books_up_for_storage,frozen_rgbd,,classical books_b01; native 301-310: SR 0/10 Q 0.183333
+storing_food,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+clearing_food_from_table_into_fridge,b1k_classical,,b1k_rl_guys classical z02; SR 0.0 Q 0.36 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+assembling_gift_baskets,comet2_1,checkpoints/comet2_1,comet2_1 group1_7h step20408 (trained on this task); evaluation pending; before: comet3
+sorting_household_items,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: SHAWN π0.5 SFT • 2025; SR 0 Q 0"
+getting_organized_for_work,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+clean_up_your_desk,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: SHAWN π0.5 SFT • 2025; SR 0 Q 0"
+setting_the_fire,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0 Q 0.25
+clean_boxing_gloves,larchenko_ckpt3,checkpoints/larchenko/checkpoint_3,tracker: Larchenko Checkpoint 3; SR 0.3 Q 0.35
+wash_a_baseball_cap,larchenko_ckpt3,checkpoints/larchenko/checkpoint_3,tracker: Larchenko Checkpoint 3; SR 0.2 Q 0.2
+wash_dog_toys,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+hanging_pictures,planner,,evo-20261008-165320 b07a9f5b; recorded RTX 301-310 SR 1/10 Q 0.1
+attach_a_camera_to_a_tripod,planner,,tracker: Classical; SR 1 Q 1
+clean_a_patio,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+clean_a_trumpet,b1k_classical,,b1k_rl_guys classical t01; SR 0.6 Q 0.60 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+spraying_for_bugs,comet3,checkpoints/comet3,comet3 all63_1h step2540 (planner removed from submission; episode 306 never produced a JSON)
+spraying_fruit_trees,comet3,checkpoints/comet3,comet3 all63_1h step2540 (trained on this task); evaluation pending; before: planner evo-20261010-132017 0698e8f4; H100 port 301-305 SR 0/5 Q 0.10
+make_microwave_popcorn,planner_cpu,,native popcorn_p31; 301-310 SR 6/10 Q 0.600; pinned CPU runtime
+cook_cabbage,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+chop_an_onion,planner,,fair-42-r3 00403145; H100 SR 1/10 Q 0.325
+slicing_vegetables,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0 Q 0.492
+chopping_wood,planner,,evo-20261010-132057 b6615d11; recorded RTX 301-305 SR 3/5 Q 0.75
+cook_hot_dogs,larchenko_ckpt2,checkpoints/larchenko/checkpoint_2,tracker: Larchenko Checkpoint 2; SR 0.6 Q 0.6
+cook_bacon,larchenko_ckpt3,checkpoints/larchenko/checkpoint_3,tracker: Larchenko Checkpoint 3; SR 0.1 Q 0.157
+freeze_pies,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+canning_food,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+make_pizza,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+freeze_fruit,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+cook_a_brisket,b1k_classical,,b1k_rl_guys classical v20_submit; SR 0.2 Q 0.27 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+sorting_bottles_cans_and_paper,b1k_classical,,b1k_rl_guys classical o01; SR 0.0 Q 0.09 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+tidying_living_room,b1k_classical,,b1k_rl_guys classical v02; SR 0.0 Q 0.23 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+putting_away_toys,b1k_classical,,b1k_rl_guys classical y01; SR 0.4 Q 0.79 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+re_shelving_library_books,comet3,checkpoints/comet3,comet3 all63_1h step2540 (trained on this task); evaluation pending; before: planner fair-55-r1 c243b165; H100 SR 0/10 Q 0.33
+make_rose_centerpieces,b1k_classical,,M15/h32; native 301-310 SR 0/10 Q 0.40; RTX PRO 6000 Blackwell
+sweeping_garage,b1k_classical,,b1k_rl_guys classical s03; SR 0.6 Q 0.70 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+stacking_wood,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+organizing_art_supplies,frozen_rgbd,,classical source87; native 301-310: SR 3/10 Q 0.660000
+scrubbing_bathroom_floor,b1k_classical,,b1k_rl_guys classical b01; SR 0.2 Q 0.20 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+bringing_paper_to_recycling,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+halve_an_egg,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0.04"
+installing_smoke_detectors,planner_cpu,,native smoke_s05; 301-310 SR 10/10 Q 1.000; pinned CPU runtime
+setting_the_table,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+unloading_the_car,b1k_classical,,b1k_rl_guys classical u01; SR 0.9 Q 0.90 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+turning_out_all_lights_before_sleep,comet2,checkpoints/comet2,comet2 group2 step2498; external checkpoint; evaluation pending
+boxing_food_after_dinner,comet2_1,checkpoints/comet2_1,comet2_1 group1_7h step20408 (trained on this task); evaluation pending; before: planner evo-20261009-163744 2bde53a4; H100 port SR 0/10 Q 0.08
+cleaning_up_branches_and_twigs,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+vacuuming_floors,planner,,fair-69-r1 434d955b; H100 SR 3/10 Q 0.30
+thawing_frozen_food,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+clean_your_rusty_garden_tools,comet2,checkpoints/comet2,comet2 group2 step2498; external checkpoint; evaluation pending
+cook_a_frozen_pie,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+organizing_school_stuff,frozen_rgbd,,classical s91_integrated_contact_recovery; native 301-310: SR 3/10 Q 0.800000
+carrying_out_garden_furniture,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+put_together_a_basic_pruning_kit,b1k_classical,,b1k_rl_guys classical p01; SR 0.9 Q 0.93 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+dispose_of_glass,b1k_classical,,b1k_rl_guys classical w01; SR 0.2 Q 0.65 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+installing_a_modem,b1k_classical,,b1k_rl_guys modem_v10; native RTX 301-310 SR 8/10 Q 0.85
+make_cabinet_doors,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: Classical; SR 0 Q 0; code not in this repository"
+polishing_shoes,comet2,checkpoints/comet2,comet2 group2 step2498; external checkpoint; evaluation pending
+clean_up_broken_glass,b1k_classical,,b1k_rl_guys classical g01; SR 1.0 Q 1.00 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+packing_meal_for_delivery,comet2_1,checkpoints/comet2_1,comet2_1 group1_7h step20408 (trained on this task); evaluation pending; before: comet3
+store_batteries,b1k_classical,,b1k_rl_guys classical x02; SR 0.6 Q 0.80 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+store_honey,planner,,H100 fair-83-r1 ffacbbe6; SR 0.7 Q 0.7
+tidying_bathroom,comet2,checkpoints/comet2,comet2 group2 step2498; external checkpoint; evaluation pending
+putting_dirty_dishes_in_sink,b1k_classical,,b1k_rl_guys classical k02; SR 0.2 Q 0.57 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+make_gift_bags_for_baby_showers,comet2_1,checkpoints/comet2_1,comet2_1 group1_7h step20408 (trained on this task); evaluation pending; before: b1k_classical b1k_rl_guys classical m03; SR 0.0 Q 0.18 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+collecting_aluminum_cans,frozen_rgbd,,classical a023; native 301-310: SR 3/10 Q 0.850000
+rearrange_your_room,comet2,checkpoints/comet2,comet2 group2 step2498; external checkpoint; evaluation pending
+installing_a_fax_machine,b1k_classical,,b1k_rl_guys classical m05; SR 1.0 Q 1.00 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+composting_waste,frozen_rgbd,,classical c05; native 301-310: SR 3/10 Q 0.650000
+store_produce,comet2_1,checkpoints/comet2_1,comet2_1 group1_7h step20408 (trained on this task); evaluation pending; before: comet3
+installing_a_scanner,planner,,fair-98-r3 7dd85299; H100 SR 4/10 Q 0.60
+clean_a_keyboard,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: Classical; SR 0.3 Q 0.3; code not in this repository"
+dispose_of_batteries,b1k_classical,,b1k_rl_guys classical b01; SR 1.0 Q 1.00 on 301-310 (native evaluator; fresh process per episode); tracker: Classical
+cook_brussels_sprouts,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+cook_broccolini,comet3,checkpoints/comet3,comet3 all63_1h step2540 (trained on this task); evaluation pending; before: planner evo-20261010-131913 cb2a002c; H100 port SR 0/10 Q 0.15
+setup_a_bar_for_a_cocktail_party,comet2,checkpoints/comet2,comet2 group2 step2498; external checkpoint; evaluation pending
+laying_tile_floors,comet2,checkpoints/comet2,comet2 group2 step2498; external checkpoint; evaluation pending
+sorting_books_on_shelf,comet3,checkpoints/comet3,"comet3 all63_1h step2540 (no planner, Larchenko or comet2 route); evaluation pending; before: tracker: -; SR 0 Q 0"
+*,comet3,checkpoints/comet3,any task not listed above (a task outside these 100)

@@ -1,0 +1,10 @@
+{
+  "note": "Object priors of the fair planner of task 42 (models.py). Properties of the board and parer assets and of the sink and bowl shapes, not of any instance pose.",
+  "source": "collision meshes of the chopping_board and parer roles read from the port's USD stage by the harness (run_episode.py --dump-models, job 42fair-dump-b, pin 9941202722c4), expressed in each object's root frame; identical in the dumps of 304-307 (vertices equal to 1e-15)",
+  "builder": "planners/fair_tools/build_models.py (outside the planner package): 1500 area-weighted surface samples plus every vertex (seed 0); the board's slot grip point and closing axis from the top-face vertices off the convex hull, the parer's handle point from the half with the larger height range",
+  "board": {"extent_m": "0.300 x 0.200 x 0.020", "root_above_support_m": 0.0100, "grip_in_root": "x 0.151, y -0.004 (the end strip beside the handle slot), axis +x"},
+  "parer": {"extent_m": "0.272 x 0.034 x 0.014", "root_above_support_m": 0.0069, "handle_in_root": "x 0.060, axis +x (blade towards -x)"},
+  "bowl": "interior points (47) of the pool container record; the bowl box 0.28 x 0.28 x 0.076 m is a property of the asset",
+  "assets": "BEHAVIOR assets 3.9.0 as exported for the port; no instance pose is stored",
+  "thresholds_tuned_on": "detection bands and gates were checked on dumps of the development instances 301-303 and the start dumps of 304-310 (pose truth used only offline to measure the error); no instance number appears in the code"
+}

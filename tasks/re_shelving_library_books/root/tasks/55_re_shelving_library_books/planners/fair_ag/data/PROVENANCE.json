@@ -1,0 +1,19 @@
+{
+  "built_by": "planners/fair_ag/tools/build_map.py",
+  "purpose": "Static scene map for the fair planner: occupancy, desk and bookcase boxes, cubby boxes from the bookcase asset, book-model extents, desk-top height and visual edges, robot-frame height.",
+  "episodes": ["ep_308", "ep_309", "ep_310"],
+  "not_used": "Scored seeds 301, 302 and 303 were not used. The map stores no book world poses from any episode, only the three book models (root-frame extents).",
+  "dumps": {
+    "job": "lm-mpi-job-cce5e5e8-0ec4-485f-b61d-832c160066e6",
+    "tag": "55-fair-map1",
+    "pin": "8a204001fa60c19b3734a13e727540c9024a32cf",
+    "collector": "oracle_ag (sweep,turn,land,putback) writing observation dumps; the collector is not the fair planner",
+    "per_episode": 125,
+    "dump_every": 40,
+    "max_steps": 5000,
+    "total": 375
+  },
+  "truth_offline_only": "Each dump's truth_base, truth_* boxes and book local extents are read by build_map.py to place the camera and to copy static geometry. The planner never opens those dumps and never reads simulator state.",
+  "spread": {"table": 0.0, "cases": 0.0, "books": 0.0},
+  "asset_geometry": "bookcase container boxes from the task export scene_geometry.json, shifted onto the training-median case pose"
+}

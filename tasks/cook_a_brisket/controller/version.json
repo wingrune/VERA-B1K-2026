@@ -1,0 +1,57 @@
+{
+ "task": "cook_a_brisket",
+ "version": "v20_submit",
+ "summary": "cook_a_brisket v20_submit: frozen full_v20 (tasks/cook_a_brisket/code, byte-identical). Scored on BEHAVIOR-1K v3.9.3-post1 with the unmodified omnigibson.eval.eval (RGBDFullResWrapper, bundled r1pro.yaml, --write-video, default timeout, one rollout, fresh process per instance), instances 301-310: SR 2/10, mean Q 0.267.",
+ "per_instance": {
+  "301": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11003
+  },
+  "302": {
+   "success": false,
+   "q": 0.3333333333333333,
+   "steps": 11003
+  },
+  "303": {
+   "success": true,
+   "q": 1.0,
+   "steps": 8314
+  },
+  "304": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11003
+  },
+  "305": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11003
+  },
+  "306": {
+   "success": true,
+   "q": 1.0,
+   "steps": 10447
+  },
+  "307": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11003
+  },
+  "308": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11003
+  },
+  "309": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11003
+  },
+  "310": {
+   "success": false,
+   "q": 0.3333333333333333,
+   "steps": 11003
+  }
+ }
+}

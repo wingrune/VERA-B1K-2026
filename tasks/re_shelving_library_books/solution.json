@@ -1,0 +1,84 @@
+{
+  "task": "re_shelving_library_books",
+  "task_id_2026": 55,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/55_re_shelving_library_books/planners/fair_ag",
+    "env": {}
+  },
+  "source": {
+    "repo": "BIMBO_EvoX",
+    "commit": "106e2be5314eb896d6fa2f224c8666032906dbf5",
+    "bimbo_task": "55_re_shelving_library_books",
+    "package": "fair_ag",
+    "evolution": {
+      "run": "fair-55-r1",
+      "program": "c243b165",
+      "iteration": 200,
+      "bundle_sha256": "7f75e2fd5ded0df9e438d3f4062d4b80ba8755c38dff7a27b2bddc8a4a88e1f5",
+      "per_seed": [
+        {
+          "seed": 301,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14292
+        },
+        {
+          "seed": 302,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14292
+        },
+        {
+          "seed": 303,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14292
+        },
+        {
+          "seed": 304,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14292
+        },
+        {
+          "seed": 305,
+          "q": 0,
+          "success": false,
+          "steps": 3448
+        },
+        {
+          "seed": 306,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 10075
+        },
+        {
+          "seed": 307,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14292
+        },
+        {
+          "seed": 308,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 9668
+        },
+        {
+          "seed": 309,
+          "q": 0.3333333333333333,
+          "success": false,
+          "steps": 14292
+        },
+        {
+          "seed": 310,
+          "q": 0.6666666666666666,
+          "success": false,
+          "steps": 14292
+        }
+      ]
+    }
+  },
+  "note": "Best of fair-55-r1, H100 fitness 0.3348"
+}

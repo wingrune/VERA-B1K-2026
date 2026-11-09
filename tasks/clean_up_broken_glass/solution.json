@@ -1,0 +1,152 @@
+{
+ "task": "clean_up_broken_glass",
+ "task_id_2026": 80,
+ "kind": "b1k_classical",
+ "candidate": "g01",
+ "entry": {
+  "code": "controller",
+  "env": {}
+ },
+ "source": {
+  "repo": "github.com/tttonyalpha/b1k_rl_guys",
+  "branch": "pick-and-place",
+  "commit": "4448e41fdcc50c8ecfa378d993c0a38f0bf64b17",
+  "path": "tasks/clean_up_broken_glass/experiments/candidate/g01",
+  "fingerprint": "a7df48c86e1aa777aaf95da0c7673b63f3f09cbe904d9681aa767a76119e3837",
+  "files": 20,
+  "measured": {
+   "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+   "per_instance": [
+    {
+     "instance": 301,
+     "success": true,
+     "q": 1.0,
+     "steps": 6432
+    },
+    {
+     "instance": 302,
+     "success": true,
+     "q": 1.0,
+     "steps": 6637
+    },
+    {
+     "instance": 303,
+     "success": true,
+     "q": 1.0,
+     "steps": 7681
+    },
+    {
+     "instance": 304,
+     "success": true,
+     "q": 1.0,
+     "steps": 7486
+    },
+    {
+     "instance": 305,
+     "success": true,
+     "q": 1.0,
+     "steps": 6961
+    },
+    {
+     "instance": 306,
+     "success": true,
+     "q": 1.0,
+     "steps": 6232
+    },
+    {
+     "instance": 307,
+     "success": true,
+     "q": 1.0,
+     "steps": 3693
+    },
+    {
+     "instance": 308,
+     "success": true,
+     "q": 1.0,
+     "steps": 6234
+    },
+    {
+     "instance": 309,
+     "success": true,
+     "q": 1.0,
+     "steps": 5943
+    },
+    {
+     "instance": 310,
+     "success": true,
+     "q": 1.0,
+     "steps": 7937
+    }
+   ]
+  }
+ },
+ "note": "First controller for clean_up_broken_glass: the picking_up_trash controller t01 with this scene's map (restaurant_diner), glass-sized and trash-can-sized detection (rim fit within 3 cm), six glass lookouts in the dining room and bar and three trash-can lookouts in front of the corridor, false-glass ",
+ "our_validation": {
+  "date": "2026-10-16",
+  "protocol": "independent rerun: native evaluator, fresh process per episode, native horizon, rtx A100 x3, one scored pass",
+  "per_instance": [
+   {
+    "instance": 301,
+    "success": true,
+    "q": 1.0,
+    "steps": 6864
+   },
+   {
+    "instance": 302,
+    "success": true,
+    "q": 1.0,
+    "steps": 6568
+   },
+   {
+    "instance": 303,
+    "success": true,
+    "q": 1.0,
+    "steps": 9375
+   },
+   {
+    "instance": 304,
+    "success": true,
+    "q": 1.0,
+    "steps": 7478
+   },
+   {
+    "instance": 305,
+    "success": true,
+    "q": 1.0,
+    "steps": 7973
+   },
+   {
+    "instance": 306,
+    "success": true,
+    "q": 1.0,
+    "steps": 6115
+   },
+   {
+    "instance": 307,
+    "success": true,
+    "q": 1.0,
+    "steps": 3696
+   },
+   {
+    "instance": 308,
+    "success": true,
+    "q": 1.0,
+    "steps": 6238
+   },
+   {
+    "instance": 309,
+    "success": true,
+    "q": 1.0,
+    "steps": 6278
+   },
+   {
+    "instance": 310,
+    "success": true,
+    "q": 1.0,
+    "steps": 10356
+   }
+  ],
+  "sr": "10/10",
+  "mean_q": 1.0
+ }
+}

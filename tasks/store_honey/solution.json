@@ -1,0 +1,84 @@
+{
+  "task": "store_honey",
+  "task_id_2026": 83,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/83_store_honey/planners/fair_ag",
+    "env": {}
+  },
+  "source": {
+    "repo": "BIMBO_EvoX",
+    "commit": "106e2be5314eb896d6fa2f224c8666032906dbf5",
+    "bimbo_task": "83_store_honey",
+    "package": "fair_ag",
+    "evolution": {
+      "run": "fair-83-r1",
+      "program": "ffacbbe6",
+      "iteration": 201,
+      "bundle_sha256": "fbf438cf79e3af73ee0d076a8eb39d1e3989981a659399a4c0c6641c187d9a13",
+      "per_seed": [
+        {
+          "seed": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 6821
+        },
+        {
+          "seed": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 4910
+        },
+        {
+          "seed": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 5837
+        },
+        {
+          "seed": 304,
+          "q": 0,
+          "success": false,
+          "steps": 3571
+        },
+        {
+          "seed": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 4738
+        },
+        {
+          "seed": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 4281
+        },
+        {
+          "seed": 307,
+          "q": 0,
+          "success": false,
+          "steps": 10150
+        },
+        {
+          "seed": 308,
+          "q": 0,
+          "success": false,
+          "steps": 10150
+        },
+        {
+          "seed": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 5820
+        },
+        {
+          "seed": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 4254
+        }
+      ]
+    }
+  },
+  "note": ""
+}

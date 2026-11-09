@@ -1,0 +1,84 @@
+{
+  "task": "putting_away_toys",
+  "task_id_2026": 54,
+  "kind": "b1k_classical",
+  "candidate": "y01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "3be4f6ae472ba3d0a4411a1a28e5802e5c7c14b7",
+    "path": "tasks/putting_away_toys/experiments/candidate/y01",
+    "fingerprint": "fbe0742fd913732b1e3f615094c01537c82d80e88f9c19ef70ddd11d8be91f44",
+    "files": 20,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.75,
+          "steps": 16946
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.875,
+          "steps": 16946
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.0,
+          "steps": 16946
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.875,
+          "steps": 16946
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.5,
+          "steps": 16946
+        },
+        {
+          "instance": 306,
+          "success": true,
+          "q": 1.0,
+          "steps": 12587
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 16866
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 11698
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 11671
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.875,
+          "steps": 16946
+        }
+      ]
+    }
+  },
+  "note": "First controller for putting_away_toys: the glass controller g01 with this scene's map (house_single_floor), toy-sized detection on the living- and dining-room floors, the open toy box found as a 0.82 x 0.51 m rectangle at 0.40 m, the stance at it with its middle 0.84 m ahead, toys let go from the h"
+}

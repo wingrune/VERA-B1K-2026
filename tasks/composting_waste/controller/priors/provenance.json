@@ -1,0 +1,25 @@
+{
+  "excluded_categories": [
+    "half_banana",
+    "half_pomegranate",
+    "trash_can"
+  ],
+  "source_scene": "Rs_int",
+  "source_assets": "3.9.0",
+  "robot_assets": "3.8.2",
+  "target_surface": {
+    "name": "countertop_tpuwys_0",
+    "aabb_lo": [
+      -1.7078659534454346,
+      1.370369791984558,
+      1.0791599750518799
+    ],
+    "aabb_hi": [
+      0.09792107343673706,
+      1.698608160018921,
+      1.0791599750518799
+    ]
+  },
+  "ashcan_model": "rigid base_link only; articulated lid excluded",
+  "contact_mesh_count": 1152
+}

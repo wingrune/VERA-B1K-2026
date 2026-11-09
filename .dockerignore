@@ -1,0 +1,13 @@
+.git
+results
+results_tmp
+results_radio
+eval_runtime
+.build
+!.build/routing.csv
+config/routing.csv
+**/__pycache__
+**/*.pyc
+checkpoints
+.env
+.env.*

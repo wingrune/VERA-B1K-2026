@@ -1,0 +1,84 @@
+{
+  "task": "installing_a_fax_machine",
+  "task_id_2026": 89,
+  "kind": "b1k_classical",
+  "candidate": "m05",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "fax-manip",
+    "commit": "9d5cb69e2e3c015b9532c8f5f2396abe4dec27d6",
+    "path": "tasks/installing_a_fax_machine/experiments/candidate/m05",
+    "fingerprint": "ad12ecca56251658b7ccb14f4c4f518147d6dc2957f7f5caec3b9eb66d4fd332",
+    "files": 22,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 2528
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 1524
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 2507
+        },
+        {
+          "instance": 304,
+          "success": true,
+          "q": 1.0,
+          "steps": 1041
+        },
+        {
+          "instance": 305,
+          "success": true,
+          "q": 1.0,
+          "steps": 1187
+        },
+        {
+          "instance": 306,
+          "success": true,
+          "q": 1.0,
+          "steps": 2463
+        },
+        {
+          "instance": 307,
+          "success": true,
+          "q": 1.0,
+          "steps": 2094
+        },
+        {
+          "instance": 308,
+          "success": true,
+          "q": 1.0,
+          "steps": 2470
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 1477
+        },
+        {
+          "instance": 310,
+          "success": true,
+          "q": 1.0,
+          "steps": 2628
+        }
+      ]
+    }
+  },
+  "note": "m04 with: the lean-room term of stance planning made effective (the map's clearance function now covers large probe spheres), stances with fewer than three collision-free grasp configurations used only as a reserve, the last stretch to the stance ended within 1.5 cm, a second IK search at the stance"
+}

@@ -1,0 +1,86 @@
+{
+  "task": "collecting_aluminum_cans",
+  "task_id_2026": 87,
+  "kind": "frozen_rgbd",
+  "candidate": "a023",
+  "entry": {
+    "code": "controller",
+    "method": "action",
+    "unbatch_observations": true
+  },
+  "source": {
+    "format": "verified frozen directory archive; original Git commit not recorded",
+    "fingerprint": "e81d0a5903f980962e46e8db833d1da146fc6802a3e1346d35eea8effe207236",
+    "fingerprint_format": "sha256 of compact sorted JSON mapping relative paths to SHA256",
+    "files": 16
+  },
+  "evaluation": {
+    "protocol": "native evaluator v3.9.3-post1, RGBDFullResWrapper, public indices0-9, rollout0, default horizon, separate process per episode",
+    "original_image_id": "sha256:7f574effe873d8635c74c59baa6c0f19ccf80de866880f31895a7bc7533f6bea",
+    "mean_q": 0.85,
+    "successes": 3,
+    "per_instance": [
+      {
+        "instance": 301,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 15305
+      },
+      {
+        "instance": 302,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 15305
+      },
+      {
+        "instance": 303,
+        "q": 0.6666666666666666,
+        "success": false,
+        "steps": 15305
+      },
+      {
+        "instance": 304,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 15305
+      },
+      {
+        "instance": 305,
+        "q": 0.6666666666666666,
+        "success": false,
+        "steps": 15305
+      },
+      {
+        "instance": 306,
+        "q": 1.0,
+        "success": true,
+        "steps": 8645
+      },
+      {
+        "instance": 307,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 15305
+      },
+      {
+        "instance": 308,
+        "q": 1.0,
+        "success": true,
+        "steps": 14284
+      },
+      {
+        "instance": 309,
+        "q": 1.0,
+        "success": true,
+        "steps": 12800
+      },
+      {
+        "instance": 310,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 15305
+      }
+    ],
+    "integration_note": "Results belong to the unchanged frozen controller and original evaluated image. Integration replay does not constitute a new native evaluation."
+  }
+}

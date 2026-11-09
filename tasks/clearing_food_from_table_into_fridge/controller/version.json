@@ -1,0 +1,6 @@
+{
+ "version": "z02",
+ "parent": "z01",
+ "summary": "z01 with: far stances at the bar's south end (any free base pose 0.55-1.28 m off, the trunk bent over the bar), no phantom tupperware at the bar's corner, doubles handled, the hardest tupperware first, both side by side on the fridge's lower shelf (x 4.825 and 5.055, let go once inside, the other spot tried on failure), a look at the door with an edge lead if it stands short of 88 deg and a push to ~126 deg, no shut stage. The food stage (food.py) is in the folder but off (FOOD = False). Dev (one run per start, true state): both tupperwares in on 301, 303, 305, 306, 308, 310 with this code (Q 0.4 each).",
+ "status": "frozen 2026-10-17 03:57 MSK (same code as dev snapshot /data/aermakov/fax/food/snap/z02_n)"
+}

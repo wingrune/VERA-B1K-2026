@@ -1,0 +1,80 @@
+{
+  "vase": {
+    "category": "vase",
+    "model": "jpwsrp",
+    "scale": [
+      1.8443212509155273,
+      1.872643232345581,
+      1.7973761558532715
+    ],
+    "links": {},
+    "source": "training template zero, before public reset",
+    "world_poses_exported": false,
+    "point_count": 53556,
+    "feature_count": 604,
+    "bounds": [
+      [
+        -0.1579084647021467,
+        -0.1599727998465659,
+        -0.1723394584671282
+      ],
+      [
+        0.1620914835560552,
+        0.16002718142849867,
+        0.17766057296409837
+      ]
+    ]
+  },
+  "rose": {
+    "category": "rose",
+    "model": "hrwson",
+    "scale": [
+      0.9063357710838318,
+      0.7093951106071472,
+      0.6314075589179993
+    ],
+    "links": {},
+    "source": "training template zero, before public reset",
+    "world_poses_exported": false,
+    "point_count": 4825,
+    "feature_count": 696,
+    "bounds": [
+      [
+        -0.18579529347644128,
+        -0.06377161976161062,
+        -0.042409679285184784
+      ],
+      [
+        0.08420462261142589,
+        0.06622835942977338,
+        0.03759013100988427
+      ]
+    ]
+  },
+  "coffee_table": {
+    "category": "coffee_table",
+    "model": "koagbh",
+    "scale": [
+      0.9999982714653015,
+      1.0000159740447998,
+      1.000001311302185
+    ],
+    "links": {},
+    "source": "training template zero, before public reset",
+    "world_poses_exported": false,
+    "point_count": 3650,
+    "feature_count": 89,
+    "bounds": [
+      [
+        -0.3991732887319303,
+        -0.8255369919512359,
+        -0.3566194277693497
+      ],
+      [
+        0.40082736038697175,
+        0.830162693330828,
+        0.04970068513231375
+      ]
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "category": "box",
+  "synset": "box.n.01_1",
+  "model": "bwbpvg",
+  "scale": [
+    2.040940761566162,
+    1.9936248064041138,
+    2.094111204147339
+  ],
+  "bounds": [
+    [
+      -0.24000045657157898,
+      -0.24999995529651642,
+      -0.030970146879553795
+    ],
+    [
+      0.24000056087970734,
+      0.2500000596046448,
+      0.08902981877326965
+    ]
+  ],
+  "mass": 0.07919755578041077,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "bwbpvg__base_link",
+      "vertices": 558,
+      "faces": 816,
+      "samples": 25000,
+      "texture": "/data/behavior-1k-assets/objects/storage_box/bwbpvg/material/bwbpvg__base_link__diffuse.png",
+      "uv_shape": [
+        2448,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

@@ -1,0 +1,6 @@
+{
+ "version": "b01",
+ "parent": "c01/u01/p01 (localisation, map, routes, whole-body arm planner); s03 (squatting hold of a tool beside the base)",
+ "summary": "Classical controller for scrubbing_bathroom_floor. Localisation in the bathroom with the glass and the mirrors left out of the scan fit. The brush (red) is found from the head camera, from lookouts over floor not yet seen if needed, and taken from above by the squatting hand beside the base. The dirt marks are dark marks on the light floor within the bands where dirt is put. The floor is surveyed till little is left unseen, with one look from the nook by the toilet's mouth. Each mark is scrubbed with the brush held 1.2 cm over the floor and moved 5 cm to and fro, the marks of the strip by the bath together. A fixed-heading slide planner gets the base into the nook, the strip and the shower, where the route planner's disc does not fit. Dev rounds on the public starts 301-320: 9-10 of 20.",
+ "status": "frozen 2026-10-15 (dev snapshot b01_z16)"
+}

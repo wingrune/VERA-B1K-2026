@@ -1,0 +1,6 @@
+{
+ "version": "o01",
+ "parent": "clean_up_broken_glass g01",
+ "summary": "First controller for sorting_bottles_cans_and_paper: the glass controller g01 in the trash task's scene (kitchen of house_double_floor_lower), cans into an ice bucket and bottles into the big bucket in turn, things found by height over the floor and the bar, buckets by rim height, descent from 0.12 m (cans) or 0.26 m (bottles), the map without any task object; the newspaper and the magazine are left (best Q 0.25).",
+ "status": "frozen 2026-10-16 00:46 MSK (same code as dev snapshot o01_e); scored in REPORT_20261016_O01.md"
+}

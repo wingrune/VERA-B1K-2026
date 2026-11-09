@@ -1,0 +1,498 @@
+{
+  "python": "3.11.13",
+  "files": {
+    "assets/big_vision/paligemma_tokenizer.model": {
+      "sha256": "8986bb4f423f07f8c7f70d0dbe3526fb2316056c17bae71b1ea975e77a168fc6",
+      "bytes": 4264023
+    },
+    "lerobot/__init__.py": {
+      "sha256": "da48c39a1052a793cb4bb729b8f79e1712362ce714ad34d61dee02baefd020c3",
+      "bytes": 566
+    },
+    "lerobot/__version__.py": {
+      "sha256": "899a96f581b131b148be6fd8ffbcc483b124433efb48abe04d3699f1892785fd",
+      "bytes": 161
+    },
+    "lerobot/configs/__init__.py": {
+      "sha256": "e40513455de41567754d5ed197386ff235b8d9a29f51e5900afc0b43ba5e5fc0",
+      "bytes": 1384
+    },
+    "lerobot/configs/types.py": {
+      "sha256": "9891ab697a1cdd19993cefc539eeac5539f69145827df5f51b251f1c867856e7",
+      "bytes": 682
+    },
+    "lerobot/configs/video.py": {
+      "sha256": "e6565480469d704f6e7b8108c033977c7000b5df88270cff2b27fe58b91f835d",
+      "bytes": 7818
+    },
+    "lerobot/datasets/__init__.py": {
+      "sha256": "02921e3e83aa68531ae2870f7afaaad1b256de6cb1e8caed905e927bfd134098",
+      "bytes": 2702
+    },
+    "lerobot/datasets/compute_stats.py": {
+      "sha256": "aa614608ec30a928f3e4a55531772f61aabe1bf2a40efe3453e27d56b1c59ce3",
+      "bytes": 18654
+    },
+    "lerobot/datasets/dataset_metadata.py": {
+      "sha256": "7db7b58848b381645abc96623938b7b2974448c1117d7c51cfa04a53e4a78d34",
+      "bytes": 18382
+    },
+    "lerobot/datasets/dataset_reader.py": {
+      "sha256": "b3e9825556cf75a75a0c7c8b6480acd62a5062274b5b6320c3642437468fcf3f",
+      "bytes": 10052
+    },
+    "lerobot/datasets/depth_utils.py": {
+      "sha256": "5a20d39861dc730c9d909bc8749d1f9594044d5f851d182b8a156bc7809aea3b",
+      "bytes": 4515
+    },
+    "lerobot/datasets/feature_utils.py": {
+      "sha256": "4901a6f25ccf501d439ab84669777f4a61c794aab7541ad5e3695a46e0a4bdbb",
+      "bytes": 9549
+    },
+    "lerobot/datasets/io_utils.py": {
+      "sha256": "8a03c42ec7b543781197d1c03f205158ba2d2953dd0d0658fd6a89fc11e7418f",
+      "bytes": 6000
+    },
+    "lerobot/datasets/lerobot_dataset.py": {
+      "sha256": "e4b78d307e33b47260e94365de849b1c3cc4217df3bdc423da7abe91f315a0b3",
+      "bytes": 18414
+    },
+    "lerobot/datasets/multi_dataset.py": {
+      "sha256": "a7e66dd3a1342600bb5c6ba3709d84748a1e55d6aaa09998b4c04dab98de21a5",
+      "bytes": 6119
+    },
+    "lerobot/datasets/pyav_utils.py": {
+      "sha256": "94fe2a6e9c031eb5e0c18c04d52c2b45c56206b9ce49f0a5596f64c9ad3b6cea",
+      "bytes": 5666
+    },
+    "lerobot/datasets/utils.py": {
+      "sha256": "b8076879845ebcfb42128fa07cc9de6e05a6aced5bd884a1a9cf271c50ca7005",
+      "bytes": 12051
+    },
+    "lerobot/datasets/video_utils.py": {
+      "sha256": "c5e205eef0b9fd65546ae9d1889e79e6473fb3d0139082ffdadd5b736ed0236d",
+      "bytes": 28374
+    },
+    "lerobot/motors/__init__.py": {
+      "sha256": "496996d1cf60f57ea5a990631b757bf775c4de32f514c8195a51d1703124bbcb",
+      "bytes": 138
+    },
+    "lerobot/motors/motors_bus.py": {
+      "sha256": "aded88d7c7988c2b190730ac40730a8c4e44e7f5b2e7cb2efe6e93fefd69fde8",
+      "bytes": 35149
+    },
+    "lerobot/processor/__init__.py": {
+      "sha256": "4a105af987cd15e98329cc0bc09c3d05dc6947113f122e137cde4f866cefc418",
+      "bytes": 4758
+    },
+    "lerobot/processor/batch_processor.py": {
+      "sha256": "4d620ed17807289a754ad727198890a6243ea7256508d46ea6384a358931135c",
+      "bytes": 4563
+    },
+    "lerobot/processor/converters.py": {
+      "sha256": "e40d7c8f5b5167141e51d1c25d9acab4f1811132cae1d87b5db390758ccee52b",
+      "bytes": 8532
+    },
+    "lerobot/processor/delta_action_processor.py": {
+      "sha256": "78acc9008608fb0833118efcb5c9bae34c5df13923e3d64e1f55c81fa079e3be",
+      "bytes": 3245
+    },
+    "lerobot/processor/device_processor.py": {
+      "sha256": "1838a477f5eec09b76652b28afdbca7d368cb437f2fd592e0b53478706694103",
+      "bytes": 3584
+    },
+    "lerobot/processor/env_processor.py": {
+      "sha256": "9788224574c5fe553064fa7df19b24443b2fadff908f4bd6aff51d208ed7b3d4",
+      "bytes": 4799
+    },
+    "lerobot/processor/factory.py": {
+      "sha256": "fdead2ca844e104c6ff075e13c8de8b575c0876cd2e3e9aee4ada8c9a14e08b9",
+      "bytes": 1858
+    },
+    "lerobot/processor/gym_action_processor.py": {
+      "sha256": "91b976dfdb5b88cad7a2a65e0be9dd6fd773e260f706373be3946d5ac372044e",
+      "bytes": 2730
+    },
+    "lerobot/processor/hil_processor.py": {
+      "sha256": "61369a1d5deb631a41c8cdc1b95a54c934fc1de28b2ce4c42f43af362c704910",
+      "bytes": 13913
+    },
+    "lerobot/processor/newline_task_processor.py": {
+      "sha256": "25428406c047669b84083760db55cda913bb6acab6a683975c9c51933d6a678b",
+      "bytes": 1123
+    },
+    "lerobot/processor/normalize_processor.py": {
+      "sha256": "66f945a42825093554109cbce56fff7f283ad234768d821ed648d290fd45d3c5",
+      "bytes": 12890
+    },
+    "lerobot/processor/observation_processor.py": {
+      "sha256": "6d1def5fbda7fdee6827506d2fc2f5d1fff6515b7d103212e0a51b4cdbbb443c",
+      "bytes": 4225
+    },
+    "lerobot/processor/pipeline.py": {
+      "sha256": "95efc6d2fab2d0f540c38dba5fee5bc463fff5f3a8248414f87ee857865f4754",
+      "bytes": 29751
+    },
+    "lerobot/processor/policy_robot_bridge.py": {
+      "sha256": "cf902fc13cd47163e1a9b8ab2c59f967a26242dcf6a18a4e27c3fb564570679e",
+      "bytes": 1891
+    },
+    "lerobot/processor/relative_action_processor.py": {
+      "sha256": "baa2afb6a80ef891ce7be9c62b7cc4e898e06e1f71b55da17a0834b669d57c42",
+      "bytes": 5614
+    },
+    "lerobot/processor/rename_processor.py": {
+      "sha256": "687c357f24f099d1e53216a112395222695bcaaf4674ee4625166fe7aebe7299",
+      "bytes": 1679
+    },
+    "lerobot/processor/tokenizer_processor.py": {
+      "sha256": "705903a09b32ff44c656f7b7860de766282738d45a0b20cee1c6f50a77cd5d5b",
+      "bytes": 12990
+    },
+    "lerobot/teleoperators/__init__.py": {
+      "sha256": "6ffb8a020aabf58cd11334fbb97f9117ca0774b02a033fe1aa791910b0d59fcd",
+      "bytes": 240
+    },
+    "lerobot/teleoperators/config.py": {
+      "sha256": "35a991a0ea0e1ea94d99d087f002316997c857e5cf4c7cae961b62237c9f2386",
+      "bytes": 334
+    },
+    "lerobot/teleoperators/teleoperator.py": {
+      "sha256": "5c212c67ca0845b4f2e6c88f1f9508a8e2d9f3b1abed977401cd4aec77fb5f7f",
+      "bytes": 2735
+    },
+    "lerobot/teleoperators/utils.py": {
+      "sha256": "283eb0f97e6d635f714630cde29a4c03c556317a1a8e37625330b88083426789",
+      "bytes": 2812
+    },
+    "lerobot/types.py": {
+      "sha256": "a4a73d7e207331b776871f22a52b53015ff24209d70728304323d4a43e06c377",
+      "bytes": 1026
+    },
+    "lerobot/utils/__init__.py": {
+      "sha256": "bbd2e67738d996ad8eb87e84686bbc13c5579520c57af28589a8ab448236d946",
+      "bytes": 963
+    },
+    "lerobot/utils/constants.py": {
+      "sha256": "23e5628b577725f89500f3872afb0264ebba57126042ac739870d6bab4a5dad7",
+      "bytes": 3065
+    },
+    "lerobot/utils/decorators.py": {
+      "sha256": "d177112765c73e763bda5265be826364685e6259a6a4bcf97fd6136cfc578062",
+      "bytes": 724
+    },
+    "lerobot/utils/device_utils.py": {
+      "sha256": "66b35cf3a4ce8f4c61016a276ee1fb018ca18439df4f3008b512a02b96b32c92",
+      "bytes": 2924
+    },
+    "lerobot/utils/errors.py": {
+      "sha256": "1ce6561d8f78589832d0cc846b0717fffc9896b73044c7bf486f448ccc9dd835",
+      "bytes": 469
+    },
+    "lerobot/utils/feature_utils.py": {
+      "sha256": "8c4f2e5b8f9411066db537191d04409900f0904d5a96d8c4bbaaaaffd146be61",
+      "bytes": 4591
+    },
+    "lerobot/utils/hub.py": {
+      "sha256": "14bdfd4a3cf0d6113f0713b3c3f59d4eb0886fba624c5f2433c878cc4ed6d922",
+      "bytes": 3071
+    },
+    "lerobot/utils/import_utils.py": {
+      "sha256": "9332f3e89b71d235d19e648117ad2426eb09d5d9c7946bfdef8336d345b87820",
+      "bytes": 6791
+    },
+    "lerobot/utils/io_utils.py": {
+      "sha256": "677e2ba6c9edae068f21dd7ae57782d2024b9dc8c9a50af5280f1ca2b4166b65",
+      "bytes": 3781
+    },
+    "lerobot/utils/utils.py": {
+      "sha256": "a7139caa52ee1d7b80c167801e330369db7f4b6323ca004dab86dc0f8c813957",
+      "bytes": 7841
+    },
+    "lerobot-0.5.2.dist-info/METADATA": {
+      "sha256": "8a251e3a84c9adf166c9880182fb4624203c8b839075d6b134f5fc73d349931e",
+      "bytes": 51
+    },
+    "openpi/__init__.py": {
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    "openpi/configs/__init__.py": {
+      "sha256": "0ff7d4fd6cf2d5e559d5c67999db636eb20b6ad5a67963b906fc5f415d89bb52",
+      "bytes": 115
+    },
+    "openpi/configs/robots/__init__.py": {
+      "sha256": "4d655fc8de82a4467bb13877625ca613a251370c0d4b387bb2d4ef4d01ce1fc9",
+      "bytes": 371
+    },
+    "openpi/configs/robots/b1k.py": {
+      "sha256": "9998eb4a14d0bf9dcdedbdf3ce97a73572da25a6a7eb7416d751dd79149b6008",
+      "bytes": 2062
+    },
+    "openpi/configs/robots/base_config.py": {
+      "sha256": "d16dc68089640bd3e0a3c3e05ba89f9b705121c611bf972d8222e569669ef62b",
+      "bytes": 1555
+    },
+    "openpi/configs/tasks/__init__.py": {
+      "sha256": "a2cbe6d734aae6cc705fe76c63fd6e7945b87e00fc90c5e9474d454d0e2ec414",
+      "bytes": 354
+    },
+    "openpi/configs/tasks/b1k.py": {
+      "sha256": "617b6838ed3171eac6cb1a5f1f462710c550fb67e874d3346dcf8307d731e786",
+      "bytes": 5372
+    },
+    "openpi/configs/tasks/b1k_task_ids.json": {
+      "sha256": "ef7d0efe729939ff076dc13426e440186a3a1ffec7bf01209530444e2539676a",
+      "bytes": 3009
+    },
+    "openpi/models/__init__.py": {
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    "openpi/models/gemma.py": {
+      "sha256": "a75ba64b421b36e48efff9764e17bed11b6682229faf38ddf9e5e8bd7432a2c0",
+      "bytes": 14272
+    },
+    "openpi/models/gemma_fast.py": {
+      "sha256": "6ba2f2e6e5a566d68ad1c775a5e9280956566ee7727307baec77a97919017e89",
+      "bytes": 12857
+    },
+    "openpi/models/lora.py": {
+      "sha256": "6eb3219ddbce20401fce2f111583e0bfd1d1d052878842cf5079519c841e3a63",
+      "bytes": 4461
+    },
+    "openpi/models/model.py": {
+      "sha256": "b9a260f3063f187b5f130aa64c771a3df870e45dad56d27dba27a9543dd1a811",
+      "bytes": 8142
+    },
+    "openpi/models/pi0.py": {
+      "sha256": "9e2e71b631c0158aca52e8a69362c2750c4ddb92d79676840daf1e39d115ea59",
+      "bytes": 14711
+    },
+    "openpi/models/pi0_config.py": {
+      "sha256": "96e1479d5acca497d10f858c42d8d7e261dedf747647153651bae65ad4f84084",
+      "bytes": 3820
+    },
+    "openpi/models/pi0_fast.py": {
+      "sha256": "ee79715080bb6c28b635085af21c5b1c68756823009682611a5f24445eac3929",
+      "bytes": 10604
+    },
+    "openpi/models/siglip.py": {
+      "sha256": "076d2e77eca55d4a2d64d8bb0352499df19d0e3ec0d2b54e6e213b1264d66128",
+      "bytes": 9904
+    },
+    "openpi/models/tokenizer.py": {
+      "sha256": "637b4ce837f5c1bf653a96b927fb7610aa41d305d0c7a23512fbc48dfb98142b",
+      "bytes": 13949
+    },
+    "openpi/models/utils/fsq_tokenizer.py": {
+      "sha256": "40c50f6bbb66618b25b09c71d25fa3860a70409f942ce6500cc188244d48d751",
+      "bytes": 14600
+    },
+    "openpi/models/vit.py": {
+      "sha256": "45f2325813ca9da9d19be984c7d6121aede6ae15fcfe345afe5ebf1a16322be8",
+      "bytes": 7189
+    },
+    "openpi/models_pytorch/gemma_pytorch.py": {
+      "sha256": "91a6137b3f2fb938fdbb0090720aefd18c70124717d41ba9a60a99255ea29458",
+      "bytes": 12418
+    },
+    "openpi/models_pytorch/pi0_pytorch.py": {
+      "sha256": "7f6e85c77b104816b712d10fb9468c34e005f990654ac9e960e8754daecbf5cd",
+      "bytes": 15893
+    },
+    "openpi/models_pytorch/preprocessing_pytorch.py": {
+      "sha256": "b1007e9425d53b6ebf039233878f39b1084fdef0a50136a4090315a3d3d717da",
+      "bytes": 4743
+    },
+    "openpi/models_pytorch/transformers_replace/models/gemma/configuration_gemma.py": {
+      "sha256": "6aa9b884ccc68c4221b274c0dc9354e3d3272552fca47ab6637f52fd813a0555",
+      "bytes": 2700
+    },
+    "openpi/models_pytorch/transformers_replace/models/gemma/modeling_gemma.py": {
+      "sha256": "2d3bb80e6ce067f0c5969a71996e020b91b269fd9f1d07fb8d70a47feee4bb0a",
+      "bytes": 28048
+    },
+    "openpi/models_pytorch/transformers_replace/models/paligemma/modeling_paligemma.py": {
+      "sha256": "997d1443d943deac9168d606be3d2e46e48f8fa045e5accdcd5f09fa72230a00",
+      "bytes": 18887
+    },
+    "openpi/models_pytorch/transformers_replace/models/siglip/check.py": {
+      "sha256": "c85f72de0c331bf2fe6db3218654ca9630dfdd28d2df657a1c96f40ff9a5472c",
+      "bytes": 134
+    },
+    "openpi/models_pytorch/transformers_replace/models/siglip/modeling_siglip.py": {
+      "sha256": "f1cd3159d34ebe558b6654cb25e732fbf9eb5bb885bdb846019ec08ab2e91a44",
+      "bytes": 34884
+    },
+    "openpi/policies/aloha_policy.py": {
+      "sha256": "e4a361bea5764cf62669d7fa0da5ae2a35badcd2e357b83f343dcbed9344783b",
+      "bytes": 4828
+    },
+    "openpi/policies/b1k_policy.py": {
+      "sha256": "03240818e794eaba587ddf4bcd1631c271bf3e5bfcd0ea5ca2983a5b896ce294",
+      "bytes": 4388
+    },
+    "openpi/policies/droid_policy.py": {
+      "sha256": "ae7124f8ed6487398d7ecefe520f2ce94c8400dce644b043dac1d0f0f65a5fbd",
+      "bytes": 2712
+    },
+    "openpi/policies/libero_policy.py": {
+      "sha256": "5dc71af548676461ab28e6821fdb575ee6cdd56fb1f11b18ee63eff3281c0557",
+      "bytes": 1906
+    },
+    "openpi/policies/policy.py": {
+      "sha256": "c1c3427c44bb14bf5ceb488b50beac66107b9ed0892e722ac92080df406d2648",
+      "bytes": 4106
+    },
+    "openpi/policies/policy_config.py": {
+      "sha256": "56a41b13a617da375b28eef569e998bf8a95b46132230b386ed36f9cbbf9f595",
+      "bytes": 2687
+    },
+    "openpi/py.typed": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "openpi/serving/websocket_b1k_server.py": {
+      "sha256": "118a0d18effc510fb9575ca2b5330623bd4040ae62545c12014a101769b38277",
+      "bytes": 7568
+    },
+    "openpi/serving/websocket_policy_server.py": {
+      "sha256": "b6a420160bdef2f08f7270d04af762c797f463ac5398762634e18125c0dd4c69",
+      "bytes": 2715
+    },
+    "openpi/shared/__init__.py": {
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "bytes": 1
+    },
+    "openpi/shared/array_typing.py": {
+      "sha256": "c8f157720f03d808b180b170a0592be06eafd8ed0ece9b657e5a151335e7c90c",
+      "bytes": 2530
+    },
+    "openpi/shared/b1k_correction_rules.py": {
+      "sha256": "2672e587f6d4ecf2c7cd7124452c010b7189093204adeda81a51daed02faed58",
+      "bytes": 5514
+    },
+    "openpi/shared/download.py": {
+      "sha256": "edf5a427ca8fa71e42513a0c6adbfe30373ee29841bc1276faa70c629d2f0ba3",
+      "bytes": 6413
+    },
+    "openpi/shared/eval_b1k_wrapper.py": {
+      "sha256": "4edf5ec5cfdcc305a995aca273ca27b216feff3ed109e1c343f950127e93163b",
+      "bytes": 18178
+    },
+    "openpi/shared/image_tools.py": {
+      "sha256": "53a5e22b69d5e07676de44f461d366889ffa3c1a84edfe2f393cd3eb51b4dc30",
+      "bytes": 3404
+    },
+    "openpi/shared/nnx_utils.py": {
+      "sha256": "976adcb3023532b2c49b24ebdc615fe7304324bd35343e1e7ff5d8e6c9d37dcd",
+      "bytes": 1635
+    },
+    "openpi/shared/normalize.py": {
+      "sha256": "c23e031baa6b76121114d6eff59c16423a27d72111c0763f38a9a2273a617692",
+      "bytes": 4500
+    },
+    "openpi/training/checkpoints.py": {
+      "sha256": "90f18cd692288501f12a48b6cf0f4678985ddc4beda08c811b15abbbe4aacd1e",
+      "bytes": 6032
+    },
+    "openpi/training/config.py": {
+      "sha256": "f5e974806af3506db0377479bb914f692a1d8813e19d6bababd9eb4c2d8f3d1b",
+      "bytes": 34854
+    },
+    "openpi/training/data_loader.py": {
+      "sha256": "4eefae7bdf4f6c885c71c7d102330b82edf1e622a778afe868ddabfffdded475",
+      "bytes": 25325
+    },
+    "openpi/training/droid_rlds_dataset.py": {
+      "sha256": "67f2444342889125a0e676d6845f20979b346b6c8560e4dfe0bf6b2f4f2e4604",
+      "bytes": 7693
+    },
+    "openpi/training/lerobot_compat.py": {
+      "sha256": "a721a6fcaca513868959348ae2b2a0d159f33ed5968ef7753c4eb435a06d8330",
+      "bytes": 875
+    },
+    "openpi/training/misc/polaris_config.py": {
+      "sha256": "1c3af8375cbe386bda83f122b4211bea7d1d00807d3f9366635e8df8b3ee3a0c",
+      "bytes": 8908
+    },
+    "openpi/training/misc/roboarena_config.py": {
+      "sha256": "d9eaa3a54c9f80220942d4aa4a4585e8e42a640a05c4cbd4947f00e41eded674",
+      "bytes": 4238
+    },
+    "openpi/training/optimizer.py": {
+      "sha256": "7eb6f5b558177f38263091204e73eea685afd0dcf46057246cd0587063a32cb8",
+      "bytes": 3696
+    },
+    "openpi/training/sharding.py": {
+      "sha256": "effce43e9d399994ed96c68ec802e2a78074f9a30227b363b2069fc70e407606",
+      "bytes": 2777
+    },
+    "openpi/training/utils.py": {
+      "sha256": "1f6f581f88b744773dd5acb5be914452d4d741c5df4bd0e962afb0219f6e4917",
+      "bytes": 963
+    },
+    "openpi/training/weight_loaders.py": {
+      "sha256": "3b60e03a9b1390f92ae3bdaa35007af3cabd317fd0d7396bc0bca28ff591a1d3",
+      "bytes": 2310
+    },
+    "openpi/transforms.py": {
+      "sha256": "048db3bd88504af484853fc80bb2485d4ca8d3ffd967e3e3755725f38d6b048b",
+      "bytes": 14372
+    },
+    "openpi-0.1.0.dist-info/METADATA": {
+      "sha256": "75a65dfc6954fa40a91d5915602b7367dc3f220fe4a0d1fd4a156933263955fc",
+      "bytes": 50
+    },
+    "openpi_client/__init__.py": {
+      "sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+      "bytes": 22
+    },
+    "openpi_client/action_chunk_broker.py": {
+      "sha256": "a08f68df096f288119ca6c1d1d9856673072eb19a27bb318be4694daf64223d6",
+      "bytes": 1134
+    },
+    "openpi_client/base_policy.py": {
+      "sha256": "a3b3a348f53ca3b550e3a13c4d6de80b91c406690b95191d867db339319fb340",
+      "bytes": 185
+    },
+    "openpi_client/image_tools.py": {
+      "sha256": "f268a61d9b1ded4788ce998713ed0cb4317ede40c941eb2fffbfb1b7c21bb244",
+      "bytes": 1408
+    },
+    "openpi_client/msgpack_numpy.py": {
+      "sha256": "46643ee13277fbd39427a70da91eb1292d5f28bb35a94620adb11e0c8262046e",
+      "bytes": 1147
+    },
+    "openpi_client/runtime/agent.py": {
+      "sha256": "adf5e7e82719517c516b695046b78206d88e69c0e72ceca586fa150586c564a0",
+      "bytes": 194
+    },
+    "openpi_client/runtime/agents/policy_agent.py": {
+      "sha256": "37facfab37808f5bd577fc23c1c655bb7c49a8b6d243567d97870cad5428cd5b",
+      "bytes": 450
+    },
+    "openpi_client/runtime/environment.py": {
+      "sha256": "173fe275311c0acc65955b8afa0ab201551e583b33c7d93189ec0c43cfe3d195",
+      "bytes": 355
+    },
+    "openpi_client/runtime/runtime.py": {
+      "sha256": "9e18b65c499ed4684f886cb4bbf3132255f812cd64dc83e88d5a2ee004c2d9a5",
+      "bytes": 2526
+    },
+    "openpi_client/runtime/subscriber.py": {
+      "sha256": "7d5084157a2b60f5205900b5bb0350bc91239036e7d22c9ebb9825f748c646d7",
+      "bytes": 297
+    },
+    "openpi_client/websocket_client_policy.py": {
+      "sha256": "39ce4d791ecd350bd1b440b1fe9ddd846d2adc2a1bef9268cd4acf3de5ec749d",
+      "bytes": 1868
+    },
+    "openpi_client-0.1.0.dist-info/METADATA": {
+      "sha256": "7f659f33c6e4394185a6311ee3ed3f52d3fb0b48cf1bb112fc702cbf0bf3b534",
+      "bytes": 57
+    }
+  },
+  "requirements_sha256": "75ec477c6062005735b2a54e802a8b8245a07eae98b7606138a9db871a70bd47"
+}

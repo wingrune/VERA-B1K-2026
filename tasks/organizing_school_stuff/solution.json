@@ -1,0 +1,88 @@
+{
+  "task": "organizing_school_stuff",
+  "task_id_2026": 73,
+  "kind": "frozen_rgbd",
+  "candidate": "s91_integrated_contact_recovery",
+  "entry": {
+    "code": "controller",
+    "method": "action",
+    "unbatch_observations": false
+  },
+  "source": {
+    "format": "verified frozen directory archive; original Git commit not recorded",
+    "fingerprint": "37d9fd94fbbfa1054a78eda87df0a4931c8b9fa1f2a531cea29e880c1b6533d9",
+    "fingerprint_format": "sha256 of compact sorted JSON mapping relative paths to SHA256",
+    "files": 67
+  },
+  "evaluation": {
+    "protocol": "native evaluator v3.9.3-post1, RGBDFullResWrapper, public indices0-9, rollout0, default horizon, separate process per episode",
+    "mean_q": 0.8,
+    "successes": 3,
+    "per_instance": [
+      {
+        "instance": 301,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 21888
+      },
+      {
+        "instance": 302,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 21888
+      },
+      {
+        "instance": 303,
+        "q": 0.5,
+        "success": false,
+        "steps": 21888
+      },
+      {
+        "instance": 304,
+        "q": 0.3333333333333333,
+        "success": false,
+        "steps": 21888
+      },
+      {
+        "instance": 305,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 21888
+      },
+      {
+        "instance": 306,
+        "q": 1.0,
+        "success": true,
+        "steps": 10875
+      },
+      {
+        "instance": 307,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 21888
+      },
+      {
+        "instance": 308,
+        "q": 1.0,
+        "success": true,
+        "steps": 15738
+      },
+      {
+        "instance": 309,
+        "q": 0.8333333333333334,
+        "success": false,
+        "steps": 21888
+      },
+      {
+        "instance": 310,
+        "q": 1.0,
+        "success": true,
+        "steps": 14502
+      }
+    ],
+    "integration_note": "Results belong to the original native series with this frozen controller. The later packaged reproduction image and this integration replay are separate checks, not new native evaluations.",
+    "series": "dev_s91_301_310 (original native evaluator outputs; diagnostic bootstrap retained in provenance)",
+    "archived_reproduction_image_id": "sha256:c7bc2129c3a4a929ab05014557644de235a01e362ff54dee1e54c54181786fb3",
+    "image_note": "Native dev_s91_301_310 preceded submission packaging. The archived image was verified by recorded-input replay; it is not claimed as the image used for those native episodes."
+  }
+}

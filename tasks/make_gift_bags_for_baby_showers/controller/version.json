@@ -1,0 +1,6 @@
+{
+ "version": "m03",
+ "parent": "make_gift_bags_for_baby_showers m02 (with the small-thing skills of store_batteries x01)",
+ "summary": "m02 with a first phase: the two toy dice taken from the top of the east cabinet (small-thing detection over a known surface, pinch from above at the sighted height) and let fall one into each bag where the bags stand on the breakfast table; then the bags onto the coffee table as in m02. The wafers are not handled.",
+ "status": "frozen 2026-10-16 12:05 MSK (same code as dev snapshot m03_a); scored in REPORT_20261016_M03.md"
+}

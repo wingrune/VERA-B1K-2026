@@ -1,0 +1,38 @@
+{
+  "category": "book6",
+  "synset": "book.n.02_6",
+  "model": "dichmv",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "bounds": [
+    [
+      -0.08565250039100647,
+      -0.08485963940620422,
+      -0.015600977465510368
+    ],
+    [
+      0.08565453439950943,
+      0.08212853223085403,
+      0.015600967220962048
+    ]
+  ],
+  "mass": 0.800000011920929,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "dichmv__base_link",
+      "vertices": 230,
+      "faces": 324,
+      "samples": 11997,
+      "texture": "/data/behavior-1k-assets/objects/hardback/dichmv/material/dichmv__base_link__diffuse.png",
+      "uv_shape": [
+        972,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

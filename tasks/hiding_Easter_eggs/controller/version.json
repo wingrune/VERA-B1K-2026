@@ -1,0 +1,57 @@
+{
+ "task": "hiding_Easter_eggs",
+ "version": "v40",
+ "summary": "hiding_Easter_eggs v40: v40 = frozen full_v38 + an exploration lure toward a strongly seen parked basket (MAKE_v39.py) + an egg view that never saw the basket moves the base and looks again (MAKE_v40.py). Scored on BEHAVIOR-1K v3.9.3-post1 with the unmodified omnigibson.eval.eval (RGBDFullResWrapper, bundled r1pro.yaml, --write-video, default timeout, one rollout, fresh process per instance), instances 301-310: SR 4/10, mean Q 0.478.",
+ "per_instance": {
+  "301": {
+   "success": true,
+   "q": 1.0,
+   "steps": 4810
+  },
+  "302": {
+   "success": true,
+   "q": 1.0,
+   "steps": 4678
+  },
+  "303": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11430
+  },
+  "304": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11430
+  },
+  "305": {
+   "success": false,
+   "q": 0.7777777777777778,
+   "steps": 11430
+  },
+  "306": {
+   "success": true,
+   "q": 1.0,
+   "steps": 9364
+  },
+  "307": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11430
+  },
+  "308": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11430
+  },
+  "309": {
+   "success": true,
+   "q": 1.0,
+   "steps": 4421
+  },
+  "310": {
+   "success": false,
+   "q": 0.0,
+   "steps": 11430
+  }
+ }
+}

@@ -1,0 +1,32 @@
+name: Release checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  cpu-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install CPU test dependencies
+        run: python -m pip install numpy==2.4.6 pillow==11.2.1 msgpack==1.1.0 websockets==16.1.1
+      - name: Verify preserved source
+        run: python tools/verify_source_snapshot.py
+      - name: Check frozen controller fingerprints
+        run: python tools/check_frozen_rgbd.py
+      - name: Validate routes and documentation
+        run: |
+          python server/routing.py --no-files
+          python tools/check_release.py
+      - name: Run CPU suite
+        env:
+          PYTHONPATH: ${{ github.workspace }}/solutions/comet2/runtime
+        run: python -m unittest discover -s tests -v

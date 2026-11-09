@@ -1,0 +1,49 @@
+{
+ "note": "Dark marks on the bathroom floor that are not dirt: fixed features found by dirt_view.py in the frames of dev/jobs/probe_views.py on public starts 301-306 where no dirt lay within 6 cm, at the same place in two or more starts.",
+ "spots": [
+  [
+   24.813,
+   9.79
+  ],
+  [
+   21.728,
+   9.729
+  ],
+  [
+   21.783,
+   9.829
+  ],
+  [
+   22.163,
+   9.838
+  ],
+  [
+   21.002,
+   10.685
+  ],
+  [
+   22.704,
+   9.831
+  ],
+  [
+   23.16,
+   9.807
+  ],
+  [
+   22.971,
+   9.806
+  ],
+  [
+   20.846,
+   10.68
+  ],
+  [
+   22.055,
+   9.797
+  ],
+  [
+   22.581,
+   9.808
+  ]
+ ]
+}

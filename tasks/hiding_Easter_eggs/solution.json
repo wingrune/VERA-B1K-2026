@@ -1,0 +1,84 @@
+{
+  "task": "hiding_Easter_eggs",
+  "task_id_2026": 6,
+  "kind": "b1k_classical",
+  "candidate": "v40",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "main",
+    "commit": "09f820ca821dab56932047c0cf3945118464e6db",
+    "path": "tasks/hiding_Easter_eggs/experiments/candidate/v40",
+    "fingerprint": "962bdbe917eac7235f2372df80b56ea5ab54439d571c0bae6746ab02c6d1565e",
+    "files": 21,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": true,
+          "q": 1.0,
+          "steps": 4810
+        },
+        {
+          "instance": 302,
+          "success": true,
+          "q": 1.0,
+          "steps": 4678
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.0,
+          "steps": 11430
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.0,
+          "steps": 11430
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.7777777777777778,
+          "steps": 11430
+        },
+        {
+          "instance": 306,
+          "success": true,
+          "q": 1.0,
+          "steps": 9364
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.0,
+          "steps": 11430
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.0,
+          "steps": 11430
+        },
+        {
+          "instance": 309,
+          "success": true,
+          "q": 1.0,
+          "steps": 4421
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.0,
+          "steps": 11430
+        }
+      ]
+    }
+  },
+  "note": "hiding_Easter_eggs v40: v40 = frozen full_v38 + an exploration lure toward a strongly seen parked basket (MAKE_v39.py) + an egg view that never saw the basket moves the base and looks again (MAKE_v40.py). Scored on BEHAVIOR-1K v3.9.3-post1 with the unmodified omnigibson.eval.eval (RGBDFullResWrapper"
+}

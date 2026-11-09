@@ -1,0 +1,6 @@
+{
+ "version": "g01",
+ "parent": "picking_up_trash t01",
+ "summary": "First controller for clean_up_broken_glass: the picking_up_trash controller t01 with this scene's map (restaurant_diner), glass-sized and trash-can-sized detection (rim fit within 3 cm), six glass lookouts in the dining room and bar and three trash-can lookouts in front of the corridor, false-glass zones by the corridor's mouth and the west wall, sightings within 8 cm counted as one piece, up to six search rounds until three pieces are in, the stance at the trash can with its middle 0.58 m ahead (the trash can's box in the validator), pieces let go 8 cm (then 16 cm) above the 0.42 m rim, lookout routes that may pass over a seen piece when its keep-out disc shuts the way.",
+ "status": "frozen 2026-10-15 18:37 MSK (same code as dev snapshot g01_k); scored in REPORT_20261015_G01.md"
+}

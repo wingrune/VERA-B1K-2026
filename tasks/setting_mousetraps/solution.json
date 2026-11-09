@@ -1,0 +1,84 @@
+{
+  "task": "setting_mousetraps",
+  "task_id_2026": 5,
+  "kind": "b1k_classical",
+  "candidate": "v01",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place",
+    "commit": "4b0dafd31065da41925bef716e07b4b64bfb3aca",
+    "path": "tasks/setting_mousetraps/experiments/candidate/v01",
+    "fingerprint": "132794e60df66452e71b3dcd62d68e9b817987f2f8bda7059e17b0ec79b07595",
+    "files": 21,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 1.0,
+          "steps": 15295
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 1.0,
+          "steps": 15295
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 1.0,
+          "steps": 15295
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.8333333333333334,
+          "steps": 15295
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.8333333333333334,
+          "steps": 15295
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 1.0,
+          "steps": 15295
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 1.0,
+          "steps": 15295
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 1.0,
+          "steps": 15295
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 1.0,
+          "steps": 15295
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 1.0,
+          "steps": 15295
+        }
+      ]
+    }
+  },
+  "note": "setting_mousetraps (house_double_floor_upper): the four mousetraps are found on the bathroom cabinet's top, pinched from above across their long axis 3 cm off their middle, carried two at a time to the sink and laid from a side stance with their middle 4 cm in under the wall-hung vanity (under the s"
+}

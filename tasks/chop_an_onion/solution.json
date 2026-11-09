@@ -1,0 +1,84 @@
+{
+  "task": "chop_an_onion",
+  "task_id_2026": 42,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/42_chop_an_onion/planners/fair",
+    "env": {}
+  },
+  "source": {
+    "repo": "BIMBO_EvoX",
+    "commit": "106e2be5314eb896d6fa2f224c8666032906dbf5",
+    "bimbo_task": "42_chop_an_onion",
+    "package": "fair",
+    "evolution": {
+      "run": "fair-42-r3",
+      "program": "00403145",
+      "iteration": 143,
+      "bundle_sha256": "65a4628605f0343fbd84310820782238b4185cfa43812a575230e98c3a10ef3c",
+      "per_seed": [
+        {
+          "seed": 301,
+          "q": 0,
+          "success": false,
+          "steps": 5796
+        },
+        {
+          "seed": 302,
+          "q": 0.75,
+          "success": false,
+          "steps": 9599
+        },
+        {
+          "seed": 303,
+          "q": 0,
+          "success": false,
+          "steps": 3813
+        },
+        {
+          "seed": 304,
+          "q": 0.75,
+          "success": false,
+          "steps": 7202
+        },
+        {
+          "seed": 305,
+          "q": 0,
+          "success": false,
+          "steps": 9599
+        },
+        {
+          "seed": 306,
+          "q": 0,
+          "success": false,
+          "steps": 9599
+        },
+        {
+          "seed": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 2701
+        },
+        {
+          "seed": 308,
+          "q": 0,
+          "success": false,
+          "steps": 8043
+        },
+        {
+          "seed": 309,
+          "q": 0.75,
+          "success": false,
+          "steps": 9599
+        },
+        {
+          "seed": 310,
+          "q": 0,
+          "success": false,
+          "steps": 9599
+        }
+      ]
+    }
+  },
+  "note": "Best of fair-42-r3, H100 fitness 0.3025"
+}

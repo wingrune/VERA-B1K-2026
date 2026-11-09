@@ -1,0 +1,50 @@
+{
+  "name": "comet2",
+  "checkpoint_sha256": "9afdb712de022c058fc10495f8aca921c24b38291dd40aca9950c38805799923",
+  "checkpoint_revision": "local:group2_20261017_step2498:9afdb712de022c058fc10495f8aca921c24b38291dd40aca9950c38805799923",
+  "weights_in_repository": false,
+  "routes_before_comet2": [
+    [
+      "turning_out_all_lights_before_sleep",
+      "none",
+      "",
+      "tracker: -; SR 0 Q 0"
+    ],
+    [
+      "clean_your_rusty_garden_tools",
+      "none",
+      "",
+      "tracker: -; SR 0 Q 0"
+    ],
+    [
+      "polishing_shoes",
+      "b1k_classical",
+      "",
+      "b1k_rl_guys classical h02; SR 0.0 Q 0.27 on 301-310 (native evaluator; fresh process per episode); tracker: Classical"
+    ],
+    [
+      "tidying_bathroom",
+      "none",
+      "",
+      "tracker: SHAWN \u03c00.5 SFT \u2022 2025; SR 0 Q 0"
+    ],
+    [
+      "rearrange_your_room",
+      "none",
+      "",
+      "tracker: -; SR 0 Q 0"
+    ],
+    [
+      "setup_a_bar_for_a_cocktail_party",
+      "none",
+      "",
+      "tracker: -; SR 0 Q 0"
+    ],
+    [
+      "laying_tile_floors",
+      "none",
+      "",
+      "tracker: -; SR 0 Q 0"
+    ]
+  ]
+}

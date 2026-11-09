@@ -1,0 +1,9 @@
+{
+  "source_scene": "house_double_floor_upper",
+  "assets": "3.9.0",
+  "excluded_movable_categories": [
+    "hardback",
+    "storage_box"
+  ],
+  "source": "static furniture and object-local canonical geometry; no robot/target instance world pose"
+}

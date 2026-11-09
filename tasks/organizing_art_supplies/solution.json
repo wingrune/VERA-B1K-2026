@@ -1,0 +1,86 @@
+{
+  "task": "organizing_art_supplies",
+  "task_id_2026": 59,
+  "kind": "frozen_rgbd",
+  "candidate": "source87",
+  "entry": {
+    "code": "controller",
+    "method": "action",
+    "unbatch_observations": false
+  },
+  "source": {
+    "format": "verified frozen directory archive; original Git commit not recorded",
+    "fingerprint": "e32013f4ae8165c22f7ba7107be5e53be39ed5665add198ca24c7b9255b481ed",
+    "fingerprint_format": "sha256 of compact sorted JSON mapping relative paths to SHA256",
+    "files": 45
+  },
+  "evaluation": {
+    "protocol": "native evaluator v3.9.3-post1, RGBDFullResWrapper, public indices0-9, rollout0, default horizon, separate process per episode",
+    "original_image_id": "sha256:da14ad6165f4e809cda7c306a929be0d203ac4a24f12ab5d83d2e3e6142cc767",
+    "mean_q": 0.66,
+    "successes": 3,
+    "per_instance": [
+      {
+        "instance": 301,
+        "q": 0.6,
+        "success": false,
+        "steps": 9292
+      },
+      {
+        "instance": 302,
+        "q": 1.0,
+        "success": true,
+        "steps": 7213
+      },
+      {
+        "instance": 303,
+        "q": 0.2,
+        "success": false,
+        "steps": 9292
+      },
+      {
+        "instance": 304,
+        "q": 0.8,
+        "success": false,
+        "steps": 9292
+      },
+      {
+        "instance": 305,
+        "q": 1.0,
+        "success": true,
+        "steps": 5974
+      },
+      {
+        "instance": 306,
+        "q": 0.8,
+        "success": false,
+        "steps": 9292
+      },
+      {
+        "instance": 307,
+        "q": 1.0,
+        "success": true,
+        "steps": 6756
+      },
+      {
+        "instance": 308,
+        "q": 0.2,
+        "success": false,
+        "steps": 9292
+      },
+      {
+        "instance": 309,
+        "q": 0.6,
+        "success": false,
+        "steps": 9292
+      },
+      {
+        "instance": 310,
+        "q": 0.4,
+        "success": false,
+        "steps": 9292
+      }
+    ],
+    "integration_note": "Results belong to the unchanged frozen controller and original evaluated image. Integration replay does not constitute a new native evaluation."
+  }
+}

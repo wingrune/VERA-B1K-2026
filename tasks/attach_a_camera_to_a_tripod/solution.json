@@ -1,0 +1,84 @@
+{
+  "task": "attach_a_camera_to_a_tripod",
+  "task_id_2026": 35,
+  "kind": "planner",
+  "entry": {
+    "package": "tasks/35_attach_a_camera_to_a_tripod/planners/fair",
+    "env": {}
+  },
+  "source": {
+    "repo": "BIMBO_EvoX",
+    "commit": "0ed6e8236c16e9b598d71e827014302c18488018",
+    "bimbo_task": "35_attach_a_camera_to_a_tripod",
+    "package": "fair",
+    "evolution": {
+      "run": "fair-35-r1",
+      "program": "d20842d2",
+      "iteration": 23,
+      "bundle_sha256": "d4b2cae1ad46b9ea0a1cfd8cf2845541361ce003c820b54a49e4fa6fe1035698",
+      "per_seed": [
+        {
+          "seed": 301,
+          "q": 1.0,
+          "success": true,
+          "steps": 1272
+        },
+        {
+          "seed": 302,
+          "q": 1.0,
+          "success": true,
+          "steps": 2156
+        },
+        {
+          "seed": 303,
+          "q": 1.0,
+          "success": true,
+          "steps": 4282
+        },
+        {
+          "seed": 304,
+          "q": 1.0,
+          "success": true,
+          "steps": 2657
+        },
+        {
+          "seed": 305,
+          "q": 1.0,
+          "success": true,
+          "steps": 1544
+        },
+        {
+          "seed": 306,
+          "q": 1.0,
+          "success": true,
+          "steps": 1559
+        },
+        {
+          "seed": 307,
+          "q": 1.0,
+          "success": true,
+          "steps": 2259
+        },
+        {
+          "seed": 308,
+          "q": 1.0,
+          "success": true,
+          "steps": 3549
+        },
+        {
+          "seed": 309,
+          "q": 1.0,
+          "success": true,
+          "steps": 1765
+        },
+        {
+          "seed": 310,
+          "q": 1.0,
+          "success": true,
+          "steps": 3325
+        }
+      ]
+    }
+  },
+  "note": "Evolution champion of fair-35-r1; seed fair planner W9 was SR 7/10 on the same seeds."
+}

@@ -1,0 +1,84 @@
+{
+  "task": "cook_a_brisket",
+  "task_id_2026": 51,
+  "kind": "b1k_classical",
+  "candidate": "v20_submit",
+  "entry": {
+    "code": "controller",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "main",
+    "commit": "09f820ca821dab56932047c0cf3945118464e6db",
+    "path": "tasks/cook_a_brisket/experiments/candidate/v20_submit",
+    "fingerprint": "59d869b44ff62d156978d06f2b43acad51dff0f31286d946bc428a659c4ca711",
+    "files": 16,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.0,
+          "steps": 11003
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 11003
+        },
+        {
+          "instance": 303,
+          "success": true,
+          "q": 1.0,
+          "steps": 8314
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.0,
+          "steps": 11003
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.0,
+          "steps": 11003
+        },
+        {
+          "instance": 306,
+          "success": true,
+          "q": 1.0,
+          "steps": 10447
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.0,
+          "steps": 11003
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.0,
+          "steps": 11003
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.0,
+          "steps": 11003
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.3333333333333333,
+          "steps": 11003
+        }
+      ]
+    }
+  },
+  "note": "cook_a_brisket v20_submit: frozen full_v20 (tasks/cook_a_brisket/code, byte-identical). Scored on BEHAVIOR-1K v3.9.3-post1 with the unmodified omnigibson.eval.eval (RGBDFullResWrapper, bundled r1pro.yaml, --write-video, default timeout, one rollout, fresh process per instance), instances 301-310: SR"
+}

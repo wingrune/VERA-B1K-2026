@@ -1,0 +1,15 @@
+{
+  "bed": "bed_gxfipj_0",
+  "meshes": [
+    "bed_gxfipj_0|base_link|gxfipj__base_link__collision__0",
+    "bed_gxfipj_0|base_link|gxfipj__base_link__collision__1",
+    "bed_gxfipj_0|base_link|gxfipj__base_link__collision__2",
+    "bed_gxfipj_0|base_link|gxfipj__base_link__collision__3",
+    "bed_gxfipj_0|base_link|gxfipj__base_link__collision__4",
+    "bed_gxfipj_0|base_link|gxfipj__base_link__collision__5",
+    "bed_gxfipj_0|base_link|gxfipj__base_link__collision__6",
+    "bed_gxfipj_0|base_link|gxfipj__base_link__collision__7"
+  ],
+  "method": "Convex hull of each fixed collision mesh; no reduced clearance thresholds",
+  "source": "/work/workers/0/queue/a_probe301.out"
+}

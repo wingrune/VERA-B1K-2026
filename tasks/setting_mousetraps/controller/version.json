@@ -1,0 +1,6 @@
+{
+ "version": "v01",
+ "parent": "store_batteries x02",
+ "summary": "setting_mousetraps (house_double_floor_upper): the four mousetraps are found on the bathroom cabinet's top, pinched from above across their long axis 3 cm off their middle, carried two at a time to the sink and laid from a side stance with their middle 4 cm in under the wall-hung vanity (under the sink and on the floor); a trap with no place under the sink goes to the open floor, as a last resort it is let fall in front of the base.",
+ "status": "frozen 2026-10-17 01:12 MSK (code identical to dev snapshot v01_f; dev round f on public 301-310: 9/10 successes, mean Q 0.983)"
+}

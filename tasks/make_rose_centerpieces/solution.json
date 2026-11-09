@@ -1,0 +1,85 @@
+{
+  "task": "make_rose_centerpieces",
+  "task_id_2026": 56,
+  "kind": "b1k_classical",
+  "candidate": "M15",
+  "entry": {
+    "code": "controller",
+    "env": {},
+    "adapter": "rose_m15"
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "pick-and-place-wingrune",
+    "commit": "2b611cb8623e1fca9c00ed2fda9e6616fc336d33",
+    "path": "tasks/make_rose_centerpieces/m15_validation_20261016/controller",
+    "fingerprint": "4b7ffca7ea4b10460271397330a0b39e417d52da01b30b785bf69e3ab57a4f7f",
+    "files": 235,
+    "measured": {
+      "protocol": "native evaluator, RGBDFullResWrapper, native horizon, one fresh simulator process per episode, rollout 0",
+      "per_instance": [
+        {
+          "instance": 301,
+          "success": false,
+          "q": 0.75,
+          "steps": 6799
+        },
+        {
+          "instance": 302,
+          "success": false,
+          "q": 0.5,
+          "steps": 6799
+        },
+        {
+          "instance": 303,
+          "success": false,
+          "q": 0.75,
+          "steps": 6799
+        },
+        {
+          "instance": 304,
+          "success": false,
+          "q": 0.25,
+          "steps": 6799
+        },
+        {
+          "instance": 305,
+          "success": false,
+          "q": 0.0,
+          "steps": 6799
+        },
+        {
+          "instance": 306,
+          "success": false,
+          "q": 0.5,
+          "steps": 6799
+        },
+        {
+          "instance": 307,
+          "success": false,
+          "q": 0.5,
+          "steps": 6799
+        },
+        {
+          "instance": 308,
+          "success": false,
+          "q": 0.5,
+          "steps": 6799
+        },
+        {
+          "instance": 309,
+          "success": false,
+          "q": 0.0,
+          "steps": 6799
+        },
+        {
+          "instance": 310,
+          "success": false,
+          "q": 0.25,
+          "steps": 6799
+        }
+      ]
+    }
+  },
+  "note": ""
+}

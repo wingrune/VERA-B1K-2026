@@ -1,0 +1,6 @@
+{
+ "version": "u01",
+ "parent": "c01 (loading_the_car): localisation, trunk lid, door, routes, arm planner",
+ "summary": "First controller for unloading_the_car. The two bags are found in the open trunk from the head camera's depth image: the satchel by its top surface's shape, the briefcase the same way or, however it lies, as a slab from the plane of one of its faces, the two chosen together by the points they explain. A bag is taken by an edge with a slanted hand, one finger on a face that looks up and the other on the face beside it; the candidates are the edges of the satchel's measured outline (its ends also with the hand askew) and every such edge of the briefcase as it lies, leans or stands. The satchel goes first unless the briefcase lies on it or in its way out. The bag is lifted out over the sill, carried hanging from the hand in front of the chest through the door (opened beforehand with empty hands) to the stance east of the sofa's chaise, and lowered to the floor there.",
+ "status": "frozen 2026-10-13"
+}

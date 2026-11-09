@@ -1,0 +1,1 @@
+Static task-name registry generated from server/task_ids_2026.json. The pinned OpenPI training configuration imports task names while registering model configurations. This small registry allows comet2 inference to import offline; it contains no demonstrations, object poses or instance information.

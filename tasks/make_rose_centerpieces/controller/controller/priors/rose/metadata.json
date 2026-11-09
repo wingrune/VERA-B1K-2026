@@ -1,0 +1,26 @@
+{
+  "category": "rose",
+  "model": "hrwson",
+  "scale": [
+    0.9063357710838318,
+    0.7093951106071472,
+    0.6314075589179993
+  ],
+  "links": {},
+  "source": "training template zero, before public reset",
+  "world_poses_exported": false,
+  "point_count": 4825,
+  "feature_count": 696,
+  "bounds": [
+    [
+      -0.18579529347644128,
+      -0.06377161976161062,
+      -0.042409679285184784
+    ],
+    [
+      0.08420462261142589,
+      0.06622835942977338,
+      0.03759013100988427
+    ]
+  ]
+}

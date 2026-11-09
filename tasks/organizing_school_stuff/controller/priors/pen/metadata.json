@@ -1,0 +1,38 @@
+{
+  "category": "pen",
+  "synset": "pen.n.01_1",
+  "model": "enfumt",
+  "scale": [
+    0.9739540219306946,
+    1.4698652029037476,
+    0.9494081735610962
+  ],
+  "bounds": [
+    [
+      -0.07166338711977005,
+      -0.007503707427531481,
+      -0.00577843002974987
+    ],
+    [
+      0.09833808243274689,
+      0.007496533449739218,
+      0.009221753105521202
+    ]
+  ],
+  "mass": 0.05000000074505806,
+  "meshes": [
+    {
+      "link": "base_link",
+      "mesh": "enfumt__base_link",
+      "vertices": 805,
+      "faces": 1188,
+      "samples": 1500,
+      "texture": "/data/behavior-1k-assets/objects/pen/enfumt/material/enfumt__base_link__diffuse.png",
+      "uv_shape": [
+        3564,
+        2
+      ]
+    }
+  ],
+  "provenance": "Public asset geometry transformed to its root-link frame; no instance poses retained."
+}

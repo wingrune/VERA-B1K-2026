@@ -1,0 +1,23 @@
+{
+  "task": "installing_a_modem",
+  "task_id_2026": 77,
+  "kind": "b1k_classical",
+  "candidate": "modem_v10",
+  "entry": {
+    "code": "controller",
+    "adapter": "observation_policy",
+    "env": {}
+  },
+  "source": {
+    "repo": "github.com/tttonyalpha/b1k_rl_guys",
+    "branch": "main",
+    "path": "tasks/installing_a_modem/code",
+    "release": "modem_v10",
+    "measured": {
+      "protocol": "native evaluator, one fresh process per episode, instances 301-310",
+      "success_rate": 0.8,
+      "q": 0.85,
+      "note": "Selected baseline in the repository README. Public 301 and 302 failed at Q 0.25; the other eight succeeded."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "category": "glue_stick",
+  "model": "sqzyci",
+  "scale": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "links": {},
+  "meshes": [
+    "glue_stick_sqzyci_0.npz"
+  ]
+}
