@@ -13,7 +13,8 @@ IMAGE = 'ghcr.io/alstar8/b1k-evo-submit@sha256:1ab7d94f5b3ecc347dbb9adccc2d9212c
 
 
 def extract():
-    source = list(csv.DictReader((REPO / 'config/routing.csv').open()))
+    with (REPO / 'config/routing.csv').open() as stream:
+        source = list(csv.DictReader(stream))
     targets = {r['solution']: REPO / r['checkpoint'] for r in source if r['checkpoint']}
     for target in targets.values():
         if target.exists() or target.is_symlink():
@@ -25,7 +26,8 @@ def extract():
         with tempfile.TemporaryDirectory(prefix='.release-extract-', dir=REPO / 'checkpoints') as temp:
             stage = Path(temp)
             subprocess.run(['docker', 'cp', f'{container}:/opt/submit/config/routing.csv', str(stage / 'routing.csv')], check=True)
-            image_rows = list(csv.DictReader((stage / 'routing.csv').open()))
+            with (stage / 'routing.csv').open() as stream:
+                image_rows = list(csv.DictReader(stream))
             for solution, target in targets.items():
                 paths = {r['checkpoint'] for r in image_rows if r['solution'] == solution}
                 if len(paths) != 1:

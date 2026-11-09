@@ -118,7 +118,7 @@ The snapshot contains 82 tasks and 820 episodes. Mean Q over published tasks is 
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install numpy==2.4.6 pillow==11.2.1 msgpack==1.1.0 websockets==16.1.1
+.venv/bin/python -m pip install numpy==2.4.6 scipy==1.17.1 pillow==11.2.1 msgpack==1.1.0 websockets==16.1.1
 PYTHONPATH="$PWD/solutions/comet2/runtime" .venv/bin/python -m unittest discover -s tests -v
 python3 tools/verify_source_snapshot.py
 python3 tools/check_frozen_rgbd.py

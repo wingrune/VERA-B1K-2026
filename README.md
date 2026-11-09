@@ -129,11 +129,11 @@ The summary tool reads committed JSON blobs and records their SHA256 hashes. Vid
 
 ## Tests and project website
 
-CPU tests need NumPy, Pillow, msgpack and websockets. They do not run the simulator or real model inference:
+CPU tests need NumPy, SciPy, Pillow, msgpack and websockets. They do not run the simulator or real model inference:
 
 ```bash
 python3 -m venv .venv
-.venv/bin/python -m pip install numpy==2.4.6 pillow==11.2.1 msgpack==1.1.0 websockets==16.1.1
+.venv/bin/python -m pip install numpy==2.4.6 scipy==1.17.1 pillow==11.2.1 msgpack==1.1.0 websockets==16.1.1
 PYTHONPATH="$PWD/solutions/comet2/runtime" .venv/bin/python -m unittest discover -s tests -v
 ```
 
