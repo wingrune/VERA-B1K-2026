@@ -1,5 +1,7 @@
 # VERA-Volve · Planner evolution for BEHAVIOR-1K
 
+[![VERA: successful household-task episodes](docs/assets/vera-successful-tasks.gif)](https://wingrune.github.io/VERA-B1K-2026/)
+
 An open-source release of **VERA's planner solution** to the [2026 BEHAVIOR Challenge](https://behavior.stanford.edu/challenge/index.html). We build an **Isaac digital twin** for GPU simulation and fast RGB-D rendering, evolve executable planner code with **LLM proposals and algorithmic search**, and validate selected planners in native BEHAVIOR-1K.
 
 **[Project blog](https://wingrune.github.io/VERA-B1K-2026/)** · **[Technical report](docs/technical-report.pdf)** · **[Reproduction guide](docs/reproduce.md)** · **[Validation JSONs and videos](https://huggingface.co/datasets/VERA-VLA/b1k_final_submission)** · **[Challenge leaderboard](https://huggingface.co/spaces/behavior-1k/2026-challenge-leaderboard)**
