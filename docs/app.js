@@ -10,6 +10,8 @@
   let expanded = false;
   let summary;
   const readable = name => name.replaceAll('_', ' ').replace(/^./, x => x.toUpperCase());
+  const plannerRoutes = ['planner', 'planner_cpu', 'b1k_classical', 'frozen_rgbd'];
+  const method = task => plannerRoutes.includes(task.release_route) ? 'Planner' : 'VLA';
   function cell(text, className) {
     const node = document.createElement('td');
     node.textContent = text;
@@ -19,7 +21,7 @@
   function render() {
     const term = search.value.trim().toLowerCase().replaceAll('_', ' ');
     const selected = summary.tasks.filter(t => (readable(t.task).toLowerCase().includes(term) || String(t.id) === term)
-      && (family.value === 'all' || (family.value === 'planners' ? ['planner', 'planner_cpu'].includes(t.release_route) : ['b1k_classical', 'frozen_rgbd'].includes(t.release_route)))
+      && (family.value === 'all' || (family.value === 'planners' ? method(t) === 'Planner' : method(t) === 'VLA'))
       && (evidence.value === 'all' || (evidence.value === 'published' ? t.episodes > 0 : t.episodes === 0)));
     selected.sort((a, b) => sort.value === 'id' ? a.id - b.id : sort.value === 'name' ? a.task.localeCompare(b.task)
       : (b.mean_q ?? -1) - (a.mean_q ?? -1) || a.id - b.id);
@@ -32,7 +34,7 @@
       id.className = 'task-id';
       id.textContent = `TASK ${String(task.id).padStart(2, '0')}`;
       title.append(id, document.createTextNode(readable(task.task)));
-      row.append(title, cell(task.release_route, 'route'), cell(task.episodes ? `${task.successes} / ${task.episodes}` : '—'));
+      row.append(title, cell(method(task), 'route'), cell(task.episodes ? `${task.successes} / ${task.episodes}` : '—'));
       const score = cell('', 'score');
       if (task.mean_q !== null) {
         const value = document.createElement('span');
@@ -64,7 +66,7 @@
       row.append(score, linkCell);
       rows.append(row);
     }
-    count.textContent = `Showing ${shown.length} of ${selected.length} matching tasks · ${family.value === 'planners' ? 'planner routes' : family.value === 'classical' ? 'classical controller routes' : 'full submission'}`;
+    count.textContent = `Showing ${shown.length} of ${selected.length} matching tasks · ${family.value === 'planners' ? 'planners' : family.value === 'vla' ? 'VLA policies' : 'full submission'}`;
     more.hidden = expanded || shown.length === selected.length;
     if (!selected.length) {
       const row = document.createElement('tr');
@@ -105,3 +107,4 @@
     });
   });
 })();
+
